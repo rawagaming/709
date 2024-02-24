@@ -113,50 +113,8 @@ cokbrut=[]
 ses=requests.Session()
 princp=[]
 try:
-	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/KING/main/socks5.txt').text
-	open('.socks5.txt','w').write(prox) 
-except Exception as e:
-
-	prox=open('.proxy.txt','r').read().splitlines()
-
-try:
-	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/KING/main/socks4.txt').text
-	open('.socks4.txt','w').write(prox) 
-except Exception as e:
-
-	prox=open('.proxy.txt','r').read().splitlines()
-
-try:
-	prox= requests.get('https://github.com/Chigozieworldwide/KING/blob/main/https.txt').text
-	open('.https.txt','w').write(prox) 
-except Exception as e:
-
-	prox=open('.proxy.txt','r').read().splitlines()
-
-try:
-	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/KING/main/http.txt').text
-	open('.http.txt','w').write(prox) 
-except Exception as e:
-
-	prox=open('.proxy.txt','r').read().splitlines()
-
-try:
-	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/XFORD/main/http.txt').text
-	open('.http.txt','w').write(prox) 
-except Exception as e:
-
-	prox=open('.proxy.txt','r').read().splitlines()
-
-try:
-	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/XFORD/main/https.txt').text
-	open('.https.txt','w').write(prox) 
-except Exception as e:
-
-	prox=open('.proxy.txt','r').read().splitlines()
-
-try:
-	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/XFORD/main/socks4.txt').text
-	open('.socks4.txt','w').write(prox) 
+    prox= requests.get('https://github.com/Pro-Max-420/Api/blob/main/prox.txt').text
+    open('.prox.txt','w').write(prox)
 except Exception as e:
     pass
 prox=open('.prox.txt','r').read().splitlines()
