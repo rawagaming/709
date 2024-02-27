@@ -621,9 +621,9 @@ def menu():
     print(logo) 
   ##  print(f"\033[97;1m[\033[92;1m+\033[97;1m] \033[1;92mUSER NAME\033[1;91m :\033[1;96m "+uname)
   ##  print("\033[97;1m[\033[92;1m•\033[97;1m] \033[0;93mTODAY'S DATE :\033[1;92m "+date)
-    print(f"""\033[1;37m[1] File Cloning         """)
+    print(f"""\033[1;37m[1] CR4CK FILE🔥[WORK]         """)
    ## print(f"""\033[97;1m[\033[92;1m2\033[97;1m] \033[92;1mCHECK OK IDz   """)
-    print("""\033[1;37m[0] Exit""")
+    print("""\033[1;37m[0] DARCHUN⬅️""")
     print('------------------------------------------------')
     HAMA = input('\033[1;37m[\033[1;31m!\033[1;37m] Select option: ')
     if HAMA in ['11']:
@@ -649,7 +649,7 @@ def crack_file():
     dhy = input('\033[1;37m[+] Put file path : ')
     try:lin = open(dhy).read().splitlines()
     except:
-        animation(' [×] FILE NOT FOUND')
+        animation(' [×] FAIL HALAYA')
         time.sleep(2)
         back()
     for xid in lin:
@@ -661,10 +661,10 @@ def crack_file():
 def setting():
     print('\033[1;37m------------------------------------------------')
    # print("\033[1;37m[ 1 ] FAST")
-    print("\033[1;37m[1] Method 1 (\033[1;32mnew\033[1;37m) \n[2] Method 2 (\033[1;32mold\033[1;37m)\n[3] Method 3 (\033[1;32mold+new\033[1;37m)")
+    print("\033[1;37m[1] Method 1 [UPDATE💥] (\033[1;32mnew\033[1;37m) \n[2] Method 2 (\033[1;32mold\033[1;37m)\n[3] Method 3 (\033[1;32mold+new\033[1;37m)")
     ##print("\033[97;1m[\033[92;1m3\033[97;1m] 3ALA \x1b[33m[3\x1b[33m] \x1b[33m[\033[0;92mMIX \x1b[36mID\x1b[33m]")
  ##   print('\033[0;92m=============================')
-    hu = input('\033[1;37m[\033[1;34m!\033[1;37m] Select option: ')
+    hu = input('\033[1;37m[\033[1;34m!\033[1;37m] HALBZHERA👍🏻: ')
     if hu in ['1','01']:
         for tua in sorted(id):
             id2.append(tua)
@@ -686,7 +686,7 @@ def setting():
             xx = random.randint(0,len(id2))
             id2.insert(xx,bacot)
     print('\033[1;37mMAFIA-11532231GUANUS3911')
-    print("\033[1;37m[1] METHOD [\033[1;32mGORANET,IQ,FTTH,KOREK\033[1;37m]")
+    print("\033[1;37m[1] METHOD UPDATE💥 [\033[1;32mGORANET,IQ,FTTH,KOREK\033[1;37m]")
  #   print("\033[1;37m[ 2 ] METHOD [KOREK]")
  ##   print("\033[97;1m[\033[92;1m2\033[97;1m] METHOD \x1b[33m[2\x1b[33m] \x1b[33m[\033[0;92mSHOW \x1b[36mCP\x1b[33m]")
  ##   print('\033[0;92m==================')
@@ -706,8 +706,8 @@ def passwrd():
     print(logo)  
     print('\033[1;37m-----------------------------------------------')
     print('Total accounts :\033[1;32m ' +str(len(id)))
-    print('\033[1;37mProcess running in the background')
-    print('Your Name : '+dyar)
+    print('\033[1;37mWaIT FOR CRACK💥')
+    print('NAWAKAT➡️ : '+dyar)
     print(now)
     print('\033[1;37m-----------------------------------------------')
     with tred(max_workers=30) as pool:
@@ -776,7 +776,7 @@ def passwrd():
 def crack(idf,pwv):
     global loop,ok,cp
     bo = random.choice([m,k,h,b,u,x])
-    sys.stdout.write(f"\r \033[1;37m[DYAR]  {P}{b}\033[1;37m{loop}|{P}  OK:{P}{H}\033[1;37m{ok}{P}   CP:{P}{M}\033[1;37m{cp}{P}  {'{:.0%}'.format(loop/float(len(id)))}  "),
+    sys.stdout.write(f"\r \033[1;37m[RAWA-XD🧑🏻‍💻]  {P}{b}\033[1;37m{loop}|{P}  OK:{P}{H}\033[1;37m{ok}{P}   CP:{P}{M}\033[1;37m{cp}{P}  {'{:.0%}'.format(loop/float(len(id)))}  "),
     sys.stdout.flush()
     ua = random.choice(['Mozilla/5.0 (iPhone; CPU iPhone OS 8_7_4 like Mac OS X) AppleWebKit/604.5.6 (KHTML, like Gecko) Version/12.0 Mobile/13A452 Safari/606.1.36',
 'Mozilla/5.0 (iPhone; CPU iPhone OS 8_7_4 like Mac OS X) AppleWebKit/604.5.6 (KHTML, like Gecko) Version/12.0 Mobile/13A452 Safari/606.1.36', 
