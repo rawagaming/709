@@ -154,13 +154,12 @@ def banner():
 	cetak(nel(oi, title='[bold cyan] • DEVELOVER INFORMATION • [/bold cyan]'))
 # VALIDASI TOKEN
 def login():
-#		uaku()
-		cocok()
 		try:
 			token = open('.token.txt','r').read()
+			kukis = open('.cok.txt','r').read()
 			tokenku.append(token)
 			try:
-				sy = requests.get('https://graph.facebook.com/me?fields=id,name&access_token='+tokenku[0],cookies={'cookie': cokbrut[0]})
+				sy = requests.get('https://graph.facebook.com/me?fields=id,name&access_token='+tokenku[0], cookies={'cookie':kukis})
 				sy2 = json.loads(sy.text)['name']
 				sy3 = json.loads(sy.text)['id']
 				menu(sy2,sy3)
@@ -177,117 +176,30 @@ def login():
 
 # LOGIN
 def login_lagi334():
-	banner()
-	sky = '[bold cyan][01] LOGIN COOKIE V1\n[02] LOGIN COOKIE V2[/bold cyan]'
-	sky2 = nel(sky, style='cyan')
-	cetak(nel(sky2,title='[bold cyan] • LOGIN MENU • [/bold cyan]'))
-	pil=input('[•] Choose : ')
-	if pil in ['1','01']:
-		try:
-			cik='# LOGIN USING COOKIE V1'
-			cik2=mark(cik ,style='cyan')
-			sol().print(cik2)
-			cooki=input("Cookie : ")
-			open('.cookie.txt','w').write(cooki)
-			data = requests.get("https://business.facebook.com/business_locations", headers = {"user-agent": "Mozilla/5.0 (Linux; Android 11; Realme 3 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.128 Mobile Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8","content-type":"text/html; charset=utf-8"}, cookies = {"cookie":cooki}) 
-			find_token = re.search("(EAAG\w+)", data.text)
-			ken=open(".token.txt", "w").write(find_token.group(1))
-			cokrom=open('.cookie.txt','r').read()
-			tokrom=open('.token.txt','r').read()
-			tes = requests.get('https://graph.facebook.com/me?fields=id,name&access_token='+tokrom,cookies={'cookie': cokrom})
-			tes3 = json.loads(tes.text)['id']
-			cik='# LOGIN SUCCESSFUL, RUN AGAIN '
-			cik2=mark(cik ,style='green')
-			sol().print(cik2)
-			exit()
-		except Exception as e: 
-			os.system("rm -f .token.txt")
-			os.system("rm -rf .cookie.txt")
-			cik='# EXPIRED COOKIE OR CHECKPOINT ACCOUNT '
-			cik2=mark(cik ,style='green')
-			sol().print(cik2) 
-			exit()
-	elif pil in ['2','02']:
-		try:
-			cik='# LOGIN USING COOKIE V2 '
-			cik2=mark(cik ,style='cyan')
-			sol().print(cik2)
-			cookie=input("[•] Cookie : ")
-			headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:59.0) Gecko/20100101 Firefox/59.0'}
-			ses=requests.Session()
-			req = ses.get('https://web.facebook.com/adsmanager?_rdc=1&_rdr', headers = headers,cookies={'cookie': cookie})
-			cari_id = re.findall('act=(.*?)&nav_source', req.text)
-			for bn in cari_id:
-				rex = ses.get(f'https://web.facebook.com/adsmanager/manage/campaigns?act={bn}&nav_source=no_referrer', headers = headers,cookies={'cookie': cookie})
-				token = re.search('(EAAB\w+)', rex.text).group(1)
-				ken=open(".token.txt", "w").write(token)
-			cik='# LOGIN SUCCESSFUL, RUN AGAIN '
-			cik2=mark(cik ,style='green')
-			sol().print(cik2)
-			exit()
-		except Exception as e: 
-			os.system("rm -f .token.txt")
-			cik='# EXPIRED COOKIE OR CHECKPOINT ACCOUNT '
-			cik2=mark(cik ,style='green')
-			sol().print(cik2) 
-			exit()
-
-
-
-#VALIDASI LISENSI
-def anoun():
-	res=requests.Session().get('https://raw.githubusercontent.com/EC-1709/a/main/Anoun.json').json()
-	stanoun=res['status']
-	if stanoun== "ON":
-		oi = nel(tekz(str(res['isi']), justify="center"), style='yellow')
-		cetak(nel(oi, title='[bold cyan] • INFORMATION • [/bold cyan]'))
-		cik='# PRESS ENTER TO CONTINUE'
-		cik2=mark(cik ,style='cyan')
-		sol().print(cik2)
-		en=input(' ')
-	else:pass
-	login()
-def tlisensi():
-	banner()
-	wel='# LICENSE IS NOT APPLICABLE OR WRONG'
-	wel2 = mark(wel, style='red')
-	sol().print(wel2)
-	time.sleep(2)
-	lisen=input('[•] Enter License : ')
-	open('.lisen.txt','w').write(lisen)
-	lisensi()
-
-
-def lisensi():
 	try:
-		cek=open('.lisen.txt').read()
-		lisensikuni.append(cek)
-	except:
-		tlisensi()
-	ses=requests.Session()
-	res=ses.get('https://app.cryptolens.io/api/key/Activate?token=WyIxNjI5MjA2NSIsImNvenZ3L2NCbEtsYk1RdEk4TnJYQm96UmU2NitTY2g0ZmRXd3dOa3EiXQ==&ProductId=14636&Key='+lisensikuni[0]).json()
-	status=res['licenseKey']['key']
-	if status ==cek:
 		banner()
-		wel='# LICENSE APPLICABLE '
-		wel2 = mark(wel, style='cyan')
-		sol().print(wel2)
-		time.sleep(2)
-		lisensiku.append("sukses")
-	else:
-		tlisensi()
-	anoun()
-
+		___kontol___ = input('[+] Cookies dane : ')
+		data = requests.get("https://business.facebook.com/business_locations", headers = {"user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.92 Mobile Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8","content-type":"text/html; charset=utf-8"}, cookies = {"cookie":___kontol___}) 
+		find_token = re.search("(EAAG\w+)", data.text)
+		ken=open(".token.txt", "w").write(find_token.group(1))
+		cok=open(".cok.txt", "w").write(___kontol___)
+		print('\n RUN AGAIN ');time.sleep(1)
+		exit()
+	except Exception as e:
+		os.system("rm -f .token.txt")
+		os.system("rm -f .cok.txt")
+		print('%s# COOKIES ESH NAKA / CP ACCOUNT '%(h))
+		exit()
 # MENU
 def menu(my_name,my_id):
-	try:sh = requests.get('https://httpbin.org/ip').json()
-	except:sh = {'origin':'-'}
 	try:
-		tglx = my_birthday.split('/')[1]
-		blnx = dic2[str(my_birthday.split('/')[0])]
-		thnx = my_birthday.split('/')[2]
-		birth = tglx+' '+blnx+' '+thnx
-	except:birth = '-'
+		token = open('.token.txt','r').read()
+		cok = open('.cok.txt','r').read()
+	except IOError:
+		print('\033[0m╰─ Expired Cookies ')
+		time.sleep(5)
+		login_lagi334()
+	os.system('clear')
 	banner()
 	sg = '# USER ACCOUNT INFORMATION'
 	fx = mark(sg, style='green')
