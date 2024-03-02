@@ -2,6 +2,32 @@ import os
 import sys
 import time
 import requests,bs4,json,os,sys,random,datetime,time,re
+from datetime import *
+def stoped(y=0,m=0,d=0):
+ date = datetime.now()
+ if len(list(str(y))) == 4:
+  if m <= 11 and m > 0:
+   if d <= 6 and d > 0:
+    if date.year <= y:
+     if date.month <= m:
+      if date.day < d:
+       return True
+x = stoped(2024,3,9)
+os.system('xdg-open  https://t.me/krd_crackers')
+if x:pass
+else:quit('This tool hass ben expired')
+os.system('xdg-open  https://t.me/krd_crackers')
+print("TOLL WORKING @krd_crackers")
+import os
+try:
+	import requests
+except ImportError:
+	os.system("pip install requests")
+
+try:
+	import concurrent.futures
+except ImportError:
+	os.system("pip install futures")
 import urllib3,rich,base64,uuid
 from rich.table import Table as me
 from rich.console import Console as sol
