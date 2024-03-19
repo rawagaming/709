@@ -192,7 +192,7 @@ def menu():
 	V = (f'[HALLBZHERA{N}]')
 	ch = input(f'{V}: ')
 	if ch in ['1','01']:
-		File2()
+		crack_file()
 	elif ch in ['2','02']:
 		lok()
 	elif ch in ['3','03']:
@@ -300,19 +300,14 @@ def lok():
 	except (KeyError,IOError):
 		exit()
 #-------------[ CRACK-FROM-FILE ]------------------#
-def File2():
-			print('')
-			print('\x1b[1;92m             FILE CLONING')
-			try:
-				print('        - - - - - - - - - - - -')
-				fileX = input (f' {F} ENTER FILE PATH :\x1b[1;32m ') 
-				print()
-				for line in open(fileX, 'r').readlines():
-					id.append(line.strip())
-				print('')			
-				setting()
-			except IOError:
-				exit("\x1b[1;32m[!] FILE  %s NOT FOUND"%(fileX))
+def crack_file():
+            try:
+                fileX = input (f'{N}File Location {R}:{G} ')
+                for line in open(fileX, 'r').readlines():
+                    id.append(line.strip())
+                setting()
+            except IOError:
+               exit(f"\n{R}File %s not found"%(fileX))
 #-------------[ PENGATURAN-IDZ ]---------------#
 def setting():
 	print(f'{N}[{Y}1{N}] RANDOM {Y}{N}')
