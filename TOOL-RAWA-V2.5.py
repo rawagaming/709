@@ -526,7 +526,7 @@ def dump_massal():
  
 def crack_file():
     #print('\033[0;92m^^^^^^^^^^^^^^^^^^^^^')
-    jum = input(' Enter your file ')
+    o = input('\033[97;1m[\033[92;1m+\033[97;1m] FILE DANE :\033[92;1m ')
     try:lin = open(o).read().splitlines()
     except:
         #print('\033[0;92m==================')
@@ -541,7 +541,7 @@ def crack_file():
  
 def setting():
     #print('\033[0;92m=============================')
-    print("ZHMARA (3) DABNE =")
+    print("\033[97;1m[\033[92;1m3\033[97;1m]  \x1b[33m[𝟑\x1b[33m] \x1b[33m[\033[0;92m \x1b[36m𝐅𝐀𝐂𝐄𝐁𝐎𝐎𝐊 𝐑𝐀𝐍𝐃𝐎𝐌✅x1b[33m]")
     #print('\033[0;92m=============================')
     hu = input('\033[97;1m[\033[92;1m+\033[97;1m]HALBZHERA= :\033[92;1m ')
     if hu in ['1','01']:
