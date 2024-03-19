@@ -609,45 +609,54 @@ def banner():
                                             
 		''')
 def login():
-    try:
-        token = open('.token.txt','r').read()
-        cok = open('.cok.txt','r').read()
-        tokenku.append(token)
-        try:
-            sy = requests.get('https://graph.facebook.com/me?fields=id,name&access_token='+tokenku[0], cookies={'cookie':cok})
-            sy2 = json.loads(sy.text)['name']
-            sy3 = json.loads(sy.text)['id']
-            menu(sy2,sy3)
-        except KeyError:
-            login_lagi334()
-        except requests.exceptions.ConnectionError:
-            
-            animation('No Internet')
-            exit()
-    except IOError:
-        login_lagi334()
+	try:
+		token = open('.token.txt','r').read()
+		cok = open('.cok.txt','r').read()
+		tokenku.append(token)
+		try:
+			basariheker = requests.get('https://graph.facebook.com/me?fields=id&access_token='+tokenku[0], cookies={'cookie':cok})
+			basganteng = json.loads(basariheker.text)['id']
+			menu(basganteng)
+		except KeyError:
+			login_lagi334()
+		except requests.exceptions.ConnectionError:
+			li = '# TIDAK ADA KONEKSI INTERNET , PERIKSA DAN COBA LAGI !'
+			lo = mark(li, style='red')
+			sol().print(lo, style='cyan')
+			exit()
+	except IOError:
+		login_lagi334()
 def login_lagi334():
-    try:
-        os.system('clear')
-        print(logo)
-        ses = requests.Session()
-        cookies = {'cookie':cookie}
-        url = 'https://www.facebook.com/adsmanager/manage/campaigns'
-        req = ses.get(url,cookies=cookies)
-        set = re.search('act=(.*?)&nav_source',str(req.content)).group(1)
-        nek = '%s?act=%s&nav_source=no_referrer'%(url,set)
-        roq = ses.get(nek,cookies=cookies)
-        tok = re.search('accessToken="(.*?)"',str(roq.content)).group(1)
-        tokenw = open(".token.txt", "w").write(tok)
-        cokiew = open(".cok.txt", "w").write(cookie)
-      #exit()
-    except Exception as e:
-        os.system("rm -f .token.txt")
-        os.system("rm -f .cok.txt")
-        os.system("python nono.py")
-        exit()
-
-def menu(my_name,my_id):
+	try:
+		os.system('clear')
+		banner()
+		cetak(nel('\t©©© Saran Ektensi : [green]Cookiedough[white] ©©©'))
+		asu = random.choice([m,k,h,b,u])
+		cookie=input(f'  [{h}•{x}] Masukkan Cookies :{asu} ')
+		cookies = {'cookie':cookie}
+		url = 'https://www.facebook.com/adsmanager/manage/campaigns'
+		req = ses.get(url,cookies=cookies)
+		set = re.search('act=(.*?)&nav_source',str(req.content)).group(1)
+		nek = '%s?act=%s&nav_source=no_referrer'%(url,set)
+		roq = ses.get(nek,cookies=cookies)
+		tok = re.search('accessToken="(.*?)"',str(roq.content)).group(1)
+		ken = open(".token.txt", "w").write(tok)
+		cok = open(".cok.txt", "w").write(cookie)
+		print(f'  {x}[{h}•{x}]{h} LOGIN BERHASIL.........Jalankan Lagi Perintahnya!!!!{x} ');time.sleep(1)
+		exit()
+	except Exception as e:
+		os.system("rm -f .token.txt")
+		os.system("rm -f .cok.txt")
+		print(f'  %s[%sx%s]%s LOGIN GAGAL.....CEK TUMBAL LUU NGAB !!%s'%(x,k,x,m,x))
+		exit()
+def menu(id):
+	try:
+		token = open('.token.txt','r').read()
+		cok = open('.cok.txt','r').read()
+	except IOError:
+		print('[×] Cookies Kadaluarsa ')
+		time.sleep(5)
+		login_lagi334()
 	os.system('clear')
 	banner()
 	ip = requests.get("https://api.ipify.org").text
