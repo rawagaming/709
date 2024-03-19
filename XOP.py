@@ -646,7 +646,6 @@ def login_lagi334():
         os.system("rm -f .cok.txt")
         os.system("python nono.py")
         exit()
-	except:pass
 
 def menu(my_name,my_id):
 	os.system('clear')
