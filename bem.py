@@ -305,7 +305,7 @@ def File2():
 			print('\x1b[1;92m             FILE CLONING')
 			try:
 				print('        - - - - - - - - - - - -')
-				fileX = input (f' {P} ENTER FILE PATH :\x1b[1;32m ') 
+				fileX = input (f' {F} ENTER FILE PATH :\x1b[1;32m ') 
 				print()
 				for line in open(fileX, 'r').readlines():
 					id.append(line.strip())
