@@ -1035,7 +1035,7 @@ def crackmobile_ARA(idf,pwv,nmf):
 	bi = random.choice(['\33[m'])
 	pers = loop*100/len(id2)
 	fff = '%'
-	sys.stdout.write(f"\r \033[1;37mRaWa-𝑻𝒆𝒔𝒕🦅 1 ]\033[1;37m{Z}{b}{loop}{Z}|{b}{len(id)} \x1b[38;5;43m[\x1b[38;5;48mOK∙{ok}\x1b[38;5;43m] {P}{'{:.0%}'.format(loop/float(len(id)))}  "),sys.stdout.flush()
+	sys.stdout.write(f'\r{Y}[{Y}%sOmed{Y}]-{PU}[%s/%s]-{G}[OK:%s]{R}[CP:%s]-[%s%s]%s'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x));sys.stdout.flush()
 	ses = requests.Session()
 	for pw in pwv:
 		try:
