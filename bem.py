@@ -189,7 +189,7 @@ def menu():
 	#print(f'{N}[{Y}2{N}] CRACK BA ID	')
 	#print(f'{N}[{Y}3{N}] BO DANANE COOKIES	')
 	#print(f'{N}[{Y}4{N}] BO SRENAWAY COOKIES	')
-	_____YADA__YADA_____ = input('\nHALBZHERA =  ')
+	V = (f'[HALLBZHERA{N}]')
 	ch = input(f'{V}: ')
 	if ch in ['1','01']:
 		crack_file()
