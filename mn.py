@@ -721,14 +721,14 @@ def menu(id):
 	os.system('clear')
 	banner()
 	ip = requests.get("https://api.ipify.org").text
-	print('\x1b[1;92m<--------------------------------------------------------------------------->')
-	print('\t\t\t\t       \x1b[1;92m▪︎\x1b[1;93m▪︎\x1b[1;91m▪︎\x1b[1;92mINFORMASI AUTHOR\x1b[1;91m▪︎\x1b[1;93m▪︎\x1b[1;92m▪︎')
+	#print('\x1b[1;92m<--------------------------------------------------------------------------->')
+	#print('\t\t\t\t       \x1b[1;92m▪︎\x1b[1;93m▪︎\x1b[1;91m▪︎\x1b[1;92mINFORMASI AUTHOR\x1b[1;91m▪︎\x1b[1;93m▪︎\x1b[1;92m▪︎')
 	print('')
 	#print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mTELEGRAM      : \x1b[1;93m@Ss6s3 \33[m\x1b[1;92m')
 	#print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mCHANAEL      : \x1b[1;93m@staff_1668')
 	#print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mVERSION      : \x1b[1;93m0.1')
 	#print('\x1b[1;92m<--------------------------------------------------------------------------->')
-	print('\t\t\t\t        \x1b[1;92m▪︎\x1b[1;93m▪︎\x1b[1;91m▪︎\x1b[1;92mINFORMASI MENU\x1b[1;91m▪︎\x1b[1;93m▪︎\x1b[1;92m▪︎')
+	#print('\t\t\t\t        \x1b[1;92m▪︎\x1b[1;93m▪︎\x1b[1;91m▪︎\x1b[1;92mINFORMASI MENU\x1b[1;91m▪︎\x1b[1;93m▪︎\x1b[1;92m▪︎')
 	print('')
 	#print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m1. Crack Publik \33[m\x1b[1;92m\33[m')
 	print('\x1b[1;91m[ 3 ] CRACK FILE')
@@ -818,7 +818,7 @@ def dump_massal():
 def setting():
 	#print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m1. OLD ')
 	#print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m2.  NEW ')
-	print('RANDOM FACEBOOK')
+	print('[ 1 ]RANDOM FACEBOOK')
 	print('')
 	hu = input('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mPilih > \x1b[1;93m ')
 	print('')
@@ -842,7 +842,7 @@ def setting():
 	else:
 		print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mPilih Yang Bener Kak !')
 		exit()
-	print('METHOD D [ 1 ]')
+	print('METHOD D [ 1 ] [UPDATE]')
 	#print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m2. Touch \33[m(\x1b[1;93mtouch.facebook.com\33[m) \33[m[\x1b[1;91mNot Recomended\33[m]')
 	#print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m3. Mtouch \33[m(\x1b[1;93mmbasic.facebook.com\33[m) \33[m[\x1b[1;91mNot Recomended\33[m]')
 	#print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m4. Mbasic \33[m(\x1b[1;93mm.facebook.com\33[m) \33[m[\x1b[1;92mRecomended\33[m]')
@@ -860,7 +860,7 @@ def setting():
 	else:
 		method.append('mobile')
 	print('')
-	_jembot_ = input('\x1b[1;93m[\x1b[1;92m?\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mTambahkan Aplikasi Terkait \33[m( \x1b[1;92mY\x1b[1;91m/\x1b[1;93mt \33[m) ')
+	_jembot_ = input('\x1b[1;93m[\x1b[1;92m?\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mALL PASSWORD  \33[m( \x1b[1;92mY\x1b[1;91m/\x1b[1;93mt \33[m) ')
 	if _jembot_ in ['']:
 		print('\x1b[1;93m[\x1b[1;92m!\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mPilih Yang Bener Kak ! ')
 		back()
@@ -868,7 +868,7 @@ def setting():
 		taplikasi.append('ya')
 	else:
 		taplikasi.append('no')
-	pwplus=input('\x1b[1;93m[\x1b[1;92m?\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mTambahkan Password Manual \33[m( \x1b[1;92mY\x1b[1;91m/\x1b[1;93mt \33[m) ')
+	pwplus=input('\x1b[1;93m[\x1b[1;92m?\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mSLOW PASSWORD 🔥 \33[m( \x1b[1;92mY\x1b[1;91m/\x1b[1;93mt \33[m) ')
 	if pwplus in ['y','Y']:
 		pwpluss.append('ya')
 		cetak(nel('[[cyan]•[white]] Masukkan Katasandi Tambahan Minimal 6 Karakter\n[[cyan]•[white]] Contoh :[green] kakak,ngentod,adik[white] '))
