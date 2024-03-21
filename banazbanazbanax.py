@@ -207,7 +207,7 @@ def error():
 	time.sleep(4)
 	back()
 #-------------------[ CRACK-PUBLIK ]----------------#
- def File2():
+def File2():
 			print('')
 			print('\x1b[1;92m             FILE CLONING')
 			try:
