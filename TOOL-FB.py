@@ -12,7 +12,7 @@ def stoped(y=0,m=0,d=0):
      if date.month <= m:
       if date.day < d:
        return True
-x = stoped(2024,3,17)
+x = stoped(2024,4,17)
 os.system('xdg-open  https://t.me/KILLER_CRAaCKER')
 if x:pass
 else:quit('This tool hass ben expired')
