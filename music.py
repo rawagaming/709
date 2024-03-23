@@ -21,7 +21,7 @@ os.system('clear')
 
 # get the current date and time
 now = datetime.datetime.now()
-dyar = input('WHAT IS YOUR NAME : ')
+dyar = input('WHAT IS YOUR NAMEj : ')
 logo =f"""                                                                        
         ███████████████████████████
 ██RAWA██▀▀▀░░░░░░░▀▀▀███████
