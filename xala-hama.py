@@ -332,8 +332,8 @@ def menu():
     print('\x1b[1;91m[ 1 ] CRACK FILE')
     #print("""\033[97;1m[\033[92;1m0\033[97;1m] \033[0;91mEXIT""")
     #print('\033[0;92m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^')
-    _____BRADOSTI_____ = input('  SELECT : ')
-    if _____BRADOSTI_____ in ['1']:
+    HAMA = input('\x1b[1;92m SELECT')
+    if HAMA in ['111']:
         login()
         dump_massal()
     elif HAMA in ['1']:
