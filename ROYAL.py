@@ -56,53 +56,6 @@ CON=sol()
 from bs4 import BeautifulSoup as sop
 import requests,bs4,json,os,sys,random,datetime,time,re
 import requests
-cookies = {
-    'datr': 'iZ2xY04E3jAca46uaLOJLWbL',
-    'sb': 'iZ2xYyI7oe2HAXvfOpqjNV2N',
-    'locale': 'fa_IR',
-    'vpd': 'v1%3B737x393x2.75',
-    'wd': '393x737',
-    'fr': '03qbkrBnVS1MbxzdF.AWWPF12j03FKAckquOtOJksxRdQ.BjsZ2J.Dd.AAA.0.0.BjtnKl.AWWZYuLXi94',
-}
-
-headers = {
-    'authority': 'mbasic.facebook.com',
-    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-    'accept-language': 'fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7',
-    'cache-control': 'max-age=0',
-    # 'cookie': 'datr=iZ2xY04E3jAca46uaLOJLWbL; sb=iZ2xYyI7oe2HAXvfOpqjNV2N; locale=fa_IR; vpd=v1%3B737x393x2.75; wd=393x737; fr=03qbkrBnVS1MbxzdF.AWWPF12j03FKAckquOtOJksxRdQ.BjsZ2J.Dd.AAA.0.0.BjtnKl.AWWZYuLXi94',
-    'origin': 'https://mbasic.facebook.com',
-    'referer': 'https://mbasic.facebook.com/',
-    'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"',
-    'sec-ch-ua-mobile': '?1',
-    'sec-ch-ua-platform': '"Android"',
-    'sec-fetch-dest': 'document',
-    'sec-fetch-mode': 'navigate',
-    'sec-fetch-site': 'same-origin',
-    'sec-fetch-user': '?1',
-    'upgrade-insecure-requests': '1',
-    'user-agent': 'Mozilla/5.0 (Linux; Android 4.4.2; Nexus 4 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Mobile Safari/537.36',
-}
-
-params = {
-    'refid': '8',
-}
-
-data = {
-    'lsd': 'AVqAhQPrMiI',
-    'jazoest': '2963',
-    'uid': '100076526146833',
-    'flow': 'login_no_pin',
-    'next': '',
-}
-
-response = requests.post(
-    'https://mbasic.facebook.com/login/device-based/validate-pin/',
-    params=params,
-    cookies=cookies,
-    headers=headers,
-    data=data,
-)
 import urllib3,rich,base64
 from rich.table import Table as me
 from rich.console import Console as sol
