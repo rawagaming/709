@@ -984,7 +984,7 @@ def crack(idf,pwv):
 	bi = random.choice(['\33[m'])
 	pers = loop*100/len(id2)
 	fff = '%'
-	prog.update(des,description=f'\r[deep_white] THNS➳RODAN  {(loop)}/{len(id)}[/] [green]OK[/]:[green]{(ok)} [/]=[yellow] CP[/]:[yellow]{(cp)}')
+	prog.update(des,description=f"\r\033[1;32m [ 𝑅𝑂𝑌𝐴𝐿 ]{P} [{H}{loop}{P}][{H}{len(id)}{P}] [{H}𝑂𝐾{m}${H}{ok}{P}]  "),
 	prog.advance(des)
 	ses = requests.Session()
 	ua = random.choice(ugen)
