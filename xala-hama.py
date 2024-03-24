@@ -537,13 +537,14 @@ def crack_file():
         id.append(xid)
     setting()
  
-#-------------[ PENGATURAN-IDZ ]---------------#
- 
+
 def setting():
-    #print('\033[0;92m=============================')
-    print('\x1b[1;93m METHODE MOBILE')
-    #print('\033[0;92m=============================')
-    _____BRADOSTI_____ = input('  SELECT : ')
+    print('\033[0;92m=============================')
+    print("\033[97;1m[\033[92;1m1\033[97;1m] RAWA😥 \x1b[33m[1\x1b[33m] \x1b[33m[\033[0;92mOLD \x1b[36mID\x1b[33m]")
+    print("\033[97;1m[\033[92;1m2\033[97;1m] RAWA😓 \x1b[33m[2\x1b[33m] \x1b[33m[\033[0;92mNEW \x1b[36mID\x1b[33m]")
+    print("\033[97;1m[\033[92;1m3\033[97;1m] RAWA \x1b[33m[3\x1b[33m] \x1b[33m[\033[0;92m \x1b[36mRANDOM🐾����x1b[33m]")
+    print('\033[0;92m=============================')
+    hu = input('\033[97;1m[\033[92;1m+\033[97;1m]HALBZHERA= :\033[92;1m ')
     if hu in ['1','01']:
         for tua in sorted(id):
             id2.append(tua)
@@ -564,9 +565,10 @@ def setting():
         for bacot in id:
             xx = random.randint(0,len(id2))
             id2.insert(xx,bacot)
-    print('\033[0;92m^^^^^^^^^^^^^^^^^^^^')
-    print("\033[97;1m[\033[92;1m1\033[97;1m] METHOD  1 [UPDATE🔥] \x1b[33m[1\x1b[33m] \x1b[33m[\033[0;92m \x1b")
-    print('\033[0;92m^^^^^^^^^^^^^^^^^^^^^')
+    print('\033[0;92m==================')
+    print("\033[97;1m[\033[92;1m1\033[97;1m] METHOD 1 [UPDATE🦍] \x1b[33m[1\x1b[33m] \x1b[33m[\033[0;92m \x1b[36mMETHOD \x1b[33m]")
+    print("\033[97;1m[\033[92;1m2\033[97;1m] METHOD \x1b[33m[2\x1b[33m] \x1b[33m[\033[0;92mSHOW \x1b[36mCP\x1b[33m]")
+    print('\033[0;92m==================')
     hc = input('\033[97;1m[\033[92;1m•\033[97;1m] HALBZHERA= : ')
     if hc in ['1','01']:
         method.append('mobile')
@@ -576,6 +578,8 @@ def setting():
         method.append('mobile')
     passwrd()
     exit() 
+ 
+#-------------------[ BAGIAN-WORDLIST ]------------#
  
 #-------------------[ BAGIAN-WORDLIST ]------------#
  
