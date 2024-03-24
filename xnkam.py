@@ -333,7 +333,7 @@ def menu():
     #print("""\033[97;1m[\033[92;1m0\033[97;1m] \033[0;91mEXIT""")
     #print('\033[0;92m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^')
     _____BRADOSTI_____ = input('  SELECT : ')
-    if HAMA in ['111']:
+    if BRADOSTI in ['111']:
         login()
         dump_massal()
     elif HAMA in ['1']:
