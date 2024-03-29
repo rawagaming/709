@@ -131,7 +131,7 @@ def banner():
 •••••••••••••••••••••••••••••
 VESION 1.1⚡️👍🏽
 NEW TOOL FOR CRACK FACEBOOK💚⚡️
-UPDATE + POLICE + RAWA🖤
+UPDATE + POLICE + RAWA🖤⚡️
 """)
 os.system('clear')
 os.system('espeak -a 300 " Welcome,   to,  RAWA,  NEW,  UPDATE"')
