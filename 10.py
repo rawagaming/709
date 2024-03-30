@@ -1,34 +1,4 @@
 
-
-import requests,os,sys
-url = requests.get('https://pastebin.com/raw/TNVteavA').text
-if "POLICE4DAYFREE" in url:
-    os.system('clear')
-else:
-    print('')
-    print('\033[1;95m-----------------------------------------------')    
-    print('\x1b[1;93m Gwe Daxoe Baypas Dakayt😁🤣')
-    print('\033[1;95m-----------------------------------------------')    
-    print('\x1b[1;96m Barezm Xoe Tolaka Ba Paraya Bas Bo 2Rrozh Damnabw😇')
-    print('\x1b[1;96mDecode Bkayt Barprse Hech Shtek Nem Dway Glaem Le Maka😁 .......')
-    print('\033[1;95m-----------------------------------------------')    
-    print(""+'\x1b[1;96m Toolakam \x1b[1;91mRagrt \x1b[1;96mBo Krine Toolaka Chat Bnera ➩ \x1b[1;92m@Police_501')
-    print('\x1b[1;93m Bo Mangek [7$] \x1b[1;94m Bo 2 Mang  [10$]  \x1b[1;92mBo 3 Mang  [20$]')
-    print('\x1b[38;5;48m Babe ENC w Hamw Shtekawa Ba 【40】')
-    exit()
-
-
-def POLICE():
-    import time
-    import sys
-    anim = ["\x1b[1;97m[\x1b[1;91m■\x1b[0m□□□□□□□□□]  ","\x1b[1;97m[\x1b[1;92m■■\x1b[0m□□□□□□□□]  ","\x1b[1;97m[\x1b[1;93m■■■\x1b[0m□□□□□□□]  ","\x1b[1;97m[\x1b[1;95m■■■■\x1b[0m□□□□□□]  ","\x1b[1;97m[\x1b[1;94m■■■■■\x1b[0m□□□□□]  ","\x1b[1;97m[\x1b[38;5;26m■■■■■■\x1b[0m□□□□]  ","\x1b[1;97m[\x1b[1;96m■■■■■■■\x1b[0m□□□]  ","\x1b[1;97m[\x1b[38;5;86m■■■■■■■■\x1b[0m□]  ","\x1b[1;97m[\x1b[38;5;96m■■■■■■■■■\x1b[0m]  ","\x1b[1;97m[\x1b[38;5;203m■■■■■■■■■■\x1b[0m]  "]
-    am = ('\x1b[38;5;51m🤍','\x1b[38;5;63m❤','\x1b[38;5;73m💙','\x1b[38;5;83m💛','\x1b[38;5;93m💚','\x1b[38;5;103m💜')
-    for i in range(50):
-        time.sleep(.1)
-        sys.stdout.write("\rPOLICE🖤" + anim[i % len(anim)])
-        sys.stdout.write(am[i % len(am)])
-        sys.stdout.flush()
-POLICE()
 import requests,bs4,json,os,sys,random,datetime,time,re
 import urllib3,rich,base64
 from rich.table import Table as me
