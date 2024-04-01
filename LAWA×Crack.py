@@ -27,19 +27,91 @@ CON=sol()
 ugen = []
 
 ###----------[ GET PROXY ]----------###
-try:
-	proxylist= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=100000&country=all&ssl=all&anonymity=all').text
-	open('socksku.txt','w').write(proxylist)
-except Exception as e:
-	print(f'gagal ster :(')
-proxsi=open('socksku.txt','r').read().splitlines()
+
 ###----------[ GET PROXY ]----------###
 try:
-	prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=80000&country=all&ssl=all&anonymity=all').text
-	open('.prox.txt','w').write(prox)
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/KING/main/socks5.txt').text
+	open('.socks5.txt','w').write(prox) 
 except Exception as e:
-	print('  Koneksi Internet Anda Tidak Terdeteksi Silahkan Cek Kuota Anda Ya Salam Dari saitamaXploit');exit()
-prox=open('.prox.txt','r').read().splitlines()
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/KING/main/socks4.txt').text
+	open('.socks4.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://github.com/Chigozieworldwide/KING/blob/main/https.txt').text
+	open('.https.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/KING/main/http.txt').text
+	open('.http.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/XFORD/main/http.txt').text
+	open('.http.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/XFORD/main/https.txt').text
+	open('.https.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/XFORD/main/socks4.txt').text
+	open('.socks4.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/XFORD/main/socks5.txt').text
+	open('.socks5.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/XCARET/main/http.txt').text
+	open('.http.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/XCARET/main/https.txt').text
+	open('.https.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/XCARET/main/socks4.txt').text
+	open('.socks4.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
+
+try:
+	prox= requests.get('https://raw.githubusercontent.com/Chigozieworldwide/XCARET/main/socks5.txt').text
+	open('.socks5.txt','w').write(prox) 
+except Exception as e:
+
+	prox=open('.proxy.txt','r').read().splitlines()
 for Luciver_Ganteng in range(10000):
 	a='Mozilla/5.0 (Linux; U; Android 7.1.2;'
 	b=random.randrange(1, 9)
