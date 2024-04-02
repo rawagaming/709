@@ -339,9 +339,9 @@ def setting():
 
 #-------------------[ BAGIAN-WORDLIST ]------------#
 def passwrd():
-   print(f'AUTO × PASSWORD')
+   print(f' * 1 *AUTO × PASSWORD')
    
-   V = (f'[HALLBZHERA{N}]')
+   V = (f'SELET')
    ch = input(f'{V}: ')
    if ch in ['1','01']:
    	ara()
@@ -1023,7 +1023,7 @@ def crackmobile_ARA(idf,pwv,nmf):
 	bi = random.choice(['\33[m'])
 	pers = loop*100/len(id2)
 	fff = '%'
-	sys.stdout.write(f'\r{Y}[{Y}%sOmed{Y}]-{PU}[%s/%s]-{G}[OK:%s]{R}[CP:%s]-[%s%s]%s'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x));sys.stdout.flush()
+	sys.stdout.write(f'\r{Y}[{Y}%sRaWa-Test🛜{Y}]-{PU}[%s/%s]-{G}[SUCCEFUL:%s]{R}[BAD:%s]-[%s%s]%s'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x));sys.stdout.flush()
 	ses = requests.Session()
 	for pw in pwv:
 		try:
