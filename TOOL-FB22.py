@@ -527,7 +527,7 @@ def crack_file():
         id.append(xid)
     setting()
  
-#-------------[ PENGATURAN-IDZ ]---------------#
+#-------------[ PENGATURANj-IDZ ]---------------#
  
 def setting():
     #print('\033[0;92m=============================')
