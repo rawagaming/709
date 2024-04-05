@@ -643,7 +643,8 @@ def passwrd():
 def crack(idf,pwv):
     global loop,ok,cp
     bo = random.choice([m,k,h,b,u,x])
-    sys.stdout.write('\x1b[1;92m [ RAWA-B-Api ]  %s  ~ \033[1;32m  > OK  %s\033[1;37m \x1b[1;91m    %s\033[1;37m\r'%(loop,len(oks),len(cps)));sys.stdout.flush()
+    sys.stdout.write(f"\r \033[1;37mRaWa-𝑻𝒆𝒔𝒕🦅 1 ]\033[1;37m{Z}{b}{loop}{Z}|{b}{len(id)} \x1b[38;5;43m[\x1b[38;5;48mOK∙{ok}\x1b[38;5;43m] {P}{'{:.0%}'.format(loop/float(len(id)))}  "),
+    sys.stdout.flush()
     ua = random.choice(ugen)
     ua2 = random.choice(ugen2)
     ses = requests.Session()
