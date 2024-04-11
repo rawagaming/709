@@ -1,7 +1,4 @@
-os.system('xdg-open  https://t.me/KILLER_CRACKeER')
 
-
-os.system('xdg-open  https://t.me/KILLER_CRACKeER')
 #-----------------[ IMPORT-MODULE ]-------------------
 import requests,bs4,json,os,sys,random,time,re
 import urllib3,rich,base64
