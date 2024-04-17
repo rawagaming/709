@@ -518,7 +518,6 @@ def crack(idf,pwv):
     'sec-fetch-mode': 'navigate',
     'sec-fetch-site': 'none',
     'sec-fetch-user': '?1',
-    'referer': 'https://d.facebook.com/',
     'upgrade-insecure-requests': '1',
     'user-agent': 'Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25',
     'viewport-width': '980',
@@ -545,7 +544,6 @@ def crack(idf,pwv):
     'sec-fetch-site': 'none',
     'sec-fetch-user': '?1',
     'upgrade-insecure-requests': '1',
-    'raferer': 'https://d.facebook.com/',
     'user-agent': 'Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25',
     'viewport-width': '980',
 }
