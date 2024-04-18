@@ -346,7 +346,7 @@ class D:
 def Settings():
         print('\x1b[1;93m RANDOM IDS ')
         print('')
-        hu = "1"
+        hu = "3"
         if hu in ['2','02']:
                 for tua in sorted(id):
                         id2.append(tua)
