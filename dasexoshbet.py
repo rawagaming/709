@@ -345,7 +345,7 @@ class D:
 #SERVER-SETTING			
 print("\033[1;37m[1] NEW  \n[2] OLD \n[3] RANDOM (\033[1;32mHARDOK\033[1;32m)")
     #print('\033[0;92m=============================')
-    hu = input('  SELECT : ')
+    hu = "3"
     if hu in ['1','01']:
         for tua in sorted(id):
             id2.append(tua)
