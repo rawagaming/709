@@ -343,41 +343,50 @@ class D:
                         print(" \x1b[1;91m\x1b[1;96m\x1b[1;97m \x1b[1;91m file %s hallaya bam shewaya binusa /sdcard/nawyfile.txt\x1b[0m"%(fileX));time.sleep(2)
                         F()
 #SERVER-SETTING			
-print("\033[1;37m[1] NEW  \n[2] OLD \n[3] RANDOM (\033[1;32mHARDOK\033[1;32m)")
-    #print('\033[0;92m=============================')
-    hu = input('  SELECT : ')
-    if hu in ['1','01']:
-        for tua in sorted(id):
-            id2.append(tua)
-    elif hu in ['2','02']:
-        muda=[] 
-        for bacot in sorted(id):
-            muda.append(bacot)
-        bcm=len(muda)
-        bcmi=(bcm-1)
-        for xmud in range(bcm):
-            id2.append(muda[bcmi])
-            bcmi -=1
-    elif hu in ['3','03']:
-        for bacot in id:
-            xx = random.randint(0,len(id2))
-            id2.insert(xx,bacot)
-    else:
-        for bacot in id:
-            xx = random.randint(0,len(id2))
-            id2.insert(xx,bacot)
-    #print('\033[0;92m^^^^^^^^^^^^^^^^^^^^')
-    print(f' \33[1;97m[\33[1;94m 1\33[1;97m ] \33[1;92m METHODE ➥ m.facebok.com')
-    #print('\033[0;92m^^^^^^^^^^^^^^^^^^^^^')
-    hc = input('  SELECT : ')
-    if hc in ['1','01']:
-        method.append('mobile')
-    elif hc in ['2','02']:
-        method.append('free')
-    else:
-        method.append('mobile')
-    passwrd()
-    exit()
+def Settings():
+        print('\x1b[1;93m RANDOM IDS ')
+        print('')
+        hu = "1"
+        if hu in ['2','02']:
+                for tua in sorted(id):
+                        id2.append(tua)
+
+        elif hu in ['1','1']:
+                muda=[]
+                for bacot in sorted(id):
+                        muda.append(bacot)
+                bcm=len(muda)
+                bcmi=(bcm-1)
+                for xmud in range(bcm):
+                        id2.append(muda[bcmi])
+                        bcmi -=1
+        elif hu in ['111','01']:
+                for bacot in id:
+                        xx = random.randint(0,len(id2))
+                        id2.insert(xx,bacot)
+        else:
+                print('\x1b[1;91m\x1b[1;96m{H}\x1b[1;91mNOT HALBZHERA')
+                exit()
+
+        print('\x1b[1;93m METHODE MOBILE')
+        print('')
+        hc = "1"
+        if hc in ['1','01']:
+                method.append('mobile')
+        else:
+                method.append('mobile')
+        pwplus= "t"
+        if pwplus in ['00','00']:
+                pwpluss.append('ya')
+                cetak(nel('[[cyan]•[white]] ENTER 6 CHARECTERS FOR CRACK PASS\n[[cyan]•[white]] LIKE --->[green] zaxo123,kurd123,hama1234[white] '))
+                pwku=input('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mPassword > \x1b[1;93m')
+                pwkuh=pwku.split(',')
+                for xpw in pwkuh:
+                        pwnya.append(xpw)
+        else:
+                pwpluss.append('no')
+        BB()
+        exit()
 def BB():
     os.system('clear')
     banner()
