@@ -503,7 +503,7 @@ def nge_krek():
             exit()
     try:
         print(f"└──C <(｡⁠◕⁠‿⁠◕⁠｡)⁠> ID TERKUMPUL : " +str(len(id)))
-        atur_dulu()
+        login()
     except requests.exceptions.ConnectionError:
         print(f"{T}{M}  koneksi terputus")
         exit()
