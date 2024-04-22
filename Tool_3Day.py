@@ -1,4 +1,72 @@
+from urllib.request import urlopen
+import json
+from datetime import datetime
+try:
+    import requests
+except ImportError:
+    os.system('pip3 install requests')
+import datetime
+t =0
+def timerr(t):
 
+        try:
+            with urlopen('http://worldtimeapi.org/api/timezone/Asia/Baghdad') as response:
+                data = json.loads(response.read())
+                date_time_obj = datetime.datetime.fromisoformat(data['datetime'])
+                online_datetime = date_time_obj.replace(tzinfo =None, second=0, microsecond=0)
+                
+                date_time_obj = date_time_obj.replace(second=0, microsecond=0, tzinfo=None)
+        except urllib.error.URLError:
+            print('Internet Connection Error')
+            exit()
+        try:
+            response = requests.get('https://worldtimeapi.org/api/timezone/Asia/Baghdad')
+            data = response.json()
+            online_datetime = datetime.datetime.fromisoformat(data['datetime'])
+            
+        
+            local_datetime = datetime.datetime.now()
+            
+            online_datetime = online_datetime.replace(tzinfo =None, second=0, microsecond=0)
+            kat = local_datetime.replace(second=0, microsecond=0)
+        except requests.exceptions.SSLError:
+            print('Do Not Bypass Thats Made By Sasuke! ')
+            exit()
+        if online_datetime ==kat and online_datetime ==local_datetime:
+           
+           pass
+        elif online_datetime !=kat:
+           t +=1
+           if t ==2:
+               print('Not Bypass ')
+               exit()
+           else:
+               timerr(t)
+
+timerr(t)
+import time
+kat = time.strftime("%m/%d/%Y, %H:%M:%S")
+date = '25/4/2024, 24:00:00'
+if date <= kat:
+    print("   toolaka ragerawa ")
+    print("   bo kren @l4m_rawa")
+    exit()
+
+import requests,bs4,json,os,sys,random,datetime,time,re
+import urllib3,rich,base64
+from rich.table import Table as me
+from rich.console import Console as sol
+from bs4 import BeautifulSoup as sop
+from concurrent.futures import ThreadPoolExecutor as tred
+from rich.console import Group as gp
+from rich.panel import Panel as nel
+from rich.markdown import Markdown as mark
+from rich.columns import Columns as col
+from rich import pretty
+from rich.text import Text as tekz
+from time import localtime as lt
+pretty.install()
+CON=sol()
 
 import requests,bs4,json,os,sys,random,datetime,time,re
 import urllib3,rich,base64
