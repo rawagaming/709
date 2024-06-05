@@ -395,7 +395,7 @@ def dump_massal():
 	try:
 		print('')
 		print(f' Total IDs : {h}'+str(len(id)))
-		setting()
+		settings()
 	except requests.exceptions.ConnectionError:
 		print(f'{x}')
 		print('</> Sinyal Lo kek Kontol ')
