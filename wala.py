@@ -395,7 +395,7 @@ def dump_massal():
 	try:
 		print('')
 		print(f' Total IDs : {h}'+str(len(id)))
-		settings()
+		setting()
 	except requests.exceptions.ConnectionError:
 		print(f'{x}')
 		print('</> Sinyal Lo kek Kontol ')
@@ -405,7 +405,7 @@ def dump_massal():
 		time.sleep(3)
 		back()
 #SERVER-SETTING			
-def Settings():
+def Setting():
         print('\x1b[1;93m RANDOM IDS ')
         print('')
         hu = "1"
