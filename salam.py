@@ -349,7 +349,7 @@ def dump_massal():
 	except IOError:
 		exit()
 	try:
-		jum = int(input(' How Many id : '))
+		jum = int(input('༄𒊹︎︎︎ᑕHᗩᑎᗪ Ɩᗪ ᗪᗩᗪᗩᑎƐƳ? : '))
 	except ValueError:
 		print('ERROR ')
 		exit()
@@ -360,7 +360,7 @@ def dump_massal():
 	yz = 0
 	for met in range(jum):
 		yz+=1
-		kl = input(' ID'+str(yz)+' : ')
+		kl = input('☞︎︎︎ ID 𝙴𝚗𝚝𝚊𝚛'+str(yz)+' : ')
 		uid.append(kl)
 	for user in uid:
 	    try:
@@ -404,8 +404,9 @@ def dump_massal():
 		print(f'<•>{k} Pertemanan Tidak Public {x}')
 		time.sleep(3)
 		back()
+		
 #SERVER-SETTING			
-def Setting():
+def setting():
         print('\x1b[1;93m RANDOM IDS ')
         print('')
         hu = "1"
