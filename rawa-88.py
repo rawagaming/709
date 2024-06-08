@@ -1260,7 +1260,7 @@ def menu():
 def ffb(ids,names,passlist):
         global loop,oks,cps,lim
         p=round(loop*100/lim,2)
-        sys.stdout.write('\x1b[0;95m [ RAWA ]  %s  ~ \033[1;32m  ~ OK  %s\033[1;37m \x1b[1;91m    %s\033[1;37m\r'%(loop,len(oks),len(cps)));sys.stdout.flush()
+        sys.stdout.write('\x1b[0;95m [ RAWA ]  %s  🔥 \x1b[0;90m  🔥 OK  %s \x1b[0m \x1b[1;92m   %\x1b[1;92ms\r'%(loop,len(oks),len(cps)));sys.stdout.flush()
         session = requests.Session()
         try:
                 first = names.split(' ')[0]
