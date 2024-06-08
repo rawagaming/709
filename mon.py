@@ -576,10 +576,11 @@ def cek_NIK(kuki):
    print ("\r%s  \033[0m  %s"%(P,game[i].replace("Kedaluwarsa"," Kedaluwarsa")))
  except AttributeError:
   print ("\r    %s \033[0mcookie invalid"%(M))
+def chek():
     os.system('clear')
     banner()
     menu()
-
+    
 
 
 
