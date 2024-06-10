@@ -231,12 +231,12 @@ def back():
 #------------------[ LOGO-LAKNAT ]-----------------#
 def banner():
 	clear()
-	cetak(nel(f'''{H}   
-, ＜￣｀ヽ、　　　　　　／￣＞
-　ゝ、　　＼　／⌒ヽ,ノ 　/´
-　　　ゝ、　`（ ( ‌° ‌ʖ ‌°) ／
-　　 　　>　 　 　,)
-　　　　　∠_,,,/
+	cetak(nel(f'''{N}   
+ __  __     _       __     
+   / / / /___ | |     / /___ _
+  / /_/ / __ `/ | /| / / __ `/
+ / __  / /_/ /| |/ |/ / /_/ / 
+/_/ /_/\__,_/ |__/|__/\__,_/ 
 
      New update by @i4m_hawta
                  ''',width=79,title=f'[bold green]$TAE',style='bold hot_pink2'))
