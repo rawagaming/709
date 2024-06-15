@@ -177,15 +177,7 @@ banner()
 #MENU
 def menu():
 	
-	_IPYTHONI_(f'\x1b[1;92m *PASSWORD*')
-	_____IPYTHONI_____ = input('\x1b[1;96mghost :\x1b[1;97m ')
-	if _____IPYTHONI_____ in ['ghost']:
-		F()
-		print(' \x1b[1;91m\x1b[1;96m\x1b[1;97m LogOut Successful ')
-		exit()
-	else:
-		print(' \x1b[1;91m\x1b[1;96m\x1b[1;91m NOT XALATA ')
-		back()
+	
 def error():
 	print(f' \x1b[1;91m\x1b[1;96m\x1b[1;97m \x1b[1;91mBgarewa Bo Menu')
 	time.sleep(2)
