@@ -336,7 +336,6 @@ banner()
 def menu():
        	print()
         print(f'\x1b[38;5;208m[ 1 ] CRACK FILE')
-	print(f'\x1b[38;5;208m[ 2 ] CRACK ID ')
         #print(f'\x1b[1;92m╍╌╍╌╍\x1b[1;95m‒╍╌╍╌╍‒\x1b[1;94m╍╌╍╌╍\x1b[1;97m╌╍╌╍╍\x1b[1;96m╌╍╌╍‒╍\x1b[1;93m╌╍╌╍‒╍\x1b[1;91m╌╍╌╍╌╍\x1b[1;92m╌╍╌╍╌╍')
 
         _____BRADOSTI_____ = input(' chose :  ')
